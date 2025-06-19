@@ -25,12 +25,10 @@ using-rmarkdown-container-syntax
 using-html-3
 dropdown-summaries
 print-out-session-info
-this-is-a-new-test-chapter
+setting-up-on-anvil
 learning-objectives-1
-libraries-1
-topic-of-section-1
+anvil
 subtopic-1
-code-examples-1
 image-example-1
 video-examples-1
 using-knitr-3

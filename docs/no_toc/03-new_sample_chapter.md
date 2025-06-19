@@ -1,8 +1,8 @@
-
-# This is a new test chapter
-
-
 <!-- Set up code -->
+
+
+
+# Setting up on AnVIL
 
 
 ## Learning Objectives
@@ -13,100 +13,27 @@ This chapter will cover:
 
 - {You can use https://tips.uark.edu/using-blooms-taxonomy/ to define some learning objectives here}
 - {Another learning objective}
-
-## Libraries
-
-For this chapter, we'll need the following packages attached:
-
-*Remember to add [any additional packages you need to your course's own docker image](https://github.com/jhudsl/OTTR_Template/wiki/Using-Docker#starting-a-new-docker-image).
+- {Cloning an asdfas}
 
 
-``` r
-library(magrittr)
-```
+## AnVIL
 
-## Topic of Section
 
-You can write all your text in sections like this, using `##` to indicate a new header. you can use additional pound symbols to create lower levels of headers.
-
-See [here](https://www.rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf) for additional general information about how you can format text within R Markdown files. In addition, see [here](https://pandoc.org/MANUAL.html#pandocs-markdown) for more in depth and advanced options.
 
 ### Subtopic
 
 Here's a subheading (using three pound symbols) and some text in this subsection!
 
-## Code examples
-
-You can demonstrate code like this:
-
-
-``` r
-output_dir <- file.path("resources", "code_output")
-if (!dir.exists(output_dir)) {
-  dir.create(output_dir)
-}
-```
-
-And make plots too:
-
-
-``` r
-hist_plot <- hist(iris$Sepal.Length)
-```
-
-<img src="resources/images/03-new_sample_chapter_files/figure-html/unnamed-chunk-4-1.png" width="672" />
-
-You can also save these plots to file:
-
-
-``` r
-png(file.path(output_dir, "test_plot.png"))
-hist_plot
-```
-
-```
-## $breaks
-## [1] 4.0 4.5 5.0 5.5 6.0 6.5 7.0 7.5 8.0
-## 
-## $counts
-## [1]  5 27 27 30 31 18  6  6
-## 
-## $density
-## [1] 0.06666667 0.36000000 0.36000000 0.40000000 0.41333333 0.24000000 0.08000000
-## [8] 0.08000000
-## 
-## $mids
-## [1] 4.25 4.75 5.25 5.75 6.25 6.75 7.25 7.75
-## 
-## $xname
-## [1] "iris$Sepal.Length"
-## 
-## $equidist
-## [1] TRUE
-## 
-## attr(,"class")
-## [1] "histogram"
-```
-
-``` r
-dev.off()
-```
-
-```
-## png 
-##   2
-```
 
 ## Image example
 
 How to include a Google slide. It's simplest to use the `ottrpal` package:
 
 
-<img src="resources/images/03-new_sample_chapter_files/figure-html//1YmwKdIy9BeQ3EShgZhvtb3MgR8P6iDX4DfFD65W_gdQ_gcc4fbee202_0_141.png" alt="Major point!! example image" width="100%" style="display: block; margin: auto;" />
+<img src="resources/images/03-new_sample_chapter_files/figure-html//1dEZtb0TgLbzhbr3HxQElwg8hENur2HMIzseg19OGd0g_g3625cb0685d_0_214.png" alt="Image test" width="100%" style="display: block; margin: auto;" />
 
-But if you have the slide or some other image locally downloaded you can also use HTML like this:
 
-<img src="resources/images/02-chapter_of_course_files/figure-html//1YmwKdIy9BeQ3EShgZhvtb3MgR8P6iDX4DfFD65W_gdQ_gcc4fbee202_0_141.png" title="Major point!! example image" alt="Major point!! example image" style="display: block; margin: auto;" />
+<!-- <img src="resources/images/02-chapter_of_course_files/figure-html//1YmwKdIy9BeQ3EShgZhvtb3MgR8P6iDX4DfFD65W_gdQ_gcc4fbee202_0_141.png" title="Major point!! example image" alt="Major point!! example image" style="display: block; margin: auto;" /> -->
 
 ## Video examples
 You may also want to embed videos in your course. If alternatively, you just want to include a link you can do so like this:
@@ -335,7 +262,7 @@ devtools::session_info()
 ##  later         1.3.2   2023-12-06 [1] RSPM (R 4.3.0)
 ##  lifecycle     1.0.4   2023-11-07 [1] RSPM (R 4.3.0)
 ##  lubridate     1.9.3   2023-09-27 [1] RSPM (R 4.3.0)
-##  magrittr    * 2.0.3   2022-03-30 [1] RSPM (R 4.3.0)
+##  magrittr      2.0.3   2022-03-30 [1] RSPM (R 4.3.0)
 ##  memoise       2.0.1   2021-11-26 [1] RSPM (R 4.3.0)
 ##  mime          0.12    2021-09-28 [1] RSPM (R 4.3.0)
 ##  miniUI        0.1.1.1 2018-05-18 [1] RSPM (R 4.3.0)
