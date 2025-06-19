@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>References | Course Name</title>
+  <title>3.10 Stylized boxes | Course Name</title>
   <meta name="description" content="Description about Course/Book." />
   <meta name="generator" content="bookdown 0.41 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="References | Course Name" />
+  <meta property="og:title" content="3.10 Stylized boxes | Course Name" />
   <meta property="og:type" content="book" />
   
   <meta property="og:description" content="Description about Course/Book." />
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="References | Course Name" />
+  <meta name="twitter:title" content="3.10 Stylized boxes | Course Name" />
   
   <meta name="twitter:description" content="Description about Course/Book." />
   
@@ -29,8 +29,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   <link rel="shortcut icon" href="assets/dasl_favicon.ico" type="image/x-icon" />
-<link rel="prev" href="about-the-authors.html"/>
-
+<link rel="prev" href="citation-examples-1.html"/>
+<link rel="next" href="dropdown-summaries-1.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -273,19 +273,64 @@ div.csl-indent {
 <div class="hero-image-container"> 
   <img class= "hero-image" src="assets/C-MOOR_Template/dasl_thin_main_image.png">
 </div>
-<div id="references" class="section level1 unnumbered hasAnchor">
-<h1>References<a href="references.html#references" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="stylized-boxes-1" class="section level2 hasAnchor" number="3.10">
+<h2><span class="header-section-number">3.10</span> Stylized boxes<a href="stylized-boxes-1.html#stylized-boxes-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Occasionally, you might find it useful to emphasize a particular piece of information. To help you do so, we have provided css code and images (no need for you to worry about that!) to create the following stylized boxes.</p>
+<p>You can use these boxes in your course with either of two options: using HTML code or Pandoc syntax.</p>
+<div id="using-rmarkdown-container-syntax-1" class="section level3 hasAnchor" number="3.10.1">
+<h3><span class="header-section-number">3.10.1</span> Using <code>rmarkdown</code> container syntax<a href="stylized-boxes-1.html#using-rmarkdown-container-syntax-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>The <code>rmarkdown</code> package allows for a different syntax to be converted to the HTML that you just saw and also allows for conversion to LaTeX. See the <a href="https://bookdown.org/yihui/rmarkdown-cookbook/custom-blocks.html">Bookdown</a> documentation for more information <span class="citation">(<a href="#ref-Xie2020">Xie, Dervieux, and Riederer 2020</a>)</span>. Note that Bookdown uses Pandoc.</p>
+<pre><code>::: {.notice}
+Note using rmarkdown syntax.
 
+:::</code></pre>
+<div class="notice">
+<p>Note using rmarkdown syntax.</p>
+</div>
+<p>As an example you might do something like this:</p>
+<div class="notice">
+<p>Please click on the subsection headers in the left hand
+navigation bar (e.g., 2.1, 4.3) a second time to expand the
+table of contents and enable the <code>scroll_highlight</code> feature
+(<a href="introduction.html#scroll-highlight">see more</a>)</p>
+</div>
+</div>
+<div id="using-html-7" class="section level3 hasAnchor" number="3.10.2">
+<h3><span class="header-section-number">3.10.2</span> Using HTML<a href="stylized-boxes-1.html#using-html-7" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>To add a warning box like the following use:</p>
+<pre><code>&lt;div class = &quot;notice&quot;&gt;
+Followed by the text you want inside
+&lt;/div&gt;</code></pre>
+<p>This will create the following:</p>
+<div class="notice">
+<p>Followed by the text you want inside</p>
+</div>
+<p>Here is a <code>&lt;div class = "warning"&gt;</code> box:</p>
+<div class="warning">
+<p>Note text</p>
+</div>
+<p>Here is a <code>&lt;div class = "github"&gt;</code> box:</p>
+<div class="github">
+<p>GitHub text</p>
+</div>
+<p>Here is a <code>&lt;div class = "dictionary"&gt;</code> box:</p>
+<div class="dictionary">
+<p>dictionary text</p>
+</div>
+<p>Here is a <code>&lt;div class = "reflection"&gt;</code> box:</p>
+<div class="reflection">
+<p>reflection text</p>
+</div>
+<p>Here is a <code>&lt;div class = "wip"&gt;</code> box:</p>
+<div class="wip">
+<p>This section is a <strong>Work in Progress</strong>.</p>
+</div>
+</div>
+</div>
+<h3>References<a href="references.html#references" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <div id="refs" class="references csl-bib-body hanging-indent">
-<div class="csl-entry">
-Allaire, JJ, Yihui Xie, Jonathan McPherson, Javier Luraschi, Kevin Ushey, Aron Atkins, Hadley Wickham, Joe Cheng, Winston Chang, and Richard Iannone. 2021. <em>Rmarkdown: Dynamic Documents for r</em>. <a href="https://github.com/rstudio/rmarkdown">https://github.com/rstudio/rmarkdown</a>.
-</div>
-<div class="csl-entry">
-Xie, Yihui, J. J. Allaire, and Garrett Grolemund. 2018. <em>R Markdown: The Definitive Guide</em>. Boca Raton, Florida: Chapman; Hall/CRC. <a href="https://bookdown.org/yihui/rmarkdown">https://bookdown.org/yihui/rmarkdown</a>.
-</div>
-<div class="csl-entry">
+<div id="ref-Xie2020" class="csl-entry">
 Xie, Yihui, Christophe Dervieux, and Emily Riederer. 2020. <em>R Markdown Cookbook</em>. Boca Raton, Florida: Chapman; Hall/CRC. <a href="https://bookdown.org/yihui/rmarkdown-cookbook">https://bookdown.org/yihui/rmarkdown-cookbook</a>.
-</div>
 </div>
 </div>
 <hr>
@@ -299,8 +344,8 @@ Xie, Yihui, Christophe Dervieux, and Emily Riederer. 2020. <em>R Markdown Cookbo
           </div>
         </div>
       </div>
-<a href="about-the-authors.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-
+<a href="citation-examples-1.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="dropdown-summaries-1.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
