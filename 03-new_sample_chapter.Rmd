@@ -1,11 +1,11 @@
-
-# This is a new test chapter
-
-
 <!-- Set up code -->
 ```{r, include = FALSE}
 ottrpal::set_knitr_image_path()
 ```
+
+
+# Setting up on AnVIL
+
 
 ## Learning Objectives
 
@@ -15,64 +15,31 @@ This chapter will cover:
 
 - {You can use https://tips.uark.edu/using-blooms-taxonomy/ to define some learning objectives here}
 - {Another learning objective}
+- {Cloning an asdfas}
 
-## Libraries
 
-For this chapter, we'll need the following packages attached:
+## AnVIL
 
-*Remember to add [any additional packages you need to your course's own docker image](https://github.com/jhudsl/OTTR_Template/wiki/Using-Docker#starting-a-new-docker-image).
 
-```{r}
-library(magrittr)
-```
-
-## Topic of Section
-
-You can write all your text in sections like this, using `##` to indicate a new header. you can use additional pound symbols to create lower levels of headers.
-
-See [here](https://www.rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf) for additional general information about how you can format text within R Markdown files. In addition, see [here](https://pandoc.org/MANUAL.html#pandocs-markdown) for more in depth and advanced options.
 
 ### Subtopic
 
 Here's a subheading (using three pound symbols) and some text in this subsection!
 
-## Code examples
-
-You can demonstrate code like this:
-
-```{r}
-output_dir <- file.path("resources", "code_output")
-if (!dir.exists(output_dir)) {
-  dir.create(output_dir)
-}
-```
-
-And make plots too:
-
-```{r}
-hist_plot <- hist(iris$Sepal.Length)
-```
-
-You can also save these plots to file:
-
-```{r}
-png(file.path(output_dir, "test_plot.png"))
-hist_plot
-dev.off()
-```
 
 ## Image example
 
 How to include a Google slide. It's simplest to use the `ottrpal` package:
 
 
-```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "Major point!! example image"}
-ottrpal::include_slide("https://docs.google.com/presentation/d/1YmwKdIy9BeQ3EShgZhvtb3MgR8P6iDX4DfFD65W_gdQ/edit#slide=id.gcc4fbee202_0_141")
+```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "Image test"}
+
+ottrpal::include_slide("https://docs.google.com/presentation/d/1dEZtb0TgLbzhbr3HxQElwg8hENur2HMIzseg19OGd0g/edit#slide=id.g3625cb0685d_0_214")
+
 ```
 
-But if you have the slide or some other image locally downloaded you can also use HTML like this:
 
-<img src="resources/images/02-chapter_of_course_files/figure-html//1YmwKdIy9BeQ3EShgZhvtb3MgR8P6iDX4DfFD65W_gdQ_gcc4fbee202_0_141.png" title="Major point!! example image" alt="Major point!! example image" style="display: block; margin: auto;" />
+<!-- <img src="resources/images/02-chapter_of_course_files/figure-html//1YmwKdIy9BeQ3EShgZhvtb3MgR8P6iDX4DfFD65W_gdQ_gcc4fbee202_0_141.png" title="Major point!! example image" alt="Major point!! example image" style="display: block; margin: auto;" /> -->
 
 ## Video examples
 You may also want to embed videos in your course. If alternatively, you just want to include a link you can do so like this:
