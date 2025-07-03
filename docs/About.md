@@ -41,64 +41,75 @@ These credits are based on our [course contributors table guidelines](https://ww
 
 
 ```
+## Warning in system2("quarto", "-V", stdout = TRUE, env = paste0("TMPDIR=", :
+## running command '"quarto"
+## TMPDIR=C:/Users/syork/AppData/Local/Temp/Rtmpik9ssa/file54f810243f31 -V' had
+## status 1
+```
+
+```
 ## ─ Session info ───────────────────────────────────────────────────────────────
 ##  setting  value
-##  version  R version 4.3.2 (2023-10-31)
-##  os       Ubuntu 22.04.4 LTS
-##  system   x86_64, linux-gnu
-##  ui       X11
+##  version  R version 4.4.2 (2024-10-31 ucrt)
+##  os       Windows 11 x64 (build 26100)
+##  system   x86_64, mingw32
+##  ui       RTerm
 ##  language (EN)
-##  collate  en_US.UTF-8
-##  ctype    en_US.UTF-8
-##  tz       Etc/UTC
-##  date     2025-06-19
-##  pandoc   3.1.1 @ /usr/local/bin/ (via rmarkdown)
+##  collate  English_United States.utf8
+##  ctype    English_United States.utf8
+##  tz       America/New_York
+##  date     2025-06-27
+##  pandoc   3.2 @ C:/Program Files/RStudio/resources/app/bin/quarto/bin/tools/ (via rmarkdown)
+##  quarto   NA @ C:\\PROGRA~1\\RStudio\\RESOUR~1\\app\\bin\\quarto\\bin\\quarto.exe
 ## 
 ## ─ Packages ───────────────────────────────────────────────────────────────────
 ##  package     * version date (UTC) lib source
-##  bookdown      0.41    2024-10-16 [1] CRAN (R 4.3.2)
-##  cachem        1.0.8   2023-05-01 [1] RSPM (R 4.3.0)
-##  cli           3.6.2   2023-12-11 [1] RSPM (R 4.3.0)
-##  devtools      2.4.5   2022-10-11 [1] RSPM (R 4.3.0)
-##  digest        0.6.34  2024-01-11 [1] RSPM (R 4.3.0)
-##  ellipsis      0.3.2   2021-04-29 [1] RSPM (R 4.3.0)
-##  evaluate      0.23    2023-11-01 [1] RSPM (R 4.3.0)
-##  fastmap       1.1.1   2023-02-24 [1] RSPM (R 4.3.0)
-##  fs            1.6.3   2023-07-20 [1] RSPM (R 4.3.0)
-##  glue          1.7.0   2024-01-09 [1] RSPM (R 4.3.0)
-##  htmltools     0.5.7   2023-11-03 [1] RSPM (R 4.3.0)
-##  htmlwidgets   1.6.4   2023-12-06 [1] RSPM (R 4.3.0)
-##  httpuv        1.6.14  2024-01-26 [1] RSPM (R 4.3.0)
-##  knitr         1.48    2024-07-07 [1] CRAN (R 4.3.2)
-##  later         1.3.2   2023-12-06 [1] RSPM (R 4.3.0)
-##  lifecycle     1.0.4   2023-11-07 [1] RSPM (R 4.3.0)
-##  magrittr      2.0.3   2022-03-30 [1] RSPM (R 4.3.0)
-##  memoise       2.0.1   2021-11-26 [1] RSPM (R 4.3.0)
-##  mime          0.12    2021-09-28 [1] RSPM (R 4.3.0)
-##  miniUI        0.1.1.1 2018-05-18 [1] RSPM (R 4.3.0)
-##  pkgbuild      1.4.3   2023-12-10 [1] RSPM (R 4.3.0)
-##  pkgload       1.3.4   2024-01-16 [1] RSPM (R 4.3.0)
-##  profvis       0.3.8   2023-05-02 [1] RSPM (R 4.3.0)
-##  promises      1.2.1   2023-08-10 [1] RSPM (R 4.3.0)
-##  purrr         1.0.2   2023-08-10 [1] RSPM (R 4.3.0)
-##  R6            2.5.1   2021-08-19 [1] RSPM (R 4.3.0)
-##  Rcpp          1.0.12  2024-01-09 [1] RSPM (R 4.3.0)
-##  remotes       2.4.2.1 2023-07-18 [1] RSPM (R 4.3.0)
-##  rlang         1.1.4   2024-06-04 [1] CRAN (R 4.3.2)
-##  rmarkdown     2.25    2023-09-18 [1] RSPM (R 4.3.0)
-##  sessioninfo   1.2.2   2021-12-06 [1] RSPM (R 4.3.0)
-##  shiny         1.8.0   2023-11-17 [1] RSPM (R 4.3.0)
-##  stringi       1.8.3   2023-12-11 [1] RSPM (R 4.3.0)
-##  stringr       1.5.1   2023-11-14 [1] RSPM (R 4.3.0)
-##  urlchecker    1.0.1   2021-11-30 [1] RSPM (R 4.3.0)
-##  usethis       2.2.3   2024-02-19 [1] RSPM (R 4.3.0)
-##  vctrs         0.6.5   2023-12-01 [1] RSPM (R 4.3.0)
-##  xfun          0.48    2024-10-03 [1] CRAN (R 4.3.2)
-##  xtable        1.8-4   2019-04-21 [1] RSPM (R 4.3.0)
-##  yaml          2.3.8   2023-12-11 [1] RSPM (R 4.3.0)
+##  bookdown      0.43    2025-04-15 [1] CRAN (R 4.4.3)
+##  bslib         0.9.0   2025-01-30 [1] CRAN (R 4.4.2)
+##  cachem        1.1.0   2024-05-16 [1] CRAN (R 4.4.2)
+##  cli           3.6.4   2025-02-13 [1] CRAN (R 4.4.2)
+##  devtools      2.4.5   2022-10-11 [1] CRAN (R 4.4.3)
+##  digest        0.6.37  2024-08-19 [1] CRAN (R 4.4.2)
+##  ellipsis      0.3.2   2021-04-29 [1] CRAN (R 4.4.2)
+##  evaluate      1.0.3   2025-01-10 [1] CRAN (R 4.4.2)
+##  fastmap       1.2.0   2024-05-15 [1] CRAN (R 4.4.2)
+##  fs            1.6.5   2024-10-30 [1] CRAN (R 4.4.2)
+##  glue          1.8.0   2024-09-30 [1] CRAN (R 4.4.2)
+##  htmltools     0.5.8.1 2024-04-04 [1] CRAN (R 4.4.2)
+##  htmlwidgets   1.6.4   2023-12-06 [1] CRAN (R 4.4.2)
+##  httpuv        1.6.15  2024-03-26 [1] CRAN (R 4.4.2)
+##  jquerylib     0.1.4   2021-04-26 [1] CRAN (R 4.4.2)
+##  jsonlite      1.9.0   2025-02-19 [1] CRAN (R 4.4.2)
+##  knitr         1.49    2024-11-08 [1] CRAN (R 4.4.2)
+##  later         1.4.1   2024-11-27 [1] CRAN (R 4.4.2)
+##  lifecycle     1.0.4   2023-11-07 [1] CRAN (R 4.4.2)
+##  magrittr      2.0.3   2022-03-30 [1] CRAN (R 4.4.2)
+##  memoise       2.0.1   2021-11-26 [1] CRAN (R 4.4.2)
+##  mime          0.12    2021-09-28 [1] CRAN (R 4.4.0)
+##  miniUI        0.1.2   2025-04-17 [1] CRAN (R 4.4.3)
+##  pkgbuild      1.4.7   2025-03-24 [1] CRAN (R 4.4.3)
+##  pkgload       1.4.0   2024-06-28 [1] CRAN (R 4.4.3)
+##  profvis       0.4.0   2024-09-20 [1] CRAN (R 4.4.3)
+##  promises      1.3.2   2024-11-28 [1] CRAN (R 4.4.2)
+##  purrr         1.0.4   2025-02-05 [1] CRAN (R 4.4.2)
+##  R6            2.6.1   2025-02-15 [1] CRAN (R 4.4.2)
+##  Rcpp          1.0.14  2025-01-12 [1] CRAN (R 4.4.2)
+##  remotes       2.5.0   2024-03-17 [1] CRAN (R 4.4.3)
+##  rlang         1.1.5   2025-01-17 [1] CRAN (R 4.4.2)
+##  rmarkdown     2.29    2024-11-04 [1] CRAN (R 4.4.2)
+##  rstudioapi    0.17.1  2024-10-22 [1] CRAN (R 4.4.2)
+##  sass          0.4.9   2024-03-15 [1] CRAN (R 4.4.2)
+##  sessioninfo   1.2.3   2025-02-05 [1] CRAN (R 4.4.3)
+##  shiny         1.10.0  2024-12-14 [1] CRAN (R 4.4.2)
+##  urlchecker    1.0.1   2021-11-30 [1] CRAN (R 4.4.3)
+##  usethis       3.1.0   2024-11-26 [1] CRAN (R 4.4.3)
+##  vctrs         0.6.5   2023-12-01 [1] CRAN (R 4.4.2)
+##  xfun          0.51    2025-02-19 [1] CRAN (R 4.4.2)
+##  xtable        1.8-4   2019-04-21 [1] CRAN (R 4.4.2)
+##  yaml          2.3.10  2024-07-26 [1] CRAN (R 4.4.2)
 ## 
-##  [1] /usr/local/lib/R/site-library
-##  [2] /usr/local/lib/R/library
+##  [1] C:/Users/syork/AppData/Local/R/win-library/4.4
+##  [2] C:/Program Files/R/R-4.4.2/library
 ## 
 ## ──────────────────────────────────────────────────────────────────────────────
 ```
