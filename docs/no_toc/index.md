@@ -1,6 +1,6 @@
 ---
 title: "Course Name"
-date: "June 19, 2025"
+date: "July 03, 2025"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: [book.bib]
@@ -135,6 +135,8 @@ Core concepts and competencies are taken from the following sources:
 
 
 This content is part of a collection of teaching resources developed by C-MOOR.  C-MOOR works to break down barriers to scientific participation and build pathways for the next generation of data scientists through authentic research experiences.  Learn more about C-MOOR by [viewing our projects](https://github.com/c-moor), or read about how C-MOOR is [integrating research experience into undergraduate biology courses](https://www.cloviscollege.edu/alumni-and-community/c-moor/c-moor.html) at Clovis Community College.
+
+
 
 
 <!-- ## Available course formats
