@@ -5,6 +5,7 @@ rmd_files: ["index.Rmd",
             "introduction.Rmd",
             "introducing-16S-data.Rmd",
             "explore-phyloseq.Rmd",
+            "analyze-phyloseq.Rmd",
             "About.Rmd",
             "References.Rmd"]
 new_session: yes
