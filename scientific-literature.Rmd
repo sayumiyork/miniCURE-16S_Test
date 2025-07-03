@@ -6,6 +6,18 @@ ottrpal::set_knitr_image_path()
 
 # Setting up on AnVIL
 
+## Image example
+
+How to include a Google slide. It's simplest to use the `ottrpal` package:
+
+
+```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "Image test"}
+
+ottrpal::include_slide("https://docs.google.com/presentation/d/1-orSi8DpN22hMt9-6p_rHZnte1YXXLe-a132HDSyd0U/edit?slide=id.g35f391192_00#slide=id.g35f391192_00")
+
+```
+
+
 
 ## Learning Objectives
 
@@ -20,6 +32,15 @@ This chapter will cover:
 
 ## AnVIL
 
+
+
+### Ending a session on AnVIL
+
+```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "Image test"}
+
+ottrpal::include_slide("https://docs.google.com/presentation/d/1dEZtb0TgLbzhbr3HxQElwg8hENur2HMIzseg19OGd0g/edit#slide=id.g3625cb0685d_0_214")
+
+```
 
 
 ### Subtopic
@@ -38,8 +59,15 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1dEZtb0TgLbzhbr3H
 
 ```
 
+Step 1. On the right side of the screen, click the Cloud Environment button. This is the Cloud with the lighting symbol.
 
-<!-- <img src="resources/images/02-chapter_of_course_files/figure-html//1YmwKdIy9BeQ3EShgZhvtb3MgR8P6iDX4DfFD65W_gdQ_gcc4fbee202_0_141.png" title="Major point!! example image" alt="Major point!! example image" style="display: block; margin: auto;" /> -->
+Step 2. Under the RStudio section, click settings.
+
+Step 3. Scroll to the bottom of the new window and click delete environment.
+
+Step 4. Check Delete everything, including the persistent disk or you will incur costs for storage. 
+
+Step 5. Click delete.
 
 ## Video examples
 You may also want to embed videos in your course. If alternatively, you just want to include a link you can do so like this:

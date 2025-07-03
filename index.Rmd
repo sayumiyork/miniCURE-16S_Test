@@ -193,6 +193,8 @@ cow::borrow_chapter(
 ```
 
 
+
+
 <!-- ## Available course formats
 This course is available in multiple formats which allows you to take it in the way that best suites your needs. You can take it for certificate which can be for free or fee.
 
