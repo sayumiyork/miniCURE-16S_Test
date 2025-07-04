@@ -1,11 +1,10 @@
 
-# (PART\*) 16S Research project {-}
 
 <!-- Set up code of OTTR Book-->
 
 
 
-# Introduction to 16S rRNA Data
+# 16S rRNA Data in spreadsheets
 
 ## Exploring 16S rRNA data in spreadsheets
 
