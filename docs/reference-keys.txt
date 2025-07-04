@@ -5,8 +5,8 @@ target-audience
 curriculum
 scientific-literature
 pre-lab
-lecture-reading-a-paper
-activity-scientific-literature
+lecture---reading-a-paper
+activity---scientific-literature
 purpose
 introduction-1
 instructions
