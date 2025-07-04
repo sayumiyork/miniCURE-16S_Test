@@ -9,7 +9,7 @@
 
 ## Pre-lab
 
-## Lecture: Reading a paper
+## Lecture - Reading a paper
 
 *Estimated time: *
 
@@ -18,7 +18,7 @@
 [Lecture](https://docs.google.com/presentation/d/1uuuAbg_rcfCVohaVrrxfUfszwTDqigzg34qEWfTNeR0/edit#slide=id.g35f391192_00)
 
 
-## Activity: Scientific Literature
+## Activity - Scientific Literature
 
 ### Purpose
 
