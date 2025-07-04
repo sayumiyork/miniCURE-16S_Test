@@ -10,7 +10,7 @@
 
 ## Pre-lab - Scientific literature
 
-<img src="scientific-literature_files/figure-html//1dEZtb0TgLbzhbr3HxQElwg8hENur2HMIzseg19OGd0g_g33d73503c03_0_51.png" alt="Image test" width="100%" style="display: block; margin: auto;" />
+![](resources/images/scientific-literature_files/figure-docx//1dEZtb0TgLbzhbr3HxQElwg8hENur2HMIzseg19OGd0g_g33d73503c03_0_51.png){width=100%}
 
 
 ### Purpose
@@ -54,9 +54,9 @@ Read the paper [“Fecal transplant in children with Clostridioides difficile gi
 
 #### Resources
 
-[Google Doc](https://docs.google.com/document/d/1Uzw-dPwx4kxrcDKLTM7hjxN09oFkTQWg/edit?usp=sharing&ouid=117014088395158370475&rtpof=true&sd=true)
+- [Google Doc](https://docs.google.com/document/d/1Uzw-dPwx4kxrcDKLTM7hjxN09oFkTQWg/edit?usp=sharing&ouid=117014088395158370475&rtpof=true&sd=true)
 
-[Paper](https://pmc.ncbi.nlm.nih.gov/articles/PMC6790402/)
+- [Paper](https://pmc.ncbi.nlm.nih.gov/articles/PMC6790402/)
 
 #### Contributions and affiliations
 
@@ -74,7 +74,7 @@ Read the paper [“Fecal transplant in children with Clostridioides difficile gi
 
 <!-- Perhaps this could also be generic? -->
 
-<img src="scientific-literature_files/figure-html//1mibD1XUpgRZcDPbYj5XOMUASuScuJoUBVV7RkT5nnSc_g36d36570436_0_413.png" alt="Image test" width="100%" style="display: block; margin: auto;" />
+![](resources/images/scientific-literature_files/figure-docx//1mibD1XUpgRZcDPbYj5XOMUASuScuJoUBVV7RkT5nnSc_g36d36570436_0_413.png){width=100%}
 
 [Lecture](https://docs.google.com/presentation/d/1mibD1XUpgRZcDPbYj5XOMUASuScuJoUBVV7RkT5nnSc/edit?usp=sharing)
 
@@ -209,9 +209,9 @@ Download the assignment to your local computer as a .docx, complete it, and uplo
 
 #### Resources
 
-[Google Doc](https://docs.google.com/document/d/1Mg9DGVk0EsSfYwl8VsRHb-_QdtZqiBmhWvbhUWkQERc/edit?usp=sharing)
+- [Google Doc](https://docs.google.com/document/d/1Mg9DGVk0EsSfYwl8VsRHb-_QdtZqiBmhWvbhUWkQERc/edit?usp=sharing)
 
-[Paper](https://pmc.ncbi.nlm.nih.gov/articles/PMC6790402/)
+- [Paper](https://pmc.ncbi.nlm.nih.gov/articles/PMC6790402/)
 
 #### Contributions and affiliations
 
