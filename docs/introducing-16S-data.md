@@ -1,11 +1,10 @@
 
-# (PART\*) 16S Research project {-}
 
 <!-- Set up code of OTTR Book-->
 
 
 
-# Introduction to 16S rRNA Data
+# Introduction to 16S rRNA Data in spreadsheets
 
 ## Exploring 16S rRNA data in spreadsheets
 
@@ -16,7 +15,7 @@ In this section we will look at 16S data in a spreadsheet via Google Sheets. We 
 
 *Estimated time: *
 
-![](resources/images/introducing-16S-data_files/figure-docx//1nGKvSYGHJu0JZLMWZiFu_iGLIC16IKlnWsVyNyjdyek_g35f391192_00.png){width=100%}
+<img src="introducing-16S-data_files/figure-html//1nGKvSYGHJu0JZLMWZiFu_iGLIC16IKlnWsVyNyjdyek_g35f391192_00.png" alt="Image test" width="100%" style="display: block; margin: auto;" />
 
 [Lecture](https://docs.google.com/presentation/d/1nGKvSYGHJu0JZLMWZiFu_iGLIC16IKlnWsVyNyjdyek/edit?usp=sharing)
 

@@ -4,7 +4,7 @@
 
 
 
-# Phyloseq - Part 2
+# Phyloseq part II - Exploring 16S rRNA Data
 
 ## Analyzing 16S rRNA Data with phyloseq
 
@@ -15,7 +15,7 @@
 
 *Estimated time: *
 
-![](resources/images/analyze-phyloseq_files/figure-docx//1befeRj4IAML556qaN9OQEb1gvqZo0lj6aOPlpgQkzvE_g35f391192_00.png){width=100%}
+<img src="analyze-phyloseq_files/figure-html//1befeRj4IAML556qaN9OQEb1gvqZo0lj6aOPlpgQkzvE_g35f391192_00.png" alt="Image test" width="100%" style="display: block; margin: auto;" />
 
 [Lecture](https://docs.google.com/presentation/d/1befeRj4IAML556qaN9OQEb1gvqZo0lj6aOPlpgQkzvE/edit?usp=sharing)
 
