@@ -87,3 +87,9 @@ grading-criteria-4
 footnotes-5
 resources-5
 contributions-and-affiliations-5
+question-1---profile-and-compare-asv-abundance-and-taxonomy-for-2-diets-bd-and-hd.-your-final-analysis-should-result-in-a-plot-andor-a-table.
+question-2---profile-and-compare-asv-abundance-and-taxonomy-of-21-individuals-using-a-single-homogenized-dietary-timepoint.-your-final-analysis-should-result-in-a-plot-andor-a-table.
+activity-2-2.-explore-most-common-asv-taxonomy
+activity-2-3.-plot-individual-variation-in-abundance-of-the-most-common-asv
+activity-3-1-access-miso_ps_leah_sy_subject1-file-and-open-it-with-google-sheets-then-explore-differences-between-dietary-changes-in-individual-1-by-exploring-differences-between-the-5-sample-timepoints.
+activity-3-2.-examine-the-top-15-most-variable-asvs-and-in-the-box-below-commentspeculate-on-source-of-variation-for-one-of-the-asvs.-do-you-think-the-source-of-variation-is-change-of-diet-inconsistent-replicates-or-something-else
