@@ -1,0 +1,136 @@
+
+# (PART\*) Scientific Literature {-}
+
+<!-- Set up code of OTTR Book-->
+
+
+
+## Pre-lab
+
+## Lecture: Reading a paper
+
+*Estimated time: *
+
+<img src="resources/images/scientific-literature_files/figure-html//1nGKvSYGHJu0JZLMWZiFu_iGLIC16IKlnWsVyNyjdyek_g35f391192_00.png" alt="Image test" width="100%" style="display: block; margin: auto;" />
+
+[Lecture](https://docs.google.com/presentation/d/1uuuAbg_rcfCVohaVrrxfUfszwTDqigzg34qEWfTNeR0/edit#slide=id.g35f391192_00)
+
+
+## Activity: Scientific Literature
+
+### Purpose
+
+### Introduction
+
+### Instructions
+
+### Activity 1 - Overview of the paper
+
+*Estimated time: 30 minutes*
+
+Determine the main objectives and purpose of the paper. 
+
+|1. What is the purpose of this study?  |
+|:--|
+| <br> |
+<br>
+
+|2. What is the hypothesis in this study?  |
+|:--|
+| <br> |
+<br>
+
+|3. Describe the knowledge gap. In essence, what did the scientific community not know that this study was trying to answer?|
+|:--|
+| <br> |
+<br>
+
+|4. What were the main conclusions the authors made in this study?|
+|:--|
+| <br> |
+<br>
+
+### Activity 2 - Methods and Figure Analysis (in class and homework)
+
+*Estimated time: 45 minutes*
+
+#### Activity 2.1 – Examine the Methods and Data presented in this study
+
+|1. Summarize one aspect of sample-associated metadata used for this study? e.g. What is the range of subjects’ age; what is the spectrum of subjects’ medical problems?|
+|:--|
+| <br> |
+<br>
+
+|2. Discuss one method or analysis used in this paper.|
+|:--|
+| <br> |
+<br>
+
+|Summarize one figure presented in this paper.|
+|:--|
+| <br> |
+<br>
+
+#### Activity 2.2 - Figures and a Table
+
+
+Describe the method/approach used to generate this data
+
+|                  |Method/Approach|
+|:-----------------|----:|
+|Table 1          || 
+|Fig. 2     ||
+|Fig. 3A       | | 
+|Fig. 3B   | |
+<br>
+
+Describe main result/observation 
+
+|                  |Main result/Observation|
+|:-------|----:|
+|Table 1          || 
+|Fig. 2     ||
+|Fig. 3A       | | 
+|Fig. 3B   | |
+<br>
+
+#### Activity 3 Conclusions
+
+*Estimated time: 10 min* 
+
+Compare your conclusions to author conclusions. 
+- How similar are the conclusions you came up with to the authors? 
+- Were there any differences in interpreting the data? 
+- Do you think they are over-stating their findings? Do you think their conclusions are accurate and appropriate?
+
+#### Activity 4 Future Directions
+
+*Estimated time: 10 min* 
+
+1. Scientific work builds on previous studies. What do you believe could be the next step to further the work these researchers did?
+- What follow-up question(s) do you have for the authors?
+
+
+2. What is the impact of this research area in general (or this study in particular?)
+- Do you believe further research in this area may benefit society? Can we build on what this study found?
+
+
+### Grading criteria
+
+- Download this assignment as Microsoft Word (.docx) and upload on your LMS (ex. Canvas, Blackboard, Google Classroom)
+
+### Footnotes
+
+#### Resources
+
+[Google Doc](https://docs.google.com/document/d/1Mg9DGVk0EsSfYwl8VsRHb-_QdtZqiBmhWvbhUWkQERc/edit?usp=sharing)
+[Paper](https://drive.google.com/file/d/1_0Q8Wqvj2AGLAvhkfwaRB_5sYKLSr0Tx/view?usp=sharing)
+
+#### Contributions and affiliations
+
+- Valeriya Gaysinskaya, Johns Hopkins University
+- Frederick Tan, Johns Hopkins University
+- Sayumi York, Notre Dame of Maryland University
+
+
+
