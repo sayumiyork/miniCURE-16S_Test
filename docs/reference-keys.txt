@@ -78,3 +78,13 @@ grading-criteria-3
 footnotes-4
 resources-4
 contributions-and-affiliations-4
+pre-lab---scientific-literature
+activity
+questions
+purpose-1
+instructions-1
+learning-objectives-3
+grading-criteria-4
+footnotes-5
+resources-5
+contributions-and-affiliations-5
