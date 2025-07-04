@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>4.1 Exploring 16S rRNA data in spreadsheets | Course Name</title>
+  <title>Chapter 3 Meet the MISO study | Course Name</title>
   <meta name="description" content="Description about Course/Book." />
   <meta name="generator" content="bookdown 0.41 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="4.1 Exploring 16S rRNA data in spreadsheets | Course Name" />
+  <meta property="og:title" content="Chapter 3 Meet the MISO study | Course Name" />
   <meta property="og:type" content="book" />
   
   <meta property="og:description" content="Description about Course/Book." />
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="4.1 Exploring 16S rRNA data in spreadsheets | Course Name" />
+  <meta name="twitter:title" content="Chapter 3 Meet the MISO study | Course Name" />
   
   <meta name="twitter:description" content="Description about Course/Book." />
   
@@ -29,8 +29,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   <link rel="shortcut icon" href="assets/dasl_favicon.ico" type="image/x-icon" />
-<link rel="prev" href="s-rrna-data-in-spreadsheets.html"/>
-<link rel="next" href="lecture---introducing-16s-rrna-data-using-spreadsheets.html"/>
+<link rel="prev" href="activity-scientific-literature.html"/>
+<link rel="next" href="s-rrna-data-in-spreadsheets.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -251,9 +251,174 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <div class="hero-image-container"> 
   <img class= "hero-image" src="assets/C-MOOR_Template/dasl_thin_main_image.png">
 </div>
-<div id="exploring-16s-rrna-data-in-spreadsheets" class="section level2 hasAnchor" number="4.1">
-<h2><span class="header-section-number">4.1</span> Exploring 16S rRNA data in spreadsheets<a href="exploring-16s-rrna-data-in-spreadsheets.html#exploring-16s-rrna-data-in-spreadsheets" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>In this section we will look at 16S data in a spreadsheet via Google Sheets. We will familiarize ourselves with the format of 16S data and manipulate just a few ASVs to better understand what kinds of research questions we can ask with the data. Through this exercise we will also come to understand the necessity of more powerful analysis tools in R; sorting through trends in a spreadsheet could take years!</p>
+<div id="meet-the-miso-study" class="section level1 hasAnchor" number="3">
+<h1><span class="header-section-number">Chapter 3</span> Meet the MISO study<a href="meet-the-miso-study.html#meet-the-miso-study" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>Human diet has been implicated heavily in the establishment and maintenance of the gut microbiome [REFs]. For example, human babies undergo a drastic change in the gut microbiome following the transition to solid food [REF], and microbes that assist in the breakdown of seaweed are found in Japanese gut microbiomes.</p>
+<!-- REFs: Xu et al. (2015) -->
+<p>It’s difficult to capture the mechanisms and effects of diet on the gut microbiome given the sheer number of variables involved. The microbiome individuality and stability over time (MISO) study aimed to explore the connection between diet, microbiome, and metabolites by looking at the effect of feeding a standardized diet to people over 7 days.</p>
+<div id="miso-study-diet-and-sampling-schedule" class="section level3 hasAnchor" number="3.0.1">
+<h3><span class="header-section-number">3.0.1</span> MISO study diet and sampling schedule<a href="meet-the-miso-study.html#miso-study-diet-and-sampling-schedule" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><img src="resources/images/meet-MISO_files/figure-html/1dEZtb0TgLbzhbr3HxQElwg8hENur2HMIzseg19OGd0g_g33d6fd7d4b6_0_27.png" alt="Image test" width="100%" style="display: block; margin: auto;" /></p>
+<p>The figure above shows the study design for the MISO study. You do not need to memorize all these details; feel free to refer to this page throughout the project:</p>
+<ul>
+<li>Participants eat their usual, <strong>baseline diet (BD) for 14 days</strong></li>
+<li>Participants all eat the same diet, the <strong>homogenized diet (HD), for 7 days</strong></li>
+<li>Participants return to their usual diet during the <strong>washout (WO) period for 7 days</strong></li>
+</ul>
+<p>The study lasts a total of 28 days. Samples from the blood, stool, and urine, our metabolite and 16S rRNA data are taken at 5 different timepoints:</p>
+<ul>
+<li><strong>Timepoint 1:</strong> Day 0 (the start of the study)</li>
+<li><strong>Timepoint 2:</strong> Day 13</li>
+<li><strong>Timepoint 3:</strong> Day 17</li>
+<li><strong>Timepoint 4:</strong> Day 21</li>
+<li><strong>Timepoint 5:</strong> Day 28</li>
+</ul>
+</div>
+<div id="miso-study-variables-and-factors" class="section level3 hasAnchor" number="3.0.2">
+<h3><span class="header-section-number">3.0.2</span> MISO study variables and factors<a href="meet-the-miso-study.html#miso-study-variables-and-factors" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><img src="resources/images/meet-MISO_files/figure-html/1dEZtb0TgLbzhbr3HxQElwg8hENur2HMIzseg19OGd0g_g33d6fd7d4b6_0_61.png" alt="Image test" width="100%" style="display: block; margin: auto;" /></p>
+<p>We have a number of variables we can use in our analysis. Notice that the variables for the study and subjects are in lowercase. This is also how you will access these variables in R.</p>
+<div id="study-design-variables" class="section level4 hasAnchor" number="3.0.2.1">
+<h4><span class="header-section-number">3.0.2.1</span> Study design variables<a href="meet-the-miso-study.html#study-design-variables" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<!-- How to align table using this format? -->
+<table>
+<colgroup>
+<col width="20%" />
+<col width="58%" />
+<col width="20%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">Variable</th>
+<th>What is it?</th>
+<th align="right">Factors</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">timepoint</td>
+<td>The 5 samplings that occur on days 0, 13, 17, 21, and 28 coded as timepoints 1 through 5</td>
+<td align="right">1, 2, 3, 4, 5</td>
+</tr>
+<tr class="even">
+<td align="left">timepoint group</td>
+<td>The diet the subject was on during the sampling</td>
+<td align="right">BD, HD, WO</td>
+</tr>
+<tr class="odd">
+<td align="left">phase</td>
+<td>Whether the subject was on their usual diet or the homogenized diet during sampling</td>
+<td align="right">non-miso, miso</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="subject-variables" class="section level4 hasAnchor" number="3.0.2.2">
+<h4><span class="header-section-number">3.0.2.2</span> Subject variables<a href="meet-the-miso-study.html#subject-variables" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<table>
+<colgroup>
+<col width="18%" />
+<col width="36%" />
+<col width="45%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">Variable</th>
+<th>What is it?</th>
+<th align="right">Factors</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">subject</td>
+<td>A unique ID given to each subject (participant)</td>
+<td align="right">S## (ex. S02 is subject 2. Note that while there are a total of 21 subjects in the study, but their subject numbers are not 1 through 20</td>
+</tr>
+<tr class="even">
+<td align="left">sample</td>
+<td>A unique ID given to every sample taken during the study that includes the subject and timepoint of the sample</td>
+<td align="right">MISO-Subject##-Sample# (ex. MISO1-S02-1 is the sample from subject 2 at timepoint 1)</td>
+</tr>
+<tr class="odd">
+<td align="left">gender</td>
+<td>The gender of the subject</td>
+<td align="right">M, F. All subjects were cisgender</td>
+</tr>
+<tr class="even">
+<td align="left">age</td>
+<td>The age in years of the subject</td>
+<td align="right">A continuous variable from 23 to 75 years old</td>
+</tr>
+<tr class="odd">
+<td align="left">bsa</td>
+<td>Body surface area; a measure of body size</td>
+<td align="right">A continuous variable from 1.6 to 2.8</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="metabolite-variables" class="section level4 hasAnchor" number="3.0.2.3">
+<h4><span class="header-section-number">3.0.2.3</span> Metabolite variables<a href="meet-the-miso-study.html#metabolite-variables" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Variable</th>
+<th>What is it?</th>
+<th align="right">Factors</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Creatinine</td>
+<td>Creatinine</td>
+<td align="right">A continuous variable from 1072 to 3971</td>
+</tr>
+<tr class="even">
+<td align="left">PCS</td>
+<td><em>p</em>-cresol sulfate</td>
+<td align="right">A continuous variable from 2 to 95</td>
+</tr>
+<tr class="odd">
+<td align="left">IS</td>
+<td>Indoxyl sulfate</td>
+<td align="right">A continuous variable from 3 to 58</td>
+</tr>
+<tr class="even">
+<td align="left">HIPP</td>
+<td>Hippuric acid</td>
+<td align="right">A continuous variable from 16 to 1119</td>
+</tr>
+<tr class="odd">
+<td align="left">PAG</td>
+<td>Phenylacetylglutamine</td>
+<td align="right">A continuous variable from 16 to 318</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="amplicon-sequence-variants-asvs-data" class="section level3 hasAnchor" number="3.0.3">
+<h3><span class="header-section-number">3.0.3</span> Amplicon sequence variants (ASVs) data<a href="meet-the-miso-study.html#amplicon-sequence-variants-asvs-data" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Finally we have our microbe count data, or our <em>Amplicon Sequence Variants (ASVs)</em>. Each ASV is a unique sequences that differs by as little as a single nucleotide from other ASVs and represents a specific microbe. We have assigned taxonomy to these microbes, but not all microbes have taxonomic data through the species level. These missing fields will appear as NA in the data.</p>
+<p><img src="resources/images/meet-MISO_files/figure-html/1dEZtb0TgLbzhbr3HxQElwg8hENur2HMIzseg19OGd0g_g33d6fd7d4b6_0_136.png" alt="Image test" width="100%" style="display: block; margin: auto;" /></p>
+<p>You may see the word Operational Taxonomic Unit (OTU) in phyloseq and in other published studies. <strong>For our purposes, we will generally consider OTUs and ASVs as interchangable</strong>, although they have some key differences.</p>
+<p>Each sample is associated with a count of each ASV. We can compare the counts of these ASVs between samples to determine differences in the composition of the microbiome between samples.</p>
+<p><img src="resources/images/meet-MISO_files/figure-html/1dEZtb0TgLbzhbr3HxQElwg8hENur2HMIzseg19OGd0g_g33d6fd7d4b6_0_113.png" alt="Image test" width="100%" style="display: block; margin: auto;" /></p>
+</div>
+<div id="footnotes-1" class="section level3 hasAnchor" number="3.0.4">
+<h3><span class="header-section-number">3.0.4</span> Footnotes<a href="meet-the-miso-study.html#footnotes-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="resources-1" class="section level4 hasAnchor" number="3.0.4.1">
+<h4><span class="header-section-number">3.0.4.1</span> Resources<a href="meet-the-miso-study.html#resources-1" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+</div>
+<div id="contributions-and-affiliations-1" class="section level4 hasAnchor" number="3.0.4.2">
+<h4><span class="header-section-number">3.0.4.2</span> Contributions and affiliations<a href="meet-the-miso-study.html#contributions-and-affiliations-1" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<ul>
+<li>Sayumi York, Notre Dame of Maryland University</li>
+</ul>
+
+<!-- Set up code of OTTR Book-->
+</div>
+</div>
 </div>
 <hr>
 <center> 
@@ -266,8 +431,8 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
           </div>
         </div>
       </div>
-<a href="s-rrna-data-in-spreadsheets.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="lecture---introducing-16s-rrna-data-using-spreadsheets.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="activity-scientific-literature.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="s-rrna-data-in-spreadsheets.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
