@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>4.2 Lecture - Introducing 16S rRNA Data Using Spreadsheets | Course Name</title>
+  <title>5.6 Try it Question 3 - Does gender contribute to individual microbiome variation? | Course Name</title>
   <meta name="description" content="Description about Course/Book." />
   <meta name="generator" content="bookdown 0.41 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="4.2 Lecture - Introducing 16S rRNA Data Using Spreadsheets | Course Name" />
+  <meta property="og:title" content="5.6 Try it Question 3 - Does gender contribute to individual microbiome variation? | Course Name" />
   <meta property="og:type" content="book" />
   
   <meta property="og:description" content="Description about Course/Book." />
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="4.2 Lecture - Introducing 16S rRNA Data Using Spreadsheets | Course Name" />
+  <meta name="twitter:title" content="5.6 Try it Question 3 - Does gender contribute to individual microbiome variation? | Course Name" />
   
   <meta name="twitter:description" content="Description about Course/Book." />
   
@@ -29,8 +29,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   <link rel="shortcut icon" href="assets/dasl_favicon.ico" type="image/x-icon" />
-<link rel="prev" href="exploring-16s-rrna-data-in-spreadsheets.html"/>
-<link rel="next" href="activity---introducing-16s-rrna-data-using-spreadsheet.html"/>
+<link rel="prev" href="try-it-question-2---what-are-some-of-the-most-abundant-microbes-when-viewed-at-different-taxonomic-resolutions.html"/>
+<link rel="next" href="try-it-question-4---does-age-contribute-to-individual-microbiome-variation.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -310,11 +310,214 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <div class="hero-image-container"> 
   <img class= "hero-image" src="assets/C-MOOR_Template/dasl_thin_main_image.png">
 </div>
-<div id="lecture---introducing-16s-rrna-data-using-spreadsheets" class="section level2 hasAnchor" number="4.2">
-<h2><span class="header-section-number">4.2</span> Lecture - Introducing 16S rRNA Data Using Spreadsheets<a href="lecture---introducing-16s-rrna-data-using-spreadsheets.html#lecture---introducing-16s-rrna-data-using-spreadsheets" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p><em>Estimated time: </em></p>
-<p><img src="resources/images/introducing-16S-data_files/figure-html/14E26SbzaLEDJxAaZ1qjaZcJehAI8q2GHuTokNPKKDTc_g35f391192_00.png" alt="Image test" width="100%" style="display: block; margin: auto;" /></p>
-<p><a href="https://docs.google.com/presentation/d/14E26SbzaLEDJxAaZ1qjaZcJehAI8q2GHuTokNPKKDTc/edit?usp=sharing">Lecture</a></p>
+<div id="try-it-question-3---does-gender-contribute-to-individual-microbiome-variation" class="section level2 hasAnchor" number="5.6">
+<h2><span class="header-section-number">5.6</span> Try it Question 3 - Does gender contribute to individual microbiome variation?<a href="try-it-question-3---does-gender-contribute-to-individual-microbiome-variation.html#try-it-question-3---does-gender-contribute-to-individual-microbiome-variation" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Approach: First survey the differences in microbiome across gender at the level of phyla and species, and identify potential candidates that may differ between males and females. Then, plot your candidates of interest and additional candidate microbes previously associated with gender-based variation.</p>
+<div id="step-3a.-perform-an-initial-survey-to-see-if-there-are-any-differences-in-phyla-and-species-composition-between-genders." class="section level4 hasAnchor" number="5.6.0.1">
+<h4><span class="header-section-number">5.6.0.1</span> Step 3A. Perform an initial survey to see if there are any differences in phyla and species composition between genders.<a href="try-it-question-3---does-gender-contribute-to-individual-microbiome-variation.html#step-3a.-perform-an-initial-survey-to-see-if-there-are-any-differences-in-phyla-and-species-composition-between-genders." class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Specifically, your plot should show phyla diversity within male and female groups.</p>
+<ul>
+<li><p>Refer to the “Explore 16S rRNA Data with phyloseq” tutorial for help using the plot_bar() function.</p></li>
+<li><p>Use the following code as a template:</p></li>
+</ul>
+<div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb11-1"><a href="try-it-question-3---does-gender-contribute-to-individual-microbiome-variation.html#cb11-1" tabindex="-1"></a><span class="fu">plot_bar</span>(miso, <span class="st">&quot;fill in the blank&quot;</span>, <span class="at">fill =</span> <span class="st">&quot;fill in the blank&quot;</span>, <span class="at">title =</span> <span class="st">&quot;fill in the blank&quot;</span>) <span class="sc">+</span> </span>
+<span id="cb11-2"><a href="try-it-question-3---does-gender-contribute-to-individual-microbiome-variation.html#cb11-2" tabindex="-1"></a><span class="fu">geom_bar</span>(<span class="fu">aes</span>(<span class="at">color =</span> fill <span class="cf">in</span> the blank, <span class="at">fill =</span> fill <span class="cf">in</span> the blank), <span class="at">stat =</span> <span class="st">&quot;identity&quot;</span>, <span class="at">position =</span> <span class="st">&quot;stack&quot;</span>)</span></code></pre></div>
+<table>
+<thead>
+<tr class="header">
+<th align="left">3A-1. Insert the resulting plot below:</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><br></td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<p>Consider any initial differences you see, then choose one high-abundant and one low-abundant candidate Phylum that shows hints of being differentially abundant between genders.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">3A-2. Record the phylum you chose:</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><br></td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+</div>
+<div id="step-3b.-test-gender-based-difference-in-species-for-the-high-abundant-phylum-you-selected.-specifically-your-plot-should-show-species-diversity-within-male-and-female-groups-for-only-your-phylum-of-choice." class="section level4 hasAnchor" number="5.6.0.2">
+<h4><span class="header-section-number">5.6.0.2</span> Step 3B. Test gender-based difference in Species for the high abundant phylum you selected. Specifically, your plot should show species diversity within male and female groups for only your phylum of choice.<a href="try-it-question-3---does-gender-contribute-to-individual-microbiome-variation.html#step-3b.-test-gender-based-difference-in-species-for-the-high-abundant-phylum-you-selected.-specifically-your-plot-should-show-species-diversity-within-male-and-female-groups-for-only-your-phylum-of-choice." class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<ul>
+<li><p>Refer to the “Subset taxonomy” section of the “Explore 16S rRNA Data with phyloseq” tutorial for help using the subset_taxa and plot_bar() functions.</p></li>
+<li><p>Use the following code as a starter:</p></li>
+</ul>
+<div class="sourceCode" id="cb12"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb12-1"><a href="try-it-question-3---does-gender-contribute-to-individual-microbiome-variation.html#cb12-1" tabindex="-1"></a>subset <span class="ot">=</span> <span class="fu">subset_taxa</span>(miso, Phylum <span class="sc">==</span> <span class="st">&quot;fill in the blank&quot;</span>)</span>
+<span id="cb12-2"><a href="try-it-question-3---does-gender-contribute-to-individual-microbiome-variation.html#cb12-2" tabindex="-1"></a></span>
+<span id="cb12-3"><a href="try-it-question-3---does-gender-contribute-to-individual-microbiome-variation.html#cb12-3" tabindex="-1"></a><span class="fu">plot_bar</span>(subset, <span class="st">&quot;fill in the blank&quot;</span>, <span class="at">fill =</span> <span class="st">&quot;Species&quot;</span>, <span class="at">title =</span> <span class="st">&quot;choose a name for your graph&quot;</span>) <span class="sc">+</span> </span>
+<span id="cb12-4"><a href="try-it-question-3---does-gender-contribute-to-individual-microbiome-variation.html#cb12-4" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="fu">aes</span>(<span class="at">color =</span> fill <span class="cf">in</span> the blank, <span class="at">fill =</span> fill <span class="cf">in</span> the blank), <span class="at">stat =</span> <span class="st">&quot;identity&quot;</span>, <span class="at">position =</span> <span class="st">&quot;stack&quot;</span>)</span></code></pre></div>
+<ul>
+<li><p>Note, given the many different Species associated with an abundant Genus, we may need to reduce the legend text and key size in order to visualize the plot better.</p></li>
+<li><p>You can do so by adding the following lines of code:</p></li>
+</ul>
+<div class="sourceCode" id="cb13"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb13-1"><a href="try-it-question-3---does-gender-contribute-to-individual-microbiome-variation.html#cb13-1" tabindex="-1"></a><span class="fu">theme</span>(<span class="at">legend.text=</span><span class="fu">element_text</span>(<span class="at">size=</span><span class="dv">6</span>)) <span class="sc">+</span> </span>
+<span id="cb13-2"><a href="try-it-question-3---does-gender-contribute-to-individual-microbiome-variation.html#cb13-2" tabindex="-1"></a><span class="fu">theme</span>(<span class="at">legend.key.size =</span> <span class="fu">unit</span>(<span class="dv">6</span>, <span class="st">&quot;pt&quot;</span>))</span></code></pre></div>
+<table>
+<thead>
+<tr class="header">
+<th align="left">3B-1. Insert the resulting plot below:</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><br></td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">3B-2. Do you observe any differences in species based on gender?</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><br></td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+</div>
+<div id="step-3c.-test-gender-based-difference-in-species-for-the-low-abundant-phylum-you-selected.-specifically-your-plot-should-show-species-diversity-within-male-and-female-groups-for-only-your-phylum-of-choice." class="section level3 hasAnchor" number="5.6.1">
+<h3><span class="header-section-number">5.6.1</span> Step 3C. Test gender-based difference in Species for the low abundant phylum you selected.** Specifically, your plot should show species diversity within male and female groups for only your phylum of choice.<a href="try-it-question-3---does-gender-contribute-to-individual-microbiome-variation.html#step-3c.-test-gender-based-difference-in-species-for-the-low-abundant-phylum-you-selected.-specifically-your-plot-should-show-species-diversity-within-male-and-female-groups-for-only-your-phylum-of-choice." class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<ul>
+<li><p>Refer to the “Subset taxonomy” section of the “Explore 16S rRNA Data with phyloseq” tutorial for help using the subset_taxa and plot_bar() functions.</p></li>
+<li><p>Use the code you used in Step 3B as a template for your code</p></li>
+</ul>
+<table>
+<thead>
+<tr class="header">
+<th align="left">3C-1. Insert the resulting plot below:</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><br></td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+</div>
+<div id="step-3d-plot-the-individual-abundance-of-2-candidate-microbes-for-gender-differences-based-on-your-analysis-above-andor-the-curated-menu-of-microbes-below-previously-associated-with-gender-variation-with-color-denoting-gender." class="section level3 hasAnchor" number="5.6.2">
+<h3><span class="header-section-number">5.6.2</span> Step 3D: Plot the individual abundance of 2 candidate microbes for gender differences based on your analysis above, and/or the curated menu of microbes below (previously associated with gender variation), with color denoting gender.<a href="try-it-question-3---does-gender-contribute-to-individual-microbiome-variation.html#step-3d-plot-the-individual-abundance-of-2-candidate-microbes-for-gender-differences-based-on-your-analysis-above-andor-the-curated-menu-of-microbes-below-previously-associated-with-gender-variation-with-color-denoting-gender." class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Specifically, your plot should show the chosen microbial group across 21 subjects with the bars colored by gender.</p>
+<ul>
+<li><p>Refer to the “Subset taxonomy” section of the “Explore 16S rRNA Data with phyloseq” tutorial for help using the subset_taxa and plot_bar() functions.</p></li>
+<li><p>Use the following code as a template:</p></li>
+</ul>
+<div class="sourceCode" id="cb14"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb14-1"><a href="try-it-question-3---does-gender-contribute-to-individual-microbiome-variation.html#cb14-1" tabindex="-1"></a>subset <span class="ot">=</span> <span class="fu">subset_taxa</span>(miso,  Phylum <span class="sc">==</span> <span class="st">&quot;fill in the blank&quot;</span>)</span>
+<span id="cb14-2"><a href="try-it-question-3---does-gender-contribute-to-individual-microbiome-variation.html#cb14-2" tabindex="-1"></a><span class="fu">plot_bar</span>(subset, <span class="st">&quot;subject&quot;</span>, <span class="at">fill =</span> <span class="st">&quot;gender&quot;</span>, <span class="at">title =</span> <span class="st">&quot;fill in the blank&quot;</span>) <span class="sc">+</span> </span>
+<span id="cb14-3"><a href="try-it-question-3---does-gender-contribute-to-individual-microbiome-variation.html#cb14-3" tabindex="-1"></a> <span class="fu">geom_bar</span>(<span class="fu">aes</span>(<span class="at">color =</span> gender, <span class="at">fill =</span> gender), <span class="at">stat =</span> <span class="st">&quot;identity&quot;</span>, <span class="at">position =</span> <span class="st">&quot;stack&quot;</span>)</span></code></pre></div>
+<p>Here is the candidate list of different microbes previously implicated in gender-based variation.</p>
+<ul>
+<li>Phylum: Proteobacteria</li>
+<li>Order: Clostridiales</li>
+<li>Family: Ruminococcaceae</li>
+<li>Genus: Prevotella</li>
+<li>Genus: Fusobacterium</li>
+<li>Species: muciniphila</li>
+</ul>
+<table>
+<thead>
+<tr class="header">
+<th align="left">3D-1. Insert the plot from your first chosen microbial group below:</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><br></td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">3D-2. Insert the plot from your second chosen microbial group below:</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><br></td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<table>
+<colgroup>
+<col width="100%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">3D-3. Based on the all graphs you made, did you identify any candidate Phylum or Species that may differ between genders?</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><br></td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<table>
+<colgroup>
+<col width="100%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">3D-4. Based on the graphs you made, what conclusion can you make about microbiome differences between genders?</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><br></td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<table>
+<colgroup>
+<col width="100%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">3D-5. Which seems to have more effect on microbial compositions? Gender or individual subject?</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><br></td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<p><strong>A suggestion for your poster:</strong>
+- Combine the 2 plots that cover the entire dataset (3A-1 and 3B-1) and 2 plots from exploring microbial groups (3D) to make one figure summarizing your findings for gender based differences in microbial composition.
+- Include titles and a short figure description (figure legend).
+- Paste the code you used to generate your final figure(s) below:</p>
+<table>
+<tbody>
+<tr class="odd">
+<td align="left"><br></td>
+</tr>
+</tbody>
+</table>
+</div>
 </div>
 <hr>
 <center> 
@@ -327,8 +530,8 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
           </div>
         </div>
       </div>
-<a href="exploring-16s-rrna-data-in-spreadsheets.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="activity---introducing-16s-rrna-data-using-spreadsheet.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="try-it-question-2---what-are-some-of-the-most-abundant-microbes-when-viewed-at-different-taxonomic-resolutions.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="try-it-question-4---does-age-contribute-to-individual-microbiome-variation.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

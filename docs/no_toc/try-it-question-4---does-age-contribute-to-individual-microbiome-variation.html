@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>4.2 Lecture - Introducing 16S rRNA Data Using Spreadsheets | Course Name</title>
+  <title>5.7 Try it Question 4 - Does age contribute to individual microbiome variation? | Course Name</title>
   <meta name="description" content="Description about Course/Book." />
   <meta name="generator" content="bookdown 0.41 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="4.2 Lecture - Introducing 16S rRNA Data Using Spreadsheets | Course Name" />
+  <meta property="og:title" content="5.7 Try it Question 4 - Does age contribute to individual microbiome variation? | Course Name" />
   <meta property="og:type" content="book" />
   
   <meta property="og:description" content="Description about Course/Book." />
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="4.2 Lecture - Introducing 16S rRNA Data Using Spreadsheets | Course Name" />
+  <meta name="twitter:title" content="5.7 Try it Question 4 - Does age contribute to individual microbiome variation? | Course Name" />
   
   <meta name="twitter:description" content="Description about Course/Book." />
   
@@ -29,8 +29,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   <link rel="shortcut icon" href="assets/dasl_favicon.ico" type="image/x-icon" />
-<link rel="prev" href="exploring-16s-rrna-data-in-spreadsheets.html"/>
-<link rel="next" href="activity---introducing-16s-rrna-data-using-spreadsheet.html"/>
+<link rel="prev" href="try-it-question-3---does-gender-contribute-to-individual-microbiome-variation.html"/>
+<link rel="next" href="analyzing-16s-rrna-data-with-phyloseq.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -310,12 +310,192 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <div class="hero-image-container"> 
   <img class= "hero-image" src="assets/C-MOOR_Template/dasl_thin_main_image.png">
 </div>
-<div id="lecture---introducing-16s-rrna-data-using-spreadsheets" class="section level2 hasAnchor" number="4.2">
-<h2><span class="header-section-number">4.2</span> Lecture - Introducing 16S rRNA Data Using Spreadsheets<a href="lecture---introducing-16s-rrna-data-using-spreadsheets.html#lecture---introducing-16s-rrna-data-using-spreadsheets" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p><em>Estimated time: </em></p>
-<p><img src="resources/images/introducing-16S-data_files/figure-html/14E26SbzaLEDJxAaZ1qjaZcJehAI8q2GHuTokNPKKDTc_g35f391192_00.png" alt="Image test" width="100%" style="display: block; margin: auto;" /></p>
-<p><a href="https://docs.google.com/presentation/d/14E26SbzaLEDJxAaZ1qjaZcJehAI8q2GHuTokNPKKDTc/edit?usp=sharing">Lecture</a></p>
+<div id="try-it-question-4---does-age-contribute-to-individual-microbiome-variation" class="section level2 hasAnchor" number="5.7">
+<h2><span class="header-section-number">5.7</span> Try it Question 4 - Does age contribute to individual microbiome variation?<a href="try-it-question-4---does-age-contribute-to-individual-microbiome-variation.html#try-it-question-4---does-age-contribute-to-individual-microbiome-variation" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Approach: Survey the differences in microbiome across age, refining the plot to accommodate a continuous variable (age) and unequal sample sizes (some individuals in the study are the same age). Then, test if there is a shift in microbiome abundance of phyla Firmicutes and Bacteroidetes, two phyla suggested previously to change with age.</p>
+<div id="step-4a.-perform-an-initial-survey-to-see-if-there-are-any-differences-in-phyla-related-to-age." class="section level3 hasAnchor" number="5.7.1">
+<h3><span class="header-section-number">5.7.1</span> Step 4A. Perform an initial survey to see if there are any differences in phyla related to age.<a href="try-it-question-4---does-age-contribute-to-individual-microbiome-variation.html#step-4a.-perform-an-initial-survey-to-see-if-there-are-any-differences-in-phyla-related-to-age." class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Specifically, your plot should show the relationship phyla diversity and age of an individual.</p>
+<ul>
+<li>Refer to the “Explore 16S rRNA Data with phyloseq” tutorial for help using the plot_bar() function.</li>
+<li>Use the following code as a template
+plot_bar(miso, “fill in the blank”, fill = “fill in the blank”, title = “fill in the blank”) +
+geom_bar(aes(color = fill in the blank, fill = fill in the blank), stat = “identity”, position = “stack”)</li>
+</ul>
+<div class="sourceCode" id="cb15"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb15-1"><a href="try-it-question-4---does-age-contribute-to-individual-microbiome-variation.html#cb15-1" tabindex="-1"></a><span class="fu">plot_bar</span>(miso, <span class="st">&quot;fill in the blank&quot;</span>, <span class="at">fill =</span> <span class="st">&quot;fill in the blank&quot;</span>, <span class="at">title =</span> <span class="st">&quot;fill in the blank&quot;</span>) <span class="sc">+</span> </span>
+<span id="cb15-2"><a href="try-it-question-4---does-age-contribute-to-individual-microbiome-variation.html#cb15-2" tabindex="-1"></a><span class="fu">geom_bar</span>(<span class="fu">aes</span>(<span class="at">color =</span> fill <span class="cf">in</span> the blank, <span class="at">fill =</span> fill <span class="cf">in</span> the blank), <span class="at">stat =</span> <span class="st">&quot;identity&quot;</span>, <span class="at">position =</span> <span class="st">&quot;stack&quot;</span>)</span></code></pre></div>
+<table>
+<thead>
+<tr class="header">
+<th align="left">4A-1. Insert the resulting plot below:</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><br></td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<ul>
+<li>You probably found it difficult to discern any differences.</li>
+<li>Abundance is additive, so having more samples of the same age will result in adding the abundances together, so if there are say 2 samples with age 27 (as is the case), the abundance of the bar will be much higher than other ages that have only one individual.</li>
+</ul>
 </div>
+<div id="step-4b.-merge-samples-by-age-then-re-normalize-and-finally-re-plot-phyla-by-age." class="section level3 hasAnchor" number="5.7.2">
+<h3><span class="header-section-number">5.7.2</span> Step 4B. Merge samples by age, then re-normalize and finally re-plot Phyla by age.<a href="try-it-question-4---does-age-contribute-to-individual-microbiome-variation.html#step-4b.-merge-samples-by-age-then-re-normalize-and-finally-re-plot-phyla-by-age." class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<ol style="list-style-type: decimal">
+<li>Merge samples of the same age, saving the resulting phyloseq object as ‘merge’. You will probably get a warning message letting you know “NAs were introduced by coercion.” That is OK.</li>
+</ol>
+<div class="sourceCode" id="cb16"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb16-1"><a href="try-it-question-4---does-age-contribute-to-individual-microbiome-variation.html#cb16-1" tabindex="-1"></a>merge <span class="ot">&lt;-</span> <span class="fu">merge_samples</span>(miso, <span class="st">&quot;age&quot;</span>)</span></code></pre></div>
+<ol start="2" style="list-style-type: decimal">
+<li>Check your merged phyloseq object. Your new ‘merge’ object should have 16 samples corresponding to 16 unique ages in the MISO dataset.</li>
+</ol>
+<div class="sourceCode" id="cb17"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb17-1"><a href="try-it-question-4---does-age-contribute-to-individual-microbiome-variation.html#cb17-1" tabindex="-1"></a>merge</span>
+<span id="cb17-2"><a href="try-it-question-4---does-age-contribute-to-individual-microbiome-variation.html#cb17-2" tabindex="-1"></a></span>
+<span id="cb17-3"><a href="try-it-question-4---does-age-contribute-to-individual-microbiome-variation.html#cb17-3" tabindex="-1"></a>phyloseq<span class="sc">-</span>class experiment<span class="sc">-</span>level object</span>
+<span id="cb17-4"><a href="try-it-question-4---does-age-contribute-to-individual-microbiome-variation.html#cb17-4" tabindex="-1"></a><span class="fu">otu_table</span>()   OTU Table<span class="sc">:</span>         [ <span class="dv">1702</span> taxa and <span class="dv">16</span> samples ]</span>
+<span id="cb17-5"><a href="try-it-question-4---does-age-contribute-to-individual-microbiome-variation.html#cb17-5" tabindex="-1"></a><span class="fu">sample_data</span>() Sample Data<span class="sc">:</span>       [ <span class="dv">16</span> samples by <span class="dv">32</span> sample variables ]</span>
+<span id="cb17-6"><a href="try-it-question-4---does-age-contribute-to-individual-microbiome-variation.html#cb17-6" tabindex="-1"></a><span class="fu">tax_table</span>()   Taxonomy Table<span class="sc">:</span>    [ <span class="dv">1702</span> taxa by <span class="dv">9</span> taxonomic ranks ]</span></code></pre></div>
+<ol start="3" style="list-style-type: decimal">
+<li>Normalize the sample counts using the function transform_sample_counts. Our function, (100* x/sum(x)) will transform all the samples into proportions.</li>
+</ol>
+<div class="sourceCode" id="cb18"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb18-1"><a href="try-it-question-4---does-age-contribute-to-individual-microbiome-variation.html#cb18-1" tabindex="-1"></a>merge <span class="ot">&lt;-</span> <span class="fu">transform_sample_counts</span>(merge, <span class="cf">function</span>(x) <span class="dv">100</span> <span class="sc">*</span> x<span class="sc">/</span><span class="fu">sum</span>(x))</span></code></pre></div>
+<ol start="4" style="list-style-type: decimal">
+<li>Re-plot Phyla by age.</li>
+</ol>
+<div class="sourceCode" id="cb19"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb19-1"><a href="try-it-question-4---does-age-contribute-to-individual-microbiome-variation.html#cb19-1" tabindex="-1"></a><span class="fu">plot_bar</span>(merge, <span class="at">x=</span> <span class="st">&quot;age&quot;</span>, <span class="at">fill =</span> <span class="st">&quot;fill in the blank&quot;</span>, <span class="at">title =</span> <span class="st">&quot;fill in the blank&quot;</span>) <span class="sc">+</span></span>
+<span id="cb19-2"><a href="try-it-question-4---does-age-contribute-to-individual-microbiome-variation.html#cb19-2" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="fu">aes</span>(<span class="at">color =</span> fill <span class="cf">in</span> the blank, <span class="at">fill =</span> fill <span class="cf">in</span> the blank), <span class="at">stat =</span> <span class="st">&quot;identity&quot;</span>, <span class="at">position =</span> <span class="st">&quot;stack&quot;</span>)</span></code></pre></div>
+<ol start="5" style="list-style-type: decimal">
+<li>If you need to decrease the size of your legend key and text to fit, add code below to your plot after adding a + to the end of the geom_bar line:</li>
+</ol>
+<div class="sourceCode" id="cb20"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb20-1"><a href="try-it-question-4---does-age-contribute-to-individual-microbiome-variation.html#cb20-1" tabindex="-1"></a><span class="fu">theme</span>(<span class="at">legend.text=</span><span class="fu">element_text</span>(<span class="at">size=</span><span class="dv">6</span>)) <span class="sc">+</span> </span>
+<span id="cb20-2"><a href="try-it-question-4---does-age-contribute-to-individual-microbiome-variation.html#cb20-2" tabindex="-1"></a><span class="fu">theme</span>(<span class="at">legend.key.size =</span> <span class="fu">unit</span>(<span class="dv">6</span>, <span class="st">&quot;pt&quot;</span>))</span></code></pre></div>
+<table>
+<thead>
+<tr class="header">
+<th align="left">4B-1. Insert the resulting plot below:</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><br></td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">4B-2. Do you observe any candidate Phyla that changes with age?</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><br></td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+</div>
+<div id="step-4c.-candidate-phyla-implicated-in-age-variation-include-firmicutes-and-bacteroidetes.-plot-these-specific-phyla-on-their-own-separately-to-observe-any-shift-that-occurs-with-age.-use-your-new-merged-and-normalized-merge-phyloseq-object-as-input." class="section level3 hasAnchor" number="5.7.3">
+<h3><span class="header-section-number">5.7.3</span> Step 4C. Candidate Phyla implicated in age variation include Firmicutes and Bacteroidetes. Plot these specific phyla on their own, separately, to observe any shift that occurs with age.** Use your new merged and normalized ‘merge’ phyloseq object as input.<a href="try-it-question-4---does-age-contribute-to-individual-microbiome-variation.html#step-4c.-candidate-phyla-implicated-in-age-variation-include-firmicutes-and-bacteroidetes.-plot-these-specific-phyla-on-their-own-separately-to-observe-any-shift-that-occurs-with-age.-use-your-new-merged-and-normalized-merge-phyloseq-object-as-input." class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<ul>
+<li>Refer to the “Subset taxonomy” section of the “Explore 16S rRNA Data with phyloseq” tutorial for help using the subset_taxa and plot_bar() functions.</li>
+<li>Use the following code as a template:</li>
+</ul>
+<div class="sourceCode" id="cb21"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb21-1"><a href="try-it-question-4---does-age-contribute-to-individual-microbiome-variation.html#cb21-1" tabindex="-1"></a>subset <span class="ot">=</span> <span class="fu">subset_taxa</span>(merge,  Phylum <span class="sc">==</span> <span class="st">&quot;fill in the blank&quot;</span>)</span>
+<span id="cb21-2"><a href="try-it-question-4---does-age-contribute-to-individual-microbiome-variation.html#cb21-2" tabindex="-1"></a><span class="fu">plot_bar</span>(subset, <span class="st">&quot;age&quot;</span>, <span class="at">fill =</span> <span class="st">&quot;fill in the blank&quot;</span>, <span class="at">title =</span> <span class="st">&quot;fill in the blank&quot;</span>) <span class="sc">+</span> </span>
+<span id="cb21-3"><a href="try-it-question-4---does-age-contribute-to-individual-microbiome-variation.html#cb21-3" tabindex="-1"></a> <span class="fu">geom_bar</span>(<span class="fu">aes</span>(<span class="at">color =</span> fill <span class="cf">in</span> the blank, <span class="at">fill =</span> fill <span class="cf">in</span> the blank), <span class="at">stat =</span> <span class="st">&quot;identity&quot;</span>, <span class="at">position =</span> <span class="st">&quot;stack&quot;</span>)</span></code></pre></div>
+<table>
+<colgroup>
+<col width="100%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">4C-1. Insert the plot that graphs the relationship of age to the Phylum Firmicutes below:</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><br></td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">4C-2. Do you observe any changes in Phyla based on age?</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><br></td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<table>
+<colgroup>
+<col width="100%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">4C-3. Insert the plot that graphs the relationship of age to the Phylum Bacteroidetes below:</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><br></td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">4C-4 Do you observe any changes in Phyla based on age?</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><br></td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<table>
+<colgroup>
+<col width="100%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">Step 4C-5: Based on the graphs you made, did you identify any candidate Phylum that may differ between genders?</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><br></td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<p><strong>A suggestion for your poster:</strong>
+- Combine 2-4 of your plots to make one figure summarizing Phylum and Species age-based differences you observed in the MISO study. Include titles and short figure description (figure legend).
+- Paste the code you used to generate your final figure(s) below:</p>
+<table>
+<tbody>
+<tr class="odd">
+<td align="left"><br></td>
+</tr>
+</tbody>
+</table>
+
+<!-- Set up code of OTTR Book-->
+</div>
+</div>
+<!-- </div> -->
 <hr>
 <center> 
   <div class="footer">
@@ -327,8 +507,8 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
           </div>
         </div>
       </div>
-<a href="exploring-16s-rrna-data-in-spreadsheets.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="activity---introducing-16s-rrna-data-using-spreadsheet.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="try-it-question-3---does-gender-contribute-to-individual-microbiome-variation.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="analyzing-16s-rrna-data-with-phyloseq.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>4.2 Lecture - Introducing 16S rRNA Data Using Spreadsheets | Course Name</title>
+  <title>6.5 Try it Question 2 - Do diet, age, gender and levels of metabolites correlate with microbe variation between individuals? | Course Name</title>
   <meta name="description" content="Description about Course/Book." />
   <meta name="generator" content="bookdown 0.41 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="4.2 Lecture - Introducing 16S rRNA Data Using Spreadsheets | Course Name" />
+  <meta property="og:title" content="6.5 Try it Question 2 - Do diet, age, gender and levels of metabolites correlate with microbe variation between individuals? | Course Name" />
   <meta property="og:type" content="book" />
   
   <meta property="og:description" content="Description about Course/Book." />
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="4.2 Lecture - Introducing 16S rRNA Data Using Spreadsheets | Course Name" />
+  <meta name="twitter:title" content="6.5 Try it Question 2 - Do diet, age, gender and levels of metabolites correlate with microbe variation between individuals? | Course Name" />
   
   <meta name="twitter:description" content="Description about Course/Book." />
   
@@ -29,8 +29,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   <link rel="shortcut icon" href="assets/dasl_favicon.ico" type="image/x-icon" />
-<link rel="prev" href="exploring-16s-rrna-data-in-spreadsheets.html"/>
-<link rel="next" href="activity---introducing-16s-rrna-data-using-spreadsheet.html"/>
+<link rel="prev" href="try-it-question-1---how-sensitive-is-microbial-diversity-to-variables-like-diet-age-and-gender.html"/>
+<link rel="next" href="try-it-question-3---what-microbes-asvs-differ-between-males-and-females-and-does-age-have-an-impact.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -310,11 +310,359 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <div class="hero-image-container"> 
   <img class= "hero-image" src="assets/C-MOOR_Template/dasl_thin_main_image.png">
 </div>
-<div id="lecture---introducing-16s-rrna-data-using-spreadsheets" class="section level2 hasAnchor" number="4.2">
-<h2><span class="header-section-number">4.2</span> Lecture - Introducing 16S rRNA Data Using Spreadsheets<a href="lecture---introducing-16s-rrna-data-using-spreadsheets.html#lecture---introducing-16s-rrna-data-using-spreadsheets" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p><em>Estimated time: </em></p>
-<p><img src="resources/images/introducing-16S-data_files/figure-html/14E26SbzaLEDJxAaZ1qjaZcJehAI8q2GHuTokNPKKDTc_g35f391192_00.png" alt="Image test" width="100%" style="display: block; margin: auto;" /></p>
-<p><a href="https://docs.google.com/presentation/d/14E26SbzaLEDJxAaZ1qjaZcJehAI8q2GHuTokNPKKDTc/edit?usp=sharing">Lecture</a></p>
+<div id="try-it-question-2---do-diet-age-gender-and-levels-of-metabolites-correlate-with-microbe-variation-between-individuals" class="section level2 hasAnchor" number="6.5">
+<h2><span class="header-section-number">6.5</span> Try it Question 2 - Do diet, age, gender and levels of metabolites correlate with microbe variation between individuals?<a href="try-it-question-2---do-diet-age-gender-and-levels-of-metabolites-correlate-with-microbe-variation-between-individuals.html#try-it-question-2---do-diet-age-gender-and-levels-of-metabolites-correlate-with-microbe-variation-between-individuals" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Approach: Perform multidimensional scaling (also known as principal component analysis) to establish a relationship between the samples given multivariate data (metadata variables). Using a PcOA plot (via commands ordinate() and plot_ordination() in phyloseq), you will condense the original high-dimensional data into a low-dimensional one by converting data to distance map (matrix) with 2 dimensions, x and y, that best explain variability in your data. From your PCoA plot you will assess the contribution of different study variables to sample diversity and identify variables that help explain sample diversity. In a PcOA plot, samples with similar microbial profiles will be plotted close and may appear as “clusters”.</p>
+<div id="step-1.-make-a-pcoa-plot-ordinating-on-the-entire-miso-dataset-and-coloring-by-individual.-investigate-resulting-plot-shape." class="section level3 hasAnchor" number="6.5.1">
+<h3><span class="header-section-number">6.5.1</span> Step 1. Make a PcOA plot, ordinating on the entire miso dataset, and coloring by individual. Investigate resulting plot shape.<a href="try-it-question-2---do-diet-age-gender-and-levels-of-metabolites-correlate-with-microbe-variation-between-individuals.html#step-1.-make-a-pcoa-plot-ordinating-on-the-entire-miso-dataset-and-coloring-by-individual.-investigate-resulting-plot-shape." class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<ul>
+<li><p>Ordination is a term used to summarize a multidimensional dataset when projected onto a low-dimensional space (like X &amp; Y axes) and then observing any pattern the data may possess with a visual inspection.</p></li>
+<li><p>Subsequent coloring of the pattern with metadata variables can reveal underlying relationships between data and experiment variables.</p></li>
+<li><p>color - by subject</p></li>
+<li><p>Include a title for your PCoA plot</p></li>
+<li><p>Use the following code as a template:</p></li>
+</ul>
+<div class="sourceCode" id="cb28"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb28-1"><a href="try-it-question-2---do-diet-age-gender-and-levels-of-metabolites-correlate-with-microbe-variation-between-individuals.html#cb28-1" tabindex="-1"></a><span class="co">#Ordinate </span></span>
+<span id="cb28-2"><a href="try-it-question-2---do-diet-age-gender-and-levels-of-metabolites-correlate-with-microbe-variation-between-individuals.html#cb28-2" tabindex="-1"></a>miso.pcoa <span class="ot">&lt;-</span> <span class="fu">ordinate</span>(miso, <span class="at">method=</span><span class="st">&quot;PCoA&quot;</span>, <span class="at">distance=</span><span class="st">&quot;bray&quot;</span>) </span>
+<span id="cb28-3"><a href="try-it-question-2---do-diet-age-gender-and-levels-of-metabolites-correlate-with-microbe-variation-between-individuals.html#cb28-3" tabindex="-1"></a></span>
+<span id="cb28-4"><a href="try-it-question-2---do-diet-age-gender-and-levels-of-metabolites-correlate-with-microbe-variation-between-individuals.html#cb28-4" tabindex="-1"></a><span class="co">#Plot PCoA</span></span>
+<span id="cb28-5"><a href="try-it-question-2---do-diet-age-gender-and-levels-of-metabolites-correlate-with-microbe-variation-between-individuals.html#cb28-5" tabindex="-1"></a><span class="fu">plot_ordination</span>(miso, miso.pcoa, </span>
+<span id="cb28-6"><a href="try-it-question-2---do-diet-age-gender-and-levels-of-metabolites-correlate-with-microbe-variation-between-individuals.html#cb28-6" tabindex="-1"></a>        <span class="at">color =</span> <span class="st">&quot;fill in the blank&quot;</span>,  </span>
+<span id="cb28-7"><a href="try-it-question-2---do-diet-age-gender-and-levels-of-metabolites-correlate-with-microbe-variation-between-individuals.html#cb28-7" tabindex="-1"></a>        <span class="at">title=</span><span class="st">&quot;fill in the blank&quot;</span>)</span></code></pre></div>
+<table>
+<thead>
+<tr class="header">
+<th align="left">1A-1. Paste your plot below:</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><br></td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<table>
+<colgroup>
+<col width="100%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">1A-2. Describe the shape of your PCoA plot. Does the PCoA organize the into groups? Is there any pattern?</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><br></td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<table>
+<colgroup>
+<col width="100%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">1A-3. Do you observe sample clustering by individual? Provide examples and an explanation.</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><br></td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">1A-4. Offer one question you want to ask about this PCoA plot?</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><br></td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+</div>
+<div id="step-2.-using-the-pcoa-plot-from-step-1-above-look-for-any-correlations-between-the-shape-of-your-pcoa-plot-and-diet-gender-and-age" class="section level3 hasAnchor" number="6.5.2">
+<h3><span class="header-section-number">6.5.2</span> Step 2. Using the PCoA plot from Step 1 above, look for any correlations between the shape of your PCoA plot and diet, gender and age<a href="try-it-question-2---do-diet-age-gender-and-levels-of-metabolites-correlate-with-microbe-variation-between-individuals.html#step-2.-using-the-pcoa-plot-from-step-1-above-look-for-any-correlations-between-the-shape-of-your-pcoa-plot-and-diet-gender-and-age" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><strong>Step 2A. Using the PCoA plot from Step 1, look for any correlations between the shape of your PCoA plot and diet?</strong></p>
+<p>How well is your data explained by the variation in the diet - look for signs of correlation between PCoA shape and variable “timepointgroup” representing BD, HD and WO diets. Note that since we are using the same plot, we do not need to re-ordinate (no ordinate() function).</p>
+<ul>
+<li>Color - by timepointgroup</li>
+<li>Include a title for your PcOA plot</li>
+<li>Use the following code as a template:</li>
+</ul>
+<div class="sourceCode" id="cb29"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb29-1"><a href="try-it-question-2---do-diet-age-gender-and-levels-of-metabolites-correlate-with-microbe-variation-between-individuals.html#cb29-1" tabindex="-1"></a><span class="fu">plot_ordination</span>(miso, miso.pcoa, </span>
+<span id="cb29-2"><a href="try-it-question-2---do-diet-age-gender-and-levels-of-metabolites-correlate-with-microbe-variation-between-individuals.html#cb29-2" tabindex="-1"></a>        <span class="at">color =</span> <span class="st">&quot;fill in the blank&quot;</span>,  </span>
+<span id="cb29-3"><a href="try-it-question-2---do-diet-age-gender-and-levels-of-metabolites-correlate-with-microbe-variation-between-individuals.html#cb29-3" tabindex="-1"></a>        <span class="at">title=</span><span class="st">&quot;fill in the blank&quot;</span>)</span></code></pre></div>
+<table>
+<thead>
+<tr class="header">
+<th align="left">2A-1. Paste your plot below:</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><br></td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<table>
+<colgroup>
+<col width="100%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">2A-2 Did coloring the ‘miso’ PCoA plot by timepointgroup explain any variation in your data? E.g. did each of the 3 data groups/clusters correspond to each of the 3 timepointgroups or not? E.g. does the coloring appear randomly distributed or not?</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><br></td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<p><strong>Step 2B. Using the PCoA plot from Step 1, look for any correlations between the shape of your PCoA plot and gender? </strong></p>
+<p>How well is your data explained by the variation in the gender - look for signs of correlation between PcOA shape and variable “gender”.</p>
+<ul>
+<li>Color - by gender</li>
+<li>Include a title for your PcOA plot</li>
+<li>Use the following code as a template.</li>
+</ul>
+<div class="sourceCode" id="cb30"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb30-1"><a href="try-it-question-2---do-diet-age-gender-and-levels-of-metabolites-correlate-with-microbe-variation-between-individuals.html#cb30-1" tabindex="-1"></a><span class="fu">plot_ordination</span>(miso, miso.pcoa, </span>
+<span id="cb30-2"><a href="try-it-question-2---do-diet-age-gender-and-levels-of-metabolites-correlate-with-microbe-variation-between-individuals.html#cb30-2" tabindex="-1"></a>        <span class="at">color =</span> <span class="st">&quot;fill in the blank&quot;</span>,  </span>
+<span id="cb30-3"><a href="try-it-question-2---do-diet-age-gender-and-levels-of-metabolites-correlate-with-microbe-variation-between-individuals.html#cb30-3" tabindex="-1"></a>        <span class="at">title=</span><span class="st">&quot;fill in the blank&quot;</span>)</span></code></pre></div>
+<table>
+<thead>
+<tr class="header">
+<th align="left">2B-1. Paste your plot below:</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><br></td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<table>
+<colgroup>
+<col width="100%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">2B-2 Did coloring of the ‘miso’ PCoA plot by gender explain any variation in your data? E.g. does the coloring appear randomly distributed or not?</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><br></td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<p><strong>Step 2C. Using the PCoA plot from Step 1, look for any correlations between the shape of your PCoA plot and age? How well is your data explained by the variation in the age - look for signs of correlation between PcOA shape and variable “age”.</strong></p>
+<ul>
+<li>Color - age</li>
+<li>Include title name for your PcOA plot</li>
+<li>Use the following code as a template. To enhance the color range of the age variable, additionally included below (in blue) is the command to specify the color gradient with yellow–to-blue gradient.</li>
+<li>Try running the code with and without the scale_colour_gradient() command to appreciate the difference.</li>
+</ul>
+<div class="sourceCode" id="cb31"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb31-1"><a href="try-it-question-2---do-diet-age-gender-and-levels-of-metabolites-correlate-with-microbe-variation-between-individuals.html#cb31-1" tabindex="-1"></a><span class="fu">plot_ordination</span>(miso, miso.pcoa, </span>
+<span id="cb31-2"><a href="try-it-question-2---do-diet-age-gender-and-levels-of-metabolites-correlate-with-microbe-variation-between-individuals.html#cb31-2" tabindex="-1"></a>        <span class="at">color =</span> <span class="st">&quot;fill in the blank&quot;</span>,  </span>
+<span id="cb31-3"><a href="try-it-question-2---do-diet-age-gender-and-levels-of-metabolites-correlate-with-microbe-variation-between-individuals.html#cb31-3" tabindex="-1"></a>        <span class="at">title=</span><span class="st">&quot;fill in the blank&quot;</span>) <span class="sc">+</span> </span>
+<span id="cb31-4"><a href="try-it-question-2---do-diet-age-gender-and-levels-of-metabolites-correlate-with-microbe-variation-between-individuals.html#cb31-4" tabindex="-1"></a><span class="fu">scale_colour_gradient</span>(<span class="at">low =</span> <span class="st">&quot;red&quot;</span>, <span class="at">high =</span> <span class="st">&quot;green&quot;</span>) </span></code></pre></div>
+<table>
+<thead>
+<tr class="header">
+<th align="left">2C-1. Paste your plot below:</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><br></td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<table>
+<colgroup>
+<col width="100%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">2C-2 Did coloring of the ‘miso’ PCoA plot by age explain any variation in your data? E.g. Does the coloring appear randomly distributed or not? Is there any hint of a correlation between age and groups of data on the left or the right?</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><br></td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+</div>
+<div id="step-3.-using-the-pcoa-plot-from-step-1-look-for-any-correlations-between-the-shape-of-your-pcoa-plot-and-the-level-of-metabolites." class="section level3 hasAnchor" number="6.5.3">
+<h3><span class="header-section-number">6.5.3</span> Step 3. Using the PCoA plot from Step 1, look for any correlations between the shape of your PCoA plot and the level of metabolites.<a href="try-it-question-2---do-diet-age-gender-and-levels-of-metabolites-correlate-with-microbe-variation-between-individuals.html#step-3.-using-the-pcoa-plot-from-step-1-look-for-any-correlations-between-the-shape-of-your-pcoa-plot-and-the-level-of-metabolites." class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>How well is your data correlated with the variation in the 5 metabolites - Creatinine, PCS, IS, HIPP, or PAG? Test each metabolite by coloring each metabolite at a time, then, choose your favorite metabolite (e.g. one with most difference) and show the plot below.</p>
+<ul>
+<li>Color - metabolite one at a time: Creatinine, PCS, IS, HIPP, PAG</li>
+<li>Include a title for your PcOA plot</li>
+<li>Use the following code as a template:</li>
+</ul>
+<div class="sourceCode" id="cb32"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb32-1"><a href="try-it-question-2---do-diet-age-gender-and-levels-of-metabolites-correlate-with-microbe-variation-between-individuals.html#cb32-1" tabindex="-1"></a><span class="fu">plot_ordination</span>(miso, miso.pcoa fill <span class="cf">in</span> the blank metabolite name, </span>
+<span id="cb32-2"><a href="try-it-question-2---do-diet-age-gender-and-levels-of-metabolites-correlate-with-microbe-variation-between-individuals.html#cb32-2" tabindex="-1"></a>        <span class="at">color =</span> <span class="st">&quot;fill in the blank&quot;</span>,  </span>
+<span id="cb32-3"><a href="try-it-question-2---do-diet-age-gender-and-levels-of-metabolites-correlate-with-microbe-variation-between-individuals.html#cb32-3" tabindex="-1"></a>        <span class="at">title=</span><span class="st">&quot;fill in the blank&quot;</span>) <span class="sc">+</span> </span>
+<span id="cb32-4"><a href="try-it-question-2---do-diet-age-gender-and-levels-of-metabolites-correlate-with-microbe-variation-between-individuals.html#cb32-4" tabindex="-1"></a><span class="fu">scale_colour_gradient</span>(<span class="at">low =</span> <span class="st">&quot;yellow&quot;</span>, <span class="at">high =</span> <span class="st">&quot;blue&quot;</span>)</span></code></pre></div>
+<table>
+<thead>
+<tr class="header">
+<th align="left">3A-1. Paste your metabolite plot(s) below:</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><br></td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<table>
+<colgroup>
+<col width="100%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">3A-2. Which metabolite did you choose to show and why? Any difference between microbiomes for individuals with low versus high metabolite levels? Any association between metabolite level and microbiome diversity?</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><br></td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+</div>
+<div id="step-4.-one-way-of-checking-if-the-metabolite-levels-indeed-correlate-with-your-data-is-to-see-if-subsetting-smaller-chunks-or-specific-chunks-of-the-data-will-still-maintain-the-metabolite-data-relationship-or-break-it." class="section level3 hasAnchor" number="6.5.4">
+<h3><span class="header-section-number">6.5.4</span> Step 4. One way of checking if the metabolite levels indeed correlate with your data, is to see if subsetting smaller chunks or specific chunks of the data will still maintain the metabolite-data relationship or break it.<a href="try-it-question-2---do-diet-age-gender-and-levels-of-metabolites-correlate-with-microbe-variation-between-individuals.html#step-4.-one-way-of-checking-if-the-metabolite-levels-indeed-correlate-with-your-data-is-to-see-if-subsetting-smaller-chunks-or-specific-chunks-of-the-data-will-still-maintain-the-metabolite-data-relationship-or-break-it." class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Using subset() command, subset out e.g. HD diet specifically, and then BD diet. Then, generate new PcOA plots and see if the correlation with your metabolite of interest still holds.</p>
+<p><strong>Step 4A. Subset “HD”, ordinate on “HD”, and make a new PCoA plot.</strong></p>
+<ul>
+<li>Subset data - by the timepointgroup “HD”</li>
+<li>Ordinate - misoHD</li>
+<li>Color - by your selected metabolite from part 3</li>
+<li>Include a title for your PcOA plot</li>
+<li>Use the following code as a template:</li>
+</ul>
+<ol style="list-style-type: lower-alpha">
+<li>Subset only “HD” timepoint from your miso data, creating a new phyloseq object called “misoHD”</li>
+</ol>
+<div class="sourceCode" id="cb33"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb33-1"><a href="try-it-question-2---do-diet-age-gender-and-levels-of-metabolites-correlate-with-microbe-variation-between-individuals.html#cb33-1" tabindex="-1"></a>misoHD <span class="ot">=</span> <span class="fu">subset_samples</span>(miso, timepointgroup <span class="sc">==</span> <span class="st">&quot;fill in the blank&quot;</span>) </span></code></pre></div>
+<ol start="2" style="list-style-type: lower-alpha">
+<li>Ordinate using only “HD” subset, creating a new ordination matrix called “pcoa.misoHD”</li>
+</ol>
+<div class="sourceCode" id="cb34"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb34-1"><a href="try-it-question-2---do-diet-age-gender-and-levels-of-metabolites-correlate-with-microbe-variation-between-individuals.html#cb34-1" tabindex="-1"></a>pcoa.misoHD <span class="ot">&lt;-</span> <span class="fu">ordinate</span>(misoHD, <span class="at">method=</span><span class="st">&quot;PCoA&quot;</span>, <span class="at">distance=</span><span class="st">&quot;bray&quot;</span>) </span></code></pre></div>
+<ol start="3" style="list-style-type: lower-alpha">
+<li>Make a PCoA plot using your “HD” subset.</li>
+</ol>
+<div class="sourceCode" id="cb35"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb35-1"><a href="try-it-question-2---do-diet-age-gender-and-levels-of-metabolites-correlate-with-microbe-variation-between-individuals.html#cb35-1" tabindex="-1"></a><span class="fu">plot_ordination</span>(misoHD, pcoa.misoHD, </span>
+<span id="cb35-2"><a href="try-it-question-2---do-diet-age-gender-and-levels-of-metabolites-correlate-with-microbe-variation-between-individuals.html#cb35-2" tabindex="-1"></a>        <span class="at">color =</span> <span class="st">&quot;fill in the blank&quot;</span>, </span>
+<span id="cb35-3"><a href="try-it-question-2---do-diet-age-gender-and-levels-of-metabolites-correlate-with-microbe-variation-between-individuals.html#cb35-3" tabindex="-1"></a>        <span class="at">title=</span><span class="st">&quot;fill in the blank&quot;</span>)</span></code></pre></div>
+<table>
+<thead>
+<tr class="header">
+<th align="left">4A-1. Paste your plot below for HD subset:</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><br></td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<table>
+<colgroup>
+<col width="100%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">4A-2 Did subsetting by the timpointgroup “HD” maintain your data’s relationship to your chosen metabolite? Did the shape of the plot change or stay the same with “HD” subsetting? Can you conclude if your metabolite of choice correlates with HD diet?</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><br></td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<p><strong>Step 4B. Repeat the analysis on only the BD timepoint group samples. Subset “BD”, ordinate on “BD”, and make a new PCoA plot.</strong></p>
+<ul>
+<li>Subset data - by the timepointgroup “BD”</li>
+<li>Ordinate - misoBD</li>
+<li>Color - by your selected metabolite from part 3</li>
+<li>Include a title for your PcOA plot</li>
+<li>Use the code above as a template.</li>
+</ul>
+<table>
+<thead>
+<tr class="header">
+<th align="left">4A-1. Paste your plot below for BD subset:</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><br></td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<table>
+<colgroup>
+<col width="100%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">Did subsetting “BD” maintain your data’s relationship to your chosen metabolitelevels? Did the shape of the plot change or stay the same with “BD” subsetting? Explain your results. Can you conclude if your metabolite of choice correlates with sample groups when only BD timepointgroup data is plotted?</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><br></td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<p><strong>Step 5A. Select data for poster and include the code used to generate the figure.</strong></p>
+<ul>
+<li>Prepare your final figure and associated code for the poster.</li>
+<li>Figure suggestion: A 2-part figure with Figure A showing PCoA plot based on subject and Figure B, showing PCoA plot with your favorite metabolite (Creatinine, PCS, IS, HIPP, or PAG).</li>
+<li>Ensure you have a figure legend that explains your final figure.</li>
+<li>Ensure you submit the code you used to generate your final figure.</li>
+</ul>
+<table>
+<thead>
+<tr class="header">
+<th align="left">5A-1. Paste final poster figure and code below:</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><br></td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+</div>
 </div>
 <hr>
 <center> 
@@ -327,8 +675,8 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
           </div>
         </div>
       </div>
-<a href="exploring-16s-rrna-data-in-spreadsheets.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="activity---introducing-16s-rrna-data-using-spreadsheet.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="try-it-question-1---how-sensitive-is-microbial-diversity-to-variables-like-diet-age-and-gender.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="try-it-question-3---what-microbes-asvs-differ-between-males-and-females-and-does-age-have-an-impact.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

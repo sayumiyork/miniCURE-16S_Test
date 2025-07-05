@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>4.2 Lecture - Introducing 16S rRNA Data Using Spreadsheets | Course Name</title>
+  <title>5.4 Try it Question 1 - What has more impact on human microbial variation, diet or individuality? | Course Name</title>
   <meta name="description" content="Description about Course/Book." />
   <meta name="generator" content="bookdown 0.41 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="4.2 Lecture - Introducing 16S rRNA Data Using Spreadsheets | Course Name" />
+  <meta property="og:title" content="5.4 Try it Question 1 - What has more impact on human microbial variation, diet or individuality? | Course Name" />
   <meta property="og:type" content="book" />
   
   <meta property="og:description" content="Description about Course/Book." />
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="4.2 Lecture - Introducing 16S rRNA Data Using Spreadsheets | Course Name" />
+  <meta name="twitter:title" content="5.4 Try it Question 1 - What has more impact on human microbial variation, diet or individuality? | Course Name" />
   
   <meta name="twitter:description" content="Description about Course/Book." />
   
@@ -29,8 +29,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   <link rel="shortcut icon" href="assets/dasl_favicon.ico" type="image/x-icon" />
-<link rel="prev" href="exploring-16s-rrna-data-in-spreadsheets.html"/>
-<link rel="next" href="activity---introducing-16s-rrna-data-using-spreadsheet.html"/>
+<link rel="prev" href="activity---exploring-16s-rrna-data-with-phyloseq.html"/>
+<link rel="next" href="try-it-question-2---what-are-some-of-the-most-abundant-microbes-when-viewed-at-different-taxonomic-resolutions.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -310,11 +310,91 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <div class="hero-image-container"> 
   <img class= "hero-image" src="assets/C-MOOR_Template/dasl_thin_main_image.png">
 </div>
-<div id="lecture---introducing-16s-rrna-data-using-spreadsheets" class="section level2 hasAnchor" number="4.2">
-<h2><span class="header-section-number">4.2</span> Lecture - Introducing 16S rRNA Data Using Spreadsheets<a href="lecture---introducing-16s-rrna-data-using-spreadsheets.html#lecture---introducing-16s-rrna-data-using-spreadsheets" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p><em>Estimated time: </em></p>
-<p><img src="resources/images/introducing-16S-data_files/figure-html/14E26SbzaLEDJxAaZ1qjaZcJehAI8q2GHuTokNPKKDTc_g35f391192_00.png" alt="Image test" width="100%" style="display: block; margin: auto;" /></p>
-<p><a href="https://docs.google.com/presentation/d/14E26SbzaLEDJxAaZ1qjaZcJehAI8q2GHuTokNPKKDTc/edit?usp=sharing">Lecture</a></p>
+<div id="try-it-question-1---what-has-more-impact-on-human-microbial-variation-diet-or-individuality" class="section level2 hasAnchor" number="5.4">
+<h2><span class="header-section-number">5.4</span> Try it Question 1 - What has more impact on human microbial variation, diet or individuality?<a href="try-it-question-1---what-has-more-impact-on-human-microbial-variation-diet-or-individuality.html#try-it-question-1---what-has-more-impact-on-human-microbial-variation-diet-or-individuality" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Approach: Plot high level taxa (Phyla) for all timepoints and subjects and compare the plots to determine which factor has a stronger effect on microbiome composition.</p>
+<div id="step-1a-plot-high-level-taxonomy-phylum-level-for-each-timepoint-using-the-plot_bar-function.-specifically-your-plot-should-show-phyla-diversity-across-all-5-timepoints." class="section level3 hasAnchor" number="5.4.1">
+<h3><span class="header-section-number">5.4.1</span> Step 1A: Plot high-level taxonomy (Phylum level) for each timepoint using the plot_bar() function.** Specifically, your plot should show Phyla diversity across all 5 timepoints.<a href="try-it-question-1---what-has-more-impact-on-human-microbial-variation-diet-or-individuality.html#step-1a-plot-high-level-taxonomy-phylum-level-for-each-timepoint-using-the-plot_bar-function.-specifically-your-plot-should-show-phyla-diversity-across-all-5-timepoints." class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<ul>
+<li>Refer to the “Explore 16S rRNA Data with phyloseq” tutorial for help using the plot_bar() function.</li>
+<li>Ensure your plot has a title</li>
+<li>Remember, the BD diet includes timepoints 1 and 2, the HD diet includes timepoints 3 and 4, and the WO diet includes timepoint 5.</li>
+<li>Use the following code as a template:</li>
+</ul>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="try-it-question-1---what-has-more-impact-on-human-microbial-variation-diet-or-individuality.html#cb3-1" tabindex="-1"></a><span class="fu">plot_bar</span>(miso, <span class="st">&quot;fill in the blank&quot;</span>, <span class="at">fill =</span> <span class="st">&quot;fill in the blank&quot;</span>, <span class="at">title =</span> <span class="st">&quot;choose a name for your graph&quot;</span>) <span class="sc">+</span></span>
+<span id="cb3-2"><a href="try-it-question-1---what-has-more-impact-on-human-microbial-variation-diet-or-individuality.html#cb3-2" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="fu">aes</span>(<span class="at">color =</span> fill <span class="cf">in</span> the blank, <span class="at">fill =</span> fill <span class="cf">in</span> the blank), <span class="at">stat =</span> <span class="st">&quot;identity&quot;</span>, <span class="at">position =</span> <span class="st">&quot;stack&quot;</span>)</span></code></pre></div>
+<table>
+<thead>
+<tr class="header">
+<th align="left">1A-1. Paste figure 1A below.</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><br></td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<p><strong>1A-2. State your conclusion for Figure 1A below.</strong></p>
+<ul>
+<li>Include a list of the identified Phyla and their names</li>
+<li>Include if you think there is a difference between conditions and your reasoning why or why not</li>
+</ul>
+<table>
+<tbody>
+<tr class="odd">
+<td align="left"><br></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="step-1b-plot-high-level-taxonomy-phylum-level-for-each-individual-using-only-normalized-homogenized-diet-hd-timepoints-to-minimize-contribution-of-diet-to-the-analysis-using-the-plot_bar-function.-specifically-your-plot-should-show-phyla-diversity-across-all-21-individuals-at-hd-timepoints." class="section level3 hasAnchor" number="5.4.2">
+<h3><span class="header-section-number">5.4.2</span> Step 1B: Plot high-level taxonomy (Phylum level) for each individual, using only normalized homogenized diet “HD” timepoints to minimize contribution of diet to the analysis using the plot_bar() function. Specifically, your plot should show Phyla diversity across all 21 individuals at HD timepoints.<a href="try-it-question-1---what-has-more-impact-on-human-microbial-variation-diet-or-individuality.html#step-1b-plot-high-level-taxonomy-phylum-level-for-each-individual-using-only-normalized-homogenized-diet-hd-timepoints-to-minimize-contribution-of-diet-to-the-analysis-using-the-plot_bar-function.-specifically-your-plot-should-show-phyla-diversity-across-all-21-individuals-at-hd-timepoints." class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<ul>
+<li>Use the command below to create a phyloseq object with only “HD” timepoints</li>
+</ul>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="try-it-question-1---what-has-more-impact-on-human-microbial-variation-diet-or-individuality.html#cb4-1" tabindex="-1"></a>misoHD <span class="ot">=</span> <span class="fu">subset_samples</span>(miso, timepointgroup <span class="sc">==</span> <span class="st">&quot;HD&quot;</span>)</span></code></pre></div>
+<ul>
+<li>Refer to the “Explore 16S rRNA Data with phyloseq” tutorial for help using the plot_bar() function.</li>
+<li>Ensure your plot has a title</li>
+</ul>
+<table>
+<thead>
+<tr class="header">
+<th align="left">1B-1. Paste figure 1B below.</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><br></td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<p><strong>1B-2. State your conclusion for Figure 1B below.</strong>
+- Include a list of the identified Phyla and their names
+- Include if you think there is a difference between conditions and your reasoning why or why not</p>
+<table>
+<tbody>
+<tr class="odd">
+<td align="left"><br></td>
+</tr>
+</tbody>
+</table>
+<p>A suggestion for your poster:</p>
+<ol style="list-style-type: decimal">
+<li>Combine plot 1A-1 and 1B-1 into a single figure. Include their titles and short figure description (figure legend).</li>
+<li>Paste the code you used to generate your final figure(s) below:</li>
+</ol>
+<table>
+<tbody>
+<tr class="odd">
+<td align="left"><br></td>
+</tr>
+</tbody>
+</table>
+</div>
 </div>
 <hr>
 <center> 
@@ -327,8 +407,8 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
           </div>
         </div>
       </div>
-<a href="exploring-16s-rrna-data-in-spreadsheets.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="activity---introducing-16s-rrna-data-using-spreadsheet.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="activity---exploring-16s-rrna-data-with-phyloseq.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="try-it-question-2---what-are-some-of-the-most-abundant-microbes-when-viewed-at-different-taxonomic-resolutions.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

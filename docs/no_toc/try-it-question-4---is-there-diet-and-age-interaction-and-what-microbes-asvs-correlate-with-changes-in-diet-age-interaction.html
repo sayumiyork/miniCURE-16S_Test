@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>4.2 Lecture - Introducing 16S rRNA Data Using Spreadsheets | Course Name</title>
+  <title>6.7 Try it Question 4 - Is there diet and age interaction and what microbes (ASVs) correlate with changes in diet-age interaction? | Course Name</title>
   <meta name="description" content="Description about Course/Book." />
   <meta name="generator" content="bookdown 0.41 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="4.2 Lecture - Introducing 16S rRNA Data Using Spreadsheets | Course Name" />
+  <meta property="og:title" content="6.7 Try it Question 4 - Is there diet and age interaction and what microbes (ASVs) correlate with changes in diet-age interaction? | Course Name" />
   <meta property="og:type" content="book" />
   
   <meta property="og:description" content="Description about Course/Book." />
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="4.2 Lecture - Introducing 16S rRNA Data Using Spreadsheets | Course Name" />
+  <meta name="twitter:title" content="6.7 Try it Question 4 - Is there diet and age interaction and what microbes (ASVs) correlate with changes in diet-age interaction? | Course Name" />
   
   <meta name="twitter:description" content="Description about Course/Book." />
   
@@ -29,8 +29,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   <link rel="shortcut icon" href="assets/dasl_favicon.ico" type="image/x-icon" />
-<link rel="prev" href="exploring-16s-rrna-data-in-spreadsheets.html"/>
-<link rel="next" href="activity---introducing-16s-rrna-data-using-spreadsheet.html"/>
+<link rel="prev" href="try-it-question-3---what-microbes-asvs-differ-between-males-and-females-and-does-age-have-an-impact.html"/>
+<link rel="next" href="about-the-authors.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -310,12 +310,343 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <div class="hero-image-container"> 
   <img class= "hero-image" src="assets/C-MOOR_Template/dasl_thin_main_image.png">
 </div>
-<div id="lecture---introducing-16s-rrna-data-using-spreadsheets" class="section level2 hasAnchor" number="4.2">
-<h2><span class="header-section-number">4.2</span> Lecture - Introducing 16S rRNA Data Using Spreadsheets<a href="lecture---introducing-16s-rrna-data-using-spreadsheets.html#lecture---introducing-16s-rrna-data-using-spreadsheets" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p><em>Estimated time: </em></p>
-<p><img src="resources/images/introducing-16S-data_files/figure-html/14E26SbzaLEDJxAaZ1qjaZcJehAI8q2GHuTokNPKKDTc_g35f391192_00.png" alt="Image test" width="100%" style="display: block; margin: auto;" /></p>
-<p><a href="https://docs.google.com/presentation/d/14E26SbzaLEDJxAaZ1qjaZcJehAI8q2GHuTokNPKKDTc/edit?usp=sharing">Lecture</a></p>
+<div id="try-it-question-4---is-there-diet-and-age-interaction-and-what-microbes-asvs-correlate-with-changes-in-diet-age-interaction" class="section level2 hasAnchor" number="6.7">
+<h2><span class="header-section-number">6.7</span> Try it Question 4 - Is there diet and age interaction and what microbes (ASVs) correlate with changes in diet-age interaction?<a href="try-it-question-4---is-there-diet-and-age-interaction-and-what-microbes-asvs-correlate-with-changes-in-diet-age-interaction.html#try-it-question-4---is-there-diet-and-age-interaction-and-what-microbes-asvs-correlate-with-changes-in-diet-age-interaction" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Approach: Use alpha diversity measure and DESeq2 tools to answer this question. Using alpha diversity, determine if there is an interaction between diet and age. Then use DESeq2 to see if any ASVs are associated with changes in die-age interaction. Using Simpson alpha diversity measure (or specifically, Gini-Simpson) evaluate how microbial diversity changes with age and diet in general, or age and BD, HD and WO diet specifically. Remember, shifts in alpha diversity measure suggest a shift in microbial diversity, with high alpha diversity suggesting high microbial diversity. Then, use DESeq2 to evaluate if ageing changes ASVs associated with diet.</p>
+<p>Note, when plotting this data you may get a warning below. That is ok!</p>
+<div class="sourceCode" id="cb47"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb47-1"><a href="try-it-question-4---is-there-diet-and-age-interaction-and-what-microbes-asvs-correlate-with-changes-in-diet-age-interaction.html#cb47-1" tabindex="-1"></a>Warning<span class="sc">:</span> The data you have provided does not have any singletons. This is highly suspicious. Results of richness <span class="fu">estimates</span> (<span class="cf">for</span> example) are probably unreliable, or wrong, <span class="cf">if</span> you have already trimmed low<span class="sc">-</span>abundance taxa from the data.We recommended that you find the un<span class="sc">-</span>trimmed data and retry.</span></code></pre></div>
+<p>Refer to the “alpha diversity” section of the “Analyze 16S rRNA Data with phyloseq” tutorial for help using the plot_richness() function.</p>
+<div id="step-1.-plot-alpha-diversity-based-on-age-for-all-dietary-groups-and-then-for-bd-hd-and-wo." class="section level3 hasAnchor" number="6.7.1">
+<h3><span class="header-section-number">6.7.1</span> Step 1. Plot alpha diversity based on age for all dietary groups, and then for BD, HD and WO.<a href="try-it-question-4---is-there-diet-and-age-interaction-and-what-microbes-asvs-correlate-with-changes-in-diet-age-interaction.html#step-1.-plot-alpha-diversity-based-on-age-for-all-dietary-groups-and-then-for-bd-hd-and-wo." class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><strong>1A-1. Plot alpha diversity based on age for all dietary groups.</strong></p>
+<ul>
+<li>Subset data - None</li>
+<li>age is on the x-axis</li>
+<li>Color is by subject</li>
+<li>Use the following code as a template:</li>
+</ul>
+<div class="sourceCode" id="cb48"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb48-1"><a href="try-it-question-4---is-there-diet-and-age-interaction-and-what-microbes-asvs-correlate-with-changes-in-diet-age-interaction.html#cb48-1" tabindex="-1"></a><span class="fu">plot_richness</span>(miso_counts, <span class="at">x=</span><span class="st">&quot;age&quot;</span>,</span>
+<span id="cb48-2"><a href="try-it-question-4---is-there-diet-and-age-interaction-and-what-microbes-asvs-correlate-with-changes-in-diet-age-interaction.html#cb48-2" tabindex="-1"></a>            <span class="at">color=</span><span class="st">&quot;subject&quot;</span>,</span>
+<span id="cb48-3"><a href="try-it-question-4---is-there-diet-and-age-interaction-and-what-microbes-asvs-correlate-with-changes-in-diet-age-interaction.html#cb48-3" tabindex="-1"></a>            <span class="at">title =</span> <span class="st">&quot;miso&quot;</span>,</span>
+<span id="cb48-4"><a href="try-it-question-4---is-there-diet-and-age-interaction-and-what-microbes-asvs-correlate-with-changes-in-diet-age-interaction.html#cb48-4" tabindex="-1"></a>            <span class="at">measures=</span> <span class="fu">c</span>(<span class="st">&quot;Simpson&quot;</span>))</span></code></pre></div>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Paste your plot below:</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><br></td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<table>
+<colgroup>
+<col width="100%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">1A-2. Based on the alpha plot above, is age a good determinant of microbial alpha diversity? Explain. Is there an age-based trend in alpha diversity?</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><br></td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<p><strong>1B-1. Plot alpha diversity based on age for BD diet only.</strong></p>
+<ul>
+<li>Subset data - timepointgroup BD</li>
+<li>age is on the x-axis</li>
+<li>Color is by subject</li>
+<li>Use the following code as a template:</li>
+</ul>
+<div class="sourceCode" id="cb49"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb49-1"><a href="try-it-question-4---is-there-diet-and-age-interaction-and-what-microbes-asvs-correlate-with-changes-in-diet-age-interaction.html#cb49-1" tabindex="-1"></a><span class="co"># Subset only BD samples</span></span>
+<span id="cb49-2"><a href="try-it-question-4---is-there-diet-and-age-interaction-and-what-microbes-asvs-correlate-with-changes-in-diet-age-interaction.html#cb49-2" tabindex="-1"></a>miso_counts_BD <span class="ot">=</span> <span class="fu">subset_samples</span>(miso_counts, timepointgroup <span class="sc">==</span> <span class="st">&quot;BD&quot;</span>)</span>
+<span id="cb49-3"><a href="try-it-question-4---is-there-diet-and-age-interaction-and-what-microbes-asvs-correlate-with-changes-in-diet-age-interaction.html#cb49-3" tabindex="-1"></a></span>
+<span id="cb49-4"><a href="try-it-question-4---is-there-diet-and-age-interaction-and-what-microbes-asvs-correlate-with-changes-in-diet-age-interaction.html#cb49-4" tabindex="-1"></a><span class="fu">plot_richness</span>(miso_counts_BD, <span class="at">x=</span><span class="st">&quot;fill in the blank&quot;</span>,</span>
+<span id="cb49-5"><a href="try-it-question-4---is-there-diet-and-age-interaction-and-what-microbes-asvs-correlate-with-changes-in-diet-age-interaction.html#cb49-5" tabindex="-1"></a>            <span class="at">color=</span><span class="st">&quot;fill in the blank&quot;</span>,</span>
+<span id="cb49-6"><a href="try-it-question-4---is-there-diet-and-age-interaction-and-what-microbes-asvs-correlate-with-changes-in-diet-age-interaction.html#cb49-6" tabindex="-1"></a>            <span class="at">title =</span> <span class="st">&quot;fill in the blank&quot;</span>,</span>
+<span id="cb49-7"><a href="try-it-question-4---is-there-diet-and-age-interaction-and-what-microbes-asvs-correlate-with-changes-in-diet-age-interaction.html#cb49-7" tabindex="-1"></a>            <span class="at">measures=</span> <span class="fu">c</span>(<span class="st">&quot;Simpson&quot;</span>))</span></code></pre></div>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Paste your plot below:</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><br></td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<table>
+<colgroup>
+<col width="100%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">1B-2. Based on the alpha plot above, how did subsetting for BD alter the age-based alpha diversity plot? Did the trend in age-based alpha diversity change? Explain if this makes sense.</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><br></td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<p><strong>1C-1. Plot alpha diversity based on age for HD diet only.</strong></p>
+<ul>
+<li>Subset data - timepointgroup HD</li>
+<li>age is on the x-axis</li>
+<li>Color is by subject</li>
+<li>Use the following code as a template:</li>
+</ul>
+<div class="sourceCode" id="cb50"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb50-1"><a href="try-it-question-4---is-there-diet-and-age-interaction-and-what-microbes-asvs-correlate-with-changes-in-diet-age-interaction.html#cb50-1" tabindex="-1"></a><span class="co"># Subset only HD samples</span></span>
+<span id="cb50-2"><a href="try-it-question-4---is-there-diet-and-age-interaction-and-what-microbes-asvs-correlate-with-changes-in-diet-age-interaction.html#cb50-2" tabindex="-1"></a>miso_counts_BD <span class="ot">=</span> <span class="fu">subset_samples</span>(miso_counts, timepointgroup <span class="sc">==</span> <span class="st">&quot;HD&quot;</span>)</span>
+<span id="cb50-3"><a href="try-it-question-4---is-there-diet-and-age-interaction-and-what-microbes-asvs-correlate-with-changes-in-diet-age-interaction.html#cb50-3" tabindex="-1"></a></span>
+<span id="cb50-4"><a href="try-it-question-4---is-there-diet-and-age-interaction-and-what-microbes-asvs-correlate-with-changes-in-diet-age-interaction.html#cb50-4" tabindex="-1"></a><span class="fu">plot_richness</span>(miso_counts_BD, <span class="at">x=</span><span class="st">&quot;fill in the blank&quot;</span>,</span>
+<span id="cb50-5"><a href="try-it-question-4---is-there-diet-and-age-interaction-and-what-microbes-asvs-correlate-with-changes-in-diet-age-interaction.html#cb50-5" tabindex="-1"></a>            <span class="at">color=</span><span class="st">&quot;fill in the blank&quot;</span>,</span>
+<span id="cb50-6"><a href="try-it-question-4---is-there-diet-and-age-interaction-and-what-microbes-asvs-correlate-with-changes-in-diet-age-interaction.html#cb50-6" tabindex="-1"></a>            <span class="at">title =</span> <span class="st">&quot;fill in the blank&quot;</span>,</span>
+<span id="cb50-7"><a href="try-it-question-4---is-there-diet-and-age-interaction-and-what-microbes-asvs-correlate-with-changes-in-diet-age-interaction.html#cb50-7" tabindex="-1"></a>            <span class="at">measures=</span> <span class="fu">c</span>(<span class="st">&quot;Simpson&quot;</span>))</span></code></pre></div>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Paste your plot below:</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><br></td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<table>
+<colgroup>
+<col width="100%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">1C-2. Based on the alpha plot above, how did subsetting for HD alter the age-based alpha diversity plot? Did the trend in age-based alpha diversity change? Explain if this makes sense.</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><br></td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<p><strong>1D-1. Plot alpha diversity based on age for WO diet only.</strong></p>
+<ul>
+<li>Subset data - timepointgroup WO</li>
+<li>age is on the x-axis</li>
+<li>Color is by subject</li>
+<li>Use the following code as a template:</li>
+</ul>
+<div class="sourceCode" id="cb51"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb51-1"><a href="try-it-question-4---is-there-diet-and-age-interaction-and-what-microbes-asvs-correlate-with-changes-in-diet-age-interaction.html#cb51-1" tabindex="-1"></a><span class="co"># Subset only WO samples</span></span>
+<span id="cb51-2"><a href="try-it-question-4---is-there-diet-and-age-interaction-and-what-microbes-asvs-correlate-with-changes-in-diet-age-interaction.html#cb51-2" tabindex="-1"></a>miso_counts_BD <span class="ot">=</span> <span class="fu">subset_samples</span>(miso_counts, timepointgroup <span class="sc">==</span> <span class="st">&quot;WO&quot;</span>)</span>
+<span id="cb51-3"><a href="try-it-question-4---is-there-diet-and-age-interaction-and-what-microbes-asvs-correlate-with-changes-in-diet-age-interaction.html#cb51-3" tabindex="-1"></a></span>
+<span id="cb51-4"><a href="try-it-question-4---is-there-diet-and-age-interaction-and-what-microbes-asvs-correlate-with-changes-in-diet-age-interaction.html#cb51-4" tabindex="-1"></a><span class="fu">plot_richness</span>(miso_counts_BD, <span class="at">x=</span><span class="st">&quot;fill in the blank&quot;</span>,</span>
+<span id="cb51-5"><a href="try-it-question-4---is-there-diet-and-age-interaction-and-what-microbes-asvs-correlate-with-changes-in-diet-age-interaction.html#cb51-5" tabindex="-1"></a>            <span class="at">color=</span><span class="st">&quot;fill in the blank&quot;</span>,</span>
+<span id="cb51-6"><a href="try-it-question-4---is-there-diet-and-age-interaction-and-what-microbes-asvs-correlate-with-changes-in-diet-age-interaction.html#cb51-6" tabindex="-1"></a>            <span class="at">title =</span> <span class="st">&quot;fill in the blank&quot;</span>,</span>
+<span id="cb51-7"><a href="try-it-question-4---is-there-diet-and-age-interaction-and-what-microbes-asvs-correlate-with-changes-in-diet-age-interaction.html#cb51-7" tabindex="-1"></a>            <span class="at">measures=</span> <span class="fu">c</span>(<span class="st">&quot;Simpson&quot;</span>))</span></code></pre></div>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Paste your plot below:</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><br></td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<table>
+<colgroup>
+<col width="100%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">1D-2. Based on the alpha plot above, how did subsetting for WO alter the age-based alpha diversity plot? Did the trend in age-based alpha diversity change? Explain if this makes sense. Remember, WO has twice as few datapoints as BD and HD since there is only 1 WO timepoint (versus 2 for BD and HD).</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><br></td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
 </div>
+<div id="step-2.-perform-differential-abundance-analysis-comparing-hd-to-bd-for-the-population-in-general-and-then-for-older-individuals-specifically-because-older-individuals-produced-the-biggest-dietage-interaction-based-on-alpha-diversity." class="section level3 hasAnchor" number="6.7.2">
+<h3><span class="header-section-number">6.7.2</span> Step 2. Perform differential abundance analysis comparing HD to BD for the population in general, and then for older individuals specifically (because older individuals produced the biggest diet–age interaction based on alpha diversity).<a href="try-it-question-4---is-there-diet-and-age-interaction-and-what-microbes-asvs-correlate-with-changes-in-diet-age-interaction.html#step-2.-perform-differential-abundance-analysis-comparing-hd-to-bd-for-the-population-in-general-and-then-for-older-individuals-specifically-because-older-individuals-produced-the-biggest-dietage-interaction-based-on-alpha-diversity." class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><strong>Step 2A. Perform differential abundance analysis between HD and BD.</strong></p>
+<ul>
+<li><p>Design - is based on timepointgroup (no double quotes)</p></li>
+<li><p>Groups to compare - HD and BD (baseline)</p></li>
+<li><p>Plot Phylum on the X-axis and color by Class</p></li>
+<li><p>Make sure your graph has a title that includes the comparison you are making (ex. WO vs HD)</p></li>
+<li><p>Refer to the “Differential abundance” section of the “Analyze 16S rRNA Data with phyloseq” tutorial for help using the plot_ordination() function.</p></li>
+<li><p>Use the code below as a template:</p></li>
+</ul>
+<p>STEP 1: Convert the phyloseq object to a DESeq2 object and specify experimental design</p>
+<div class="sourceCode" id="cb52"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb52-1"><a href="try-it-question-4---is-there-diet-and-age-interaction-and-what-microbes-asvs-correlate-with-changes-in-diet-age-interaction.html#cb52-1" tabindex="-1"></a>DESeq2 <span class="ot">&lt;-</span> <span class="fu">phyloseq_to_deseq2</span>(miso_counts, <span class="at">design =</span> <span class="sc">~</span> timepointgroup)</span></code></pre></div>
+<p>STEP 2: Select the groups to compare, where the latter group is your baseline</p>
+<div class="sourceCode" id="cb53"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb53-1"><a href="try-it-question-4---is-there-diet-and-age-interaction-and-what-microbes-asvs-correlate-with-changes-in-diet-age-interaction.html#cb53-1" tabindex="-1"></a>comparision <span class="ot">&lt;-</span><span class="fu">c</span>(<span class="st">&quot;timepointgroup&quot;</span>, <span class="st">&quot;HD&quot;</span>, <span class="st">&quot;fill in the blank (baseline)&quot;</span>)</span></code></pre></div>
+<p>STEP 3: Run the differential abundance analysis</p>
+<div class="sourceCode" id="cb54"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb54-1"><a href="try-it-question-4---is-there-diet-and-age-interaction-and-what-microbes-asvs-correlate-with-changes-in-diet-age-interaction.html#cb54-1" tabindex="-1"></a>Significant_DEseq2_ASVs<span class="ot">&lt;-</span><span class="fu">Differential_Abundance</span>(DESeq2, comparision, <span class="fl">0.05</span>)</span></code></pre></div>
+<p>STEP 4: Retrieve the list of ASVs with a significant difference in abundance between the chosen groups</p>
+<div class="sourceCode" id="cb55"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb55-1"><a href="try-it-question-4---is-there-diet-and-age-interaction-and-what-microbes-asvs-correlate-with-changes-in-diet-age-interaction.html#cb55-1" tabindex="-1"></a>Significant_DEseq2_ASVs</span></code></pre></div>
+<p>STEP 5: Plot the results with your chosen x axis and legend</p>
+<div class="sourceCode" id="cb56"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb56-1"><a href="try-it-question-4---is-there-diet-and-age-interaction-and-what-microbes-asvs-correlate-with-changes-in-diet-age-interaction.html#cb56-1" tabindex="-1"></a><span class="fu">ggplot</span>(significant_ASVs, <span class="fu">aes</span>(<span class="at">x =</span> Phylum, <span class="at">y=</span>log2FoldChange, <span class="at">color=</span> fill <span class="cf">in</span> the blank)) <span class="sc">+</span> <span class="fu">geom_point</span>(<span class="at">size=</span><span class="dv">4</span>) <span class="sc">+</span></span>
+<span id="cb56-2"><a href="try-it-question-4---is-there-diet-and-age-interaction-and-what-microbes-asvs-correlate-with-changes-in-diet-age-interaction.html#cb56-2" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">axis.text.x =</span> <span class="fu">element_text</span>(<span class="at">angle =</span> <span class="sc">-</span><span class="dv">90</span>, <span class="at">hjust =</span> <span class="dv">0</span>, <span class="at">vjust=</span><span class="fl">0.5</span>))<span class="sc">+</span></span>
+<span id="cb56-3"><a href="try-it-question-4---is-there-diet-and-age-interaction-and-what-microbes-asvs-correlate-with-changes-in-diet-age-interaction.html#cb56-3" tabindex="-1"></a>  <span class="fu">ggtitle</span>(<span class="st">&quot;fill in the blank&quot;</span>)</span></code></pre></div>
+<table>
+<thead>
+<tr class="header">
+<th align="left">2A-1. Insert the resulting plot below:</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><br></td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">2A-2. How many differentially abundant ASVs were identified?</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><br></td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<table>
+<colgroup>
+<col width="100%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">2A-3. Discuss the meaning for your differential abundance plot above. Did you observe few or many differences between BD and HD for the general population (all individuals)? What does that indicate in terms of diet-induced microbiome changes?</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><br></td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+</div>
+<div id="step-2b.-perform-differential-abundance-analysis-between-hd-and-bd-for-older-individual-50-yo." class="section level3 hasAnchor" number="6.7.3">
+<h3><span class="header-section-number">6.7.3</span> Step 2B. Perform differential abundance analysis between HD and BD for older individual (&gt; 50 yo.)<a href="try-it-question-4---is-there-diet-and-age-interaction-and-what-microbes-asvs-correlate-with-changes-in-diet-age-interaction.html#step-2b.-perform-differential-abundance-analysis-between-hd-and-bd-for-older-individual-50-yo." class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<ul>
+<li><p>Subset data - older age (&gt; 50 yo)</p></li>
+<li><p>Design - is based on timepointgroup (no double quotes)</p></li>
+<li><p>Groups to compare - HD and BD (baseline)</p></li>
+<li><p>Plot Phylum on the X-axis and color by Class</p></li>
+<li><p>Make sure your graph has a title that includes the comparison you are making (ex. WO vs HD)</p></li>
+<li><p>Refer to the “Differential abundance” section of the “Analyze 16S rRNA Data with phyloseq” tutorial for help using the plot_ordination() function.</p></li>
+<li><p>Use the code below as a template:</p></li>
+</ul>
+<p>STEP 1: Subset miso_counts object to only include older individuals over age 50</p>
+<div class="sourceCode" id="cb57"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb57-1"><a href="try-it-question-4---is-there-diet-and-age-interaction-and-what-microbes-asvs-correlate-with-changes-in-diet-age-interaction.html#cb57-1" tabindex="-1"></a>subset <span class="ot">=</span> <span class="fu">subset_samples</span>(miso_counts, age <span class="sc">&gt;</span><span class="dv">50</span>)</span></code></pre></div>
+<p>STEP 2: Convert the phyloseq object to a DESeq2 object and specify experimental design</p>
+<div class="sourceCode" id="cb58"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb58-1"><a href="try-it-question-4---is-there-diet-and-age-interaction-and-what-microbes-asvs-correlate-with-changes-in-diet-age-interaction.html#cb58-1" tabindex="-1"></a>DESeq2 <span class="ot">&lt;-</span> <span class="fu">phyloseq_to_deseq2</span>(subset, <span class="at">design =</span> <span class="sc">~</span> timepointgroup)</span></code></pre></div>
+<p>STEP 3: Select the groups to compare, where the latter group is your baseline</p>
+<div class="sourceCode" id="cb59"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb59-1"><a href="try-it-question-4---is-there-diet-and-age-interaction-and-what-microbes-asvs-correlate-with-changes-in-diet-age-interaction.html#cb59-1" tabindex="-1"></a>comparision_subset <span class="ot">&lt;-</span><span class="fu">c</span>(<span class="st">&quot;timepointgroup&quot;</span>, <span class="st">&quot;HD&quot;</span>, <span class="st">&quot;fill in the blank (baseline)&quot;</span>)</span></code></pre></div>
+<p>STEP 4: Run the differential abundance analysis</p>
+<div class="sourceCode" id="cb60"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb60-1"><a href="try-it-question-4---is-there-diet-and-age-interaction-and-what-microbes-asvs-correlate-with-changes-in-diet-age-interaction.html#cb60-1" tabindex="-1"></a>Significant_ASVs_subset <span class="ot">&lt;-</span> <span class="fu">Differential_Abundance</span>(DESeq2, comparision_subset, <span class="fl">0.05</span>)</span></code></pre></div>
+<p>STEP 5: Retrieve the list of ASVs with a significant difference in abundance between the chosen groups</p>
+<div class="sourceCode" id="cb61"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb61-1"><a href="try-it-question-4---is-there-diet-and-age-interaction-and-what-microbes-asvs-correlate-with-changes-in-diet-age-interaction.html#cb61-1" tabindex="-1"></a>Significant_ASVs_subset</span></code></pre></div>
+<p>STEP 6: Plot the results with your chosen x axis and legend</p>
+<div class="sourceCode" id="cb62"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb62-1"><a href="try-it-question-4---is-there-diet-and-age-interaction-and-what-microbes-asvs-correlate-with-changes-in-diet-age-interaction.html#cb62-1" tabindex="-1"></a><span class="fu">ggplot</span>(significant_ASVs_subset, <span class="fu">aes</span>(<span class="at">x =</span> Phylum, <span class="at">y=</span>log2FoldChange, <span class="at">color=</span> fill <span class="cf">in</span> the blank)) <span class="sc">+</span> <span class="fu">geom_point</span>(<span class="at">size=</span><span class="dv">4</span>) <span class="sc">+</span></span>
+<span id="cb62-2"><a href="try-it-question-4---is-there-diet-and-age-interaction-and-what-microbes-asvs-correlate-with-changes-in-diet-age-interaction.html#cb62-2" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">axis.text.x =</span> <span class="fu">element_text</span>(<span class="at">angle =</span> <span class="sc">-</span><span class="dv">90</span>, <span class="at">hjust =</span> <span class="dv">0</span>, <span class="at">vjust=</span><span class="fl">0.5</span>))<span class="sc">+</span></span>
+<span id="cb62-3"><a href="try-it-question-4---is-there-diet-and-age-interaction-and-what-microbes-asvs-correlate-with-changes-in-diet-age-interaction.html#cb62-3" tabindex="-1"></a>  <span class="fu">ggtitle</span>(<span class="st">&quot;fill in the blank&quot;</span>)</span></code></pre></div>
+<table>
+<thead>
+<tr class="header">
+<th align="left">2B-1. Insert the resulting plot below:</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><br></td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">2B-2. How many differentially abundant ASVs were identified?</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><br></td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<table>
+<colgroup>
+<col width="100%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">2B-3. Discuss the meaning for your differential abundance plot above. Did you observe any differences between BD and HD for the older individuals? How does that compare to general population? Note, by comparison, when subsetting the younger population (&lt;= 50yo), the number of differential ASVs produced is 3. What does that indicate in terms of diet-age interaction?</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><br></td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+</div>
+<div id="step-3.-select-data-for-poster-and-include-the-code-used-to-generate-the-figure.-1" class="section level3 hasAnchor" number="6.7.4">
+<h3><span class="header-section-number">6.7.4</span> Step 3. Select data for poster and include the code used to generate the figure.<a href="try-it-question-4---is-there-diet-and-age-interaction-and-what-microbes-asvs-correlate-with-changes-in-diet-age-interaction.html#step-3.-select-data-for-poster-and-include-the-code-used-to-generate-the-figure.-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<ul>
+<li>Prepare your final figure and associated code for the poster.</li>
+<li>Figure suggestion: A 4-part figure with top panel: Figure A showing alpha diversity in general (includes all 3 dietary interventions), and Figure B showing alpha diversity for HD diet only. The bottom panel: Figure C showing differentially abundant ASVs between HD and BD for all ages, and Figure D showing differentially abundant ASVs for older individuals.</li>
+<li>Ensure you have a figure legend that explains your final figure.</li>
+<li>Ensure you submit the code you used to generate your final figure.</li>
+</ul>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Paste final poster figure and code below:</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><br></td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+
+</div>
+</div>
+<!-- </div> -->
 <hr>
 <center> 
   <div class="footer">
@@ -327,8 +658,8 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
           </div>
         </div>
       </div>
-<a href="exploring-16s-rrna-data-in-spreadsheets.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="activity---introducing-16s-rrna-data-using-spreadsheet.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="try-it-question-3---what-microbes-asvs-differ-between-males-and-females-and-does-age-have-an-impact.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="about-the-authors.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
