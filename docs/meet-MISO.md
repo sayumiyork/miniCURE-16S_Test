@@ -5,9 +5,11 @@
 
 
 
-Let's get prepared to do some research using 16S rRNA data! In this section, we'll be exploring data from *Impact of a 7-day homogeneous diet on interpersonal variation in human gut microbiomes and metabolomes* by Guthrie et al. (2022). This study is one of many that explores the relationship between diet and the human gut microbiome and will help familiarize us with the format that 16S rRNA data takes. We'll start slow and look at just a few lines of data in Google Sheets and then use phyloseq and DESeq2 in R to take our analysis to the next level.
+
 
 # Meet the MISO study
+
+Let's get prepared to do some research using 16S rRNA data! In this section, we'll be exploring data from *Impact of a 7-day homogeneous diet on interpersonal variation in human gut microbiomes and metabolomes* by Guthrie et al. (2022). This study is one of many that explores the relationship between diet and the human gut microbiome and will help familiarize us with the format that 16S rRNA data takes. We'll start slow and look at just a few lines of data in Google Sheets and then use phyloseq and DESeq2 in R to take our analysis to the next level.
 
 Human diet has been implicated heavily in the establishment and maintenance of the gut microbiome [REFs]. For example, human babies undergo a drastic change in the gut microbiome following the transition to solid food [REF], and microbes that assist in the breakdown of seaweed are found in Japanese gut microbiomes. 
 
@@ -76,7 +78,7 @@ Finally we have our microbe count data, or our *Amplicon Sequence Variants (ASVs
 
 ![](resources/images/meet-MISO_files/figure-docx//1dEZtb0TgLbzhbr3HxQElwg8hENur2HMIzseg19OGd0g_g33d6fd7d4b6_0_136.png){width=100%}
 
-You may see the word Operational Taxonomic Unit (OTU) in phyloseq and in other published studies. **For our purposes, we will generally consider OTUs and ASVs as interchangable**, although they have some key differences. 
+You may see the word Operational Taxonomic Unit (OTU) in phyloseq and in other published studies. **ASVs and OTUs have some differences between them but they both represent distinct units of microbial taxa**, although they have some key differences. 
 
 Each sample is associated with a count of each ASV. We can compare the counts of these ASVs between samples to determine differences in the composition of the microbiome between samples.
 

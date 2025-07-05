@@ -15,7 +15,7 @@ In this section we will look at 16S data in a spreadsheet via Google Sheets. We 
 
 *Estimated time: *
 
-<img src="introducing-16S-data_files/figure-html//14E26SbzaLEDJxAaZ1qjaZcJehAI8q2GHuTokNPKKDTc_g35f391192_00.png" alt="Image test" width="100%" style="display: block; margin: auto;" />
+![](resources/images/introducing-16S-data_files/figure-docx//14E26SbzaLEDJxAaZ1qjaZcJehAI8q2GHuTokNPKKDTc_g35f391192_00.png){width=100%}
 
 [Lecture](https://docs.google.com/presentation/d/14E26SbzaLEDJxAaZ1qjaZcJehAI8q2GHuTokNPKKDTc/edit?usp=sharing)
 
@@ -275,14 +275,14 @@ Sample approach: You can compare the 5-10 most abundant ASVs between 21 individu
 
 ### Grading criteria
 
-- Download the assignment to your local computer as a .docx, complete it, and upload the assignment to your LMS (Blackboard, Canvas, Google Classroom).### Footnotes
-- Download the Google Sheet to your local computers as a .xlsx, complete all the steps for the assignment, and upload the .xlsx to your LMS (Blackboard, Canvas, Google Classroom).
+- Download the assignment to your local computer as a .docx, complete it, and upload the assignment to your LMS (Blackboard, Canvas, Google Classroom).
+- Download the Google Sheets to your local computers as a .xlsx, complete all the steps for the assignment, and upload the .xlsx to your LMS (Blackboard, Canvas, Google Classroom).
 
 ### Footnotes
 
 #### Resources
 
-- [Google Doc](https://docs.google.com/document/d/1fTy4D3KShevTMuQ0ct8HZ60fWqUSUPcy7e-eHqY3N3w/edit?usp=sharing)
+- [Google Doc](https://docs.google.com/document/d/12pKSIwcVXisaf6dniyoG_AGdCQh1dG1dDwZ5s1cz92c/edit?usp=sharing)
 - [‘MISO_PS_Leah_SY_Sample1’](https://docs.google.com/spreadsheets/d/1hpSyjO0H8sXq6C1xM_oGMyv9vCY2qTvfYHVdqO9ZVhk/edit?usp=sharing)
 - [MISO_PS_Leah_SY_WO-select](https://docs.google.com/spreadsheets/d/1vD0wbxgYuDlfKA0DF2Km-N4GHL2gRoUaEN_oCrSb2jU/edit?usp=sharing)
 - [ASV counts (2185 rows by 114 columns)](https://docs.google.com/spreadsheets/d/1mDk_enQzQVQVplbLzPMYJBF5whsvZ62gOPDwkqIpJvM/edit?usp=sharing)

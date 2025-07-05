@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>4.2 Lecture - Introducing 16S rRNA Data Using Spreadsheets | Course Name</title>
+  <title>6.6 Try it Question 3 - What microbes (ASVs) differ between males and females, and does age have an impact? | Course Name</title>
   <meta name="description" content="Description about Course/Book." />
   <meta name="generator" content="bookdown 0.41 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="4.2 Lecture - Introducing 16S rRNA Data Using Spreadsheets | Course Name" />
+  <meta property="og:title" content="6.6 Try it Question 3 - What microbes (ASVs) differ between males and females, and does age have an impact? | Course Name" />
   <meta property="og:type" content="book" />
   
   <meta property="og:description" content="Description about Course/Book." />
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="4.2 Lecture - Introducing 16S rRNA Data Using Spreadsheets | Course Name" />
+  <meta name="twitter:title" content="6.6 Try it Question 3 - What microbes (ASVs) differ between males and females, and does age have an impact? | Course Name" />
   
   <meta name="twitter:description" content="Description about Course/Book." />
   
@@ -29,8 +29,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   <link rel="shortcut icon" href="assets/dasl_favicon.ico" type="image/x-icon" />
-<link rel="prev" href="exploring-16s-rrna-data-in-spreadsheets.html"/>
-<link rel="next" href="activity---introducing-16s-rrna-data-using-spreadsheet.html"/>
+<link rel="prev" href="try-it-question-2---do-diet-age-gender-and-levels-of-metabolites-correlate-with-microbe-variation-between-individuals.html"/>
+<link rel="next" href="try-it-question-4---is-there-diet-and-age-interaction-and-what-microbes-asvs-correlate-with-changes-in-diet-age-interaction.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -310,11 +310,271 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <div class="hero-image-container"> 
   <img class= "hero-image" src="assets/C-MOOR_Template/dasl_thin_main_image.png">
 </div>
-<div id="lecture---introducing-16s-rrna-data-using-spreadsheets" class="section level2 hasAnchor" number="4.2">
-<h2><span class="header-section-number">4.2</span> Lecture - Introducing 16S rRNA Data Using Spreadsheets<a href="lecture---introducing-16s-rrna-data-using-spreadsheets.html#lecture---introducing-16s-rrna-data-using-spreadsheets" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p><em>Estimated time: </em></p>
-<p><img src="resources/images/introducing-16S-data_files/figure-html/14E26SbzaLEDJxAaZ1qjaZcJehAI8q2GHuTokNPKKDTc_g35f391192_00.png" alt="Image test" width="100%" style="display: block; margin: auto;" /></p>
-<p><a href="https://docs.google.com/presentation/d/14E26SbzaLEDJxAaZ1qjaZcJehAI8q2GHuTokNPKKDTc/edit?usp=sharing">Lecture</a></p>
+<div id="try-it-question-3---what-microbes-asvs-differ-between-males-and-females-and-does-age-have-an-impact" class="section level2 hasAnchor" number="6.6">
+<h2><span class="header-section-number">6.6</span> Try it Question 3 - What microbes (ASVs) differ between males and females, and does age have an impact?<a href="try-it-question-3---what-microbes-asvs-differ-between-males-and-females-and-does-age-have-an-impact.html#try-it-question-3---what-microbes-asvs-differ-between-males-and-females-and-does-age-have-an-impact" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Approach: Perform DESeq analysis between females and males and determine how many differentially abundant microbes are there between the sexes. Then examine if age has a further impact on the abundance of the microbes between the sexes.</p>
+<div id="step-3a.-perform-differential-abundance-analysis-between-genders." class="section level3 hasAnchor" number="6.6.1">
+<h3><span class="header-section-number">6.6.1</span> Step 3A. Perform differential abundance analysis between genders.<a href="try-it-question-3---what-microbes-asvs-differ-between-males-and-females-and-does-age-have-an-impact.html#step-3a.-perform-differential-abundance-analysis-between-genders." class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<ul>
+<li><p>Design - is based on gender (no double quotes)</p></li>
+<li><p>Groups to compare - females, F and males, M (baseline)</p></li>
+<li><p>Plot Phylum on the X-axis and color by Class</p></li>
+<li><p>Make sure your graph has a title that includes the comparison you are making (ex. WO vs HD)</p></li>
+<li><p>Refer to the “Differential abundance” section of the “Analyze 16S rRNA Data with phyloseq” tutorial for help using the plot_ordination() function.</p></li>
+<li><p>Use the code below as a template:</p></li>
+</ul>
+<p>STEP 1: Convert the phyloseq object to a DESeq2 object and specify experimental design</p>
+<div class="sourceCode" id="cb36"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb36-1"><a href="try-it-question-3---what-microbes-asvs-differ-between-males-and-females-and-does-age-have-an-impact.html#cb36-1" tabindex="-1"></a>DESeq2 <span class="ot">&lt;-</span> <span class="fu">phyloseq_to_deseq2</span>(miso_counts, <span class="at">design =</span> <span class="sc">~</span> fill <span class="cf">in</span> the blank)</span></code></pre></div>
+<p>STEP 2: Select the groups to compare, where the latter group is your baseline</p>
+<div class="sourceCode" id="cb37"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb37-1"><a href="try-it-question-3---what-microbes-asvs-differ-between-males-and-females-and-does-age-have-an-impact.html#cb37-1" tabindex="-1"></a>my_comparision <span class="ot">&lt;-</span><span class="fu">c</span>(<span class="st">&quot;gender&quot;</span>, <span class="st">&quot;fill in the blank&quot;</span>, <span class="st">&quot;fill in the blank (baseline)&quot;</span>)</span></code></pre></div>
+<p>STEP 3: Run the differential abundance analysis</p>
+<div class="sourceCode" id="cb38"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb38-1"><a href="try-it-question-3---what-microbes-asvs-differ-between-males-and-females-and-does-age-have-an-impact.html#cb38-1" tabindex="-1"></a>Significant_DEseq2_ASVs<span class="ot">&lt;-</span><span class="fu">Differential_Abundance</span>(DESeq2, my_comparision, <span class="fl">0.05</span>)</span></code></pre></div>
+<p>STEP 4: Retrieve the list of ASVs with a significant difference in abundance between the chosen groups</p>
+<div class="sourceCode" id="cb39"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb39-1"><a href="try-it-question-3---what-microbes-asvs-differ-between-males-and-females-and-does-age-have-an-impact.html#cb39-1" tabindex="-1"></a>Significant_DEseq2_ASVs</span></code></pre></div>
+<p>STEP 5: Plot the results with your chosen x axis and legend</p>
+<div class="sourceCode" id="cb40"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb40-1"><a href="try-it-question-3---what-microbes-asvs-differ-between-males-and-females-and-does-age-have-an-impact.html#cb40-1" tabindex="-1"></a><span class="fu">ggplot</span>(significant_ASVs, <span class="fu">aes</span>(<span class="at">x =</span> fill <span class="cf">in</span> the blank, <span class="at">y=</span>log2FoldChange, <span class="at">color=</span> fill <span class="cf">in</span> the blank)) <span class="sc">+</span> <span class="fu">geom_point</span>(<span class="at">size=</span><span class="dv">4</span>, <span class="at">position=</span><span class="st">&quot;jitter&quot;</span>) <span class="sc">+</span></span>
+<span id="cb40-2"><a href="try-it-question-3---what-microbes-asvs-differ-between-males-and-females-and-does-age-have-an-impact.html#cb40-2" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">axis.text.x =</span> <span class="fu">element_text</span>(<span class="at">angle =</span> <span class="sc">-</span><span class="dv">90</span>, <span class="at">hjust =</span> <span class="dv">0</span>, <span class="at">vjust=</span><span class="fl">0.5</span>))<span class="sc">+</span></span>
+<span id="cb40-3"><a href="try-it-question-3---what-microbes-asvs-differ-between-males-and-females-and-does-age-have-an-impact.html#cb40-3" tabindex="-1"></a>  <span class="fu">ggtitle</span>(<span class="st">&quot;fill in the blank&quot;</span>)</span></code></pre></div>
+<table>
+<thead>
+<tr class="header">
+<th align="left">3A-1. Insert the resulting plot below:</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><br></td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">3A-2. How many differentially abundant ASVs were identified?</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><br></td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<table>
+<colgroup>
+<col width="100%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">3A-3. Give an example of a differentially abundant ASVs that was significantly higher in females than males. Include ASV ID and taxa. HINT: If male was your baseline, then an example of an ASV that is higher in females will have a positive log2FC.</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><br></td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<table>
+<colgroup>
+<col width="100%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">3A-4. Give an example of a differentially abundant ASVs that was significantly higher in males than females. Include ASV ID and taxa. HINT: If male was your baseline, then an example of an ASV that is higher in males will have a negative log2FC.</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><br></td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+</div>
+<div id="step-3b.-determine-the-impact-of-younger-age-on-differential-abundance-in-males-and-females-by-subsetting-age-50-data-from-the-phyloseq-object-and-performing-deseq2-analysis-on-this-subset." class="section level3 hasAnchor" number="6.6.2">
+<h3><span class="header-section-number">6.6.2</span> Step 3B. Determine the impact of younger age on differential abundance in males and females, by subsetting age &lt; 50 data from the phyloseq object, and performing DESeq2 analysis on this subset.<a href="try-it-question-3---what-microbes-asvs-differ-between-males-and-females-and-does-age-have-an-impact.html#step-3b.-determine-the-impact-of-younger-age-on-differential-abundance-in-males-and-females-by-subsetting-age-50-data-from-the-phyloseq-object-and-performing-deseq2-analysis-on-this-subset." class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<ul>
+<li>Subset phyloseq object to only include younger individuals (age &lt; 50)</li>
+<li>For DESeq2 analysis, keep the design the same as in part A - based on gender</li>
+<li>Groups to compare: females (F) and males (M, baseline)</li>
+<li>Plot Phylum on the X-axis and color by Class</li>
+<li>Use template code below:</li>
+</ul>
+<p>STEP 1: subset by age &lt; 50</p>
+<div class="sourceCode" id="cb41"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb41-1"><a href="try-it-question-3---what-microbes-asvs-differ-between-males-and-females-and-does-age-have-an-impact.html#cb41-1" tabindex="-1"></a>ageA <span class="ot">=</span> <span class="fu">subset_samples</span>(miso_counts, age <span class="sc">&lt;</span><span class="dv">50</span>) </span></code></pre></div>
+<p>STEP 2: Convert the phyloseq object to a DESeq2 object and specify experimental design</p>
+<div class="sourceCode" id="cb42"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb42-1"><a href="try-it-question-3---what-microbes-asvs-differ-between-males-and-females-and-does-age-have-an-impact.html#cb42-1" tabindex="-1"></a>DESeq2 <span class="ot">&lt;-</span> <span class="fu">phyloseq_to_deseq2</span>(ageA, <span class="at">design =</span> <span class="sc">~</span> fill <span class="cf">in</span> the blank)</span></code></pre></div>
+<p>STEP 3: Select the groups to compare, where log2FoldChange reported will correspond to y/x.</p>
+<div class="sourceCode" id="cb43"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb43-1"><a href="try-it-question-3---what-microbes-asvs-differ-between-males-and-females-and-does-age-have-an-impact.html#cb43-1" tabindex="-1"></a>my_comparision <span class="ot">&lt;-</span><span class="fu">c</span>(<span class="st">&quot;gender&quot;</span>, <span class="st">&quot;fill in the blank&quot;</span>, <span class="st">&quot;fill in the blank (baseline)&quot;</span>)</span></code></pre></div>
+<p>STEP 4: Run the differential abundance analysis</p>
+<div class="sourceCode" id="cb44"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb44-1"><a href="try-it-question-3---what-microbes-asvs-differ-between-males-and-females-and-does-age-have-an-impact.html#cb44-1" tabindex="-1"></a>significant_ASVs<span class="ot">&lt;-</span><span class="fu">Differential_Abundance</span>(DESeq2, my_comparision, <span class="fl">0.05</span>)</span></code></pre></div>
+<p>STEP 5: Retrieve the list of ASVs with a significant difference in abundance between the chosen groups</p>
+<div class="sourceCode" id="cb45"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb45-1"><a href="try-it-question-3---what-microbes-asvs-differ-between-males-and-females-and-does-age-have-an-impact.html#cb45-1" tabindex="-1"></a>significant_DEseq2_ASVs</span></code></pre></div>
+<p>STEP 6: Plot the results with your chosen x axis and legend</p>
+<div class="sourceCode" id="cb46"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb46-1"><a href="try-it-question-3---what-microbes-asvs-differ-between-males-and-females-and-does-age-have-an-impact.html#cb46-1" tabindex="-1"></a><span class="fu">ggplot</span>(significant_ASVs, <span class="fu">aes</span>(<span class="at">x =</span> fill <span class="cf">in</span> the blank, <span class="at">y=</span>log2FoldChange, <span class="at">color=</span> fill <span class="cf">in</span> the blank)) <span class="sc">+</span> <span class="fu">geom_point</span>(<span class="at">size=</span><span class="dv">4</span>, <span class="at">position =</span> <span class="st">&quot;jitter&quot;</span>) <span class="sc">+</span></span>
+<span id="cb46-2"><a href="try-it-question-3---what-microbes-asvs-differ-between-males-and-females-and-does-age-have-an-impact.html#cb46-2" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">axis.text.x =</span> <span class="fu">element_text</span>(<span class="at">angle =</span> <span class="sc">-</span><span class="dv">90</span>, <span class="at">hjust =</span> <span class="dv">0</span>, <span class="at">vjust=</span><span class="fl">0.5</span>))<span class="sc">+</span></span>
+<span id="cb46-3"><a href="try-it-question-3---what-microbes-asvs-differ-between-males-and-females-and-does-age-have-an-impact.html#cb46-3" tabindex="-1"></a>  <span class="fu">ggtitle</span>(<span class="st">&quot;fill in the blank&quot;</span>)</span></code></pre></div>
+<table>
+<thead>
+<tr class="header">
+<th align="left">3B-1. Insert the resulting plot below:</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><br></td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">3B-2. How many differentially abundant ASVs were identified?</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><br></td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<table>
+<colgroup>
+<col width="100%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">3B-3. Give an example of a differentially abundant ASVs that was significantly higher in younger females than younger males. Include ASV ID and taxa. HINT: If male was your baseline, then an example of an ASV that is higher in females will have a positive log2FC.</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><br></td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<table>
+<colgroup>
+<col width="100%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">3B-4. Give an example of a differentially abundant ASVs that was significantly higher in younger males than younger females. Include ASV ID and taxa. HINT: If male was your baseline, then an example of an ASV that is higher in males will have a negative log2FC.</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><br></td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<table>
+<colgroup>
+<col width="100%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">3B-5. How does younger age impact microbe abundance between females and males in general?</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><br></td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+</div>
+<div id="step-3c.-determine-the-impact-of-older-age-on-differential-abundance-in-males-and-females-by-subsetting-age-50-data-from-the-phyloseq-object-and-performing-deseq2-analysis-on-this-subset." class="section level3 hasAnchor" number="6.6.3">
+<h3><span class="header-section-number">6.6.3</span> Step 3C. Determine the impact of older age on differential abundance in males and females, by subsetting age &gt;= 50 data from the phyloseq object, and performing DESeq2 analysis on this subset.<a href="try-it-question-3---what-microbes-asvs-differ-between-males-and-females-and-does-age-have-an-impact.html#step-3c.-determine-the-impact-of-older-age-on-differential-abundance-in-males-and-females-by-subsetting-age-50-data-from-the-phyloseq-object-and-performing-deseq2-analysis-on-this-subset." class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<table>
+<thead>
+<tr class="header">
+<th align="left">3C-1. Insert the resulting plot below:</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><br></td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">3C-2. How many differentially abundant ASVs were identified?</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><br></td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<table>
+<colgroup>
+<col width="100%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">3C-3. How does older age impact microbe abundance between females and males in general?</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><br></td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<table>
+<colgroup>
+<col width="100%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">3C-4. Comparing fold change plots between younger and older females and males, what is one difference between Phyla distribution?</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><br></td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+</div>
+<div id="step-4.-select-data-for-poster-and-include-the-code-used-to-generate-the-figure" class="section level3 hasAnchor" number="6.6.4">
+<h3><span class="header-section-number">6.6.4</span> Step 4. Select data for poster and include the code used to generate the figure<a href="try-it-question-3---what-microbes-asvs-differ-between-males-and-females-and-does-age-have-an-impact.html#step-4.-select-data-for-poster-and-include-the-code-used-to-generate-the-figure" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Prepare your final figure and associated code for the poster.</p>
+<ul>
+<li><p>Figure suggestion: A 3-part figure with Figure A showing fold change differences between males and females in general, Figure B showing gender differences in younger individuals, and Figure C showing gender differences in older individuals.</p></li>
+<li><p>Ensure you have a figure legend that explains your final figure.</p></li>
+<li><p>Ensure you submit the code you used to generate your final figure.</p></li>
+</ul>
+<table>
+<thead>
+<tr class="header">
+<th align="left">4A-1. Paste final poster figure and code below:</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><br></td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+</div>
 </div>
 <hr>
 <center> 
@@ -327,8 +587,8 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
           </div>
         </div>
       </div>
-<a href="exploring-16s-rrna-data-in-spreadsheets.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="activity---introducing-16s-rrna-data-using-spreadsheet.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="try-it-question-2---do-diet-age-gender-and-levels-of-metabolites-correlate-with-microbe-variation-between-individuals.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="try-it-question-4---is-there-diet-and-age-interaction-and-what-microbes-asvs-correlate-with-changes-in-diet-age-interaction.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
