@@ -281,7 +281,7 @@ Sample approach: You can compare the 5-10 most abundant ASVs between 21 individu
 
 ### Grading criteria
 
-- Download the assignment to your local computer as a .docx, complete it, and upload the assignment to your LMS (Blackboard, Canvas, Google Classroom).### Footnotes
+- Download the assignment to your local computer as a .docx, complete it, and upload the assignment to your LMS (Blackboard, Canvas, Google Classroom).
 - Download the Google Sheets to your local computers as a .xlsx, complete all the steps for the assignment, and upload the .xlsx to your LMS (Blackboard, Canvas, Google Classroom).
 
 ### Footnotes
