@@ -715,7 +715,7 @@ Prepare your final figure and associated code for the poster.
 <br>
 
 
-## Try it Question 4 -  Is there diet and age interaction and what microbes (ASVs) correlate with changes in diet-age interaction
+## Try it Question 4 -  Is there an interaction between diet and age and the microbiome
 
 Approach: Use alpha diversity measure and DESeq2 tools to answer this question. Using alpha diversity, determine if there is an interaction between diet and age. Then use DESeq2 to see if any ASVs are associated with changes in die-age interaction. Using Simpson alpha diversity measure (or specifically, Gini-Simpson) evaluate how microbial diversity changes with age and diet in general, or age and BD, HD and WO diet specifically. Remember, shifts in alpha diversity measure suggest a shift in microbial diversity, with high alpha diversity suggesting high microbial diversity. Then, use DESeq2 to evaluate if ageing changes ASVs associated with diet.
 
