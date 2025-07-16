@@ -154,7 +154,7 @@ Approach: Use alpha diversity measure and DESeq2 tools to answer this question. 
 - Sayumi York, Notre Dame of Maryland University
 
 
-## Try it Question 1 - How sensitive is microbial diversity to variables like diet, age and gender?
+## Try it Question 1 - How sensitive is microbial diversity to variables like diet, age and gender
 
 Approach: Plot Simpson alpha diversity using plot_richness() command in phyloseq and assess the impact of different study variables on changes in microbial diversity. Identify the variables that impact alpha diversity. Visible shifts in alpha diversity measure suggests a shift in microbial diversity, and higher alpha diversity value indicates an increase in alpha diversity.
 
@@ -306,7 +306,7 @@ plot_richness(miso_counts, x="fill in the blank metabolite name",
 | <br> |
 <br>
 
-## Try it Question 2 - Do diet, age, gender and levels of metabolites correlate with microbe variation between individuals?  
+## Try it Question 2 - Do diet, age, gender and levels of metabolites correlate with microbe variation between individuals 
 
 Approach: Perform multidimensional scaling (also known as principal component analysis) to establish a relationship between the samples given multivariate data (metadata variables). Using a PcOA plot (via commands ordinate() and plot_ordination() in phyloseq), you will condense the original high-dimensional data into a low-dimensional one by converting data to distance map (matrix) with 2 dimensions, x and y, that best explain variability in your data. From your PCoA plot you will assess the contribution of different study variables to sample diversity and identify variables that help explain sample diversity. In a PcOA plot, samples with similar microbial profiles will be plotted close and may appear as “clusters”.
 
@@ -530,7 +530,7 @@ plot_ordination(misoHD, pcoa.misoHD,
 <br>
 
 
-## Try it Question 3 - What microbes (ASVs) differ between males and females, and does age have an impact? 
+## Try it Question 3 - What microbes (ASVs) differ between males and females, and does age have an impact
 
 Approach: Perform DESeq analysis between females and males and determine how many differentially abundant microbes are there between the sexes. Then examine if age has a further impact on the abundance of the microbes between the sexes. 
 
@@ -715,7 +715,7 @@ Prepare your final figure and associated code for the poster.
 <br>
 
 
-## Try it Question 4 -  Is there diet and age interaction and what microbes (ASVs) correlate with changes in diet-age interaction?
+## Try it Question 4 -  Is there diet and age interaction and what microbes (ASVs) correlate with changes in diet-age interaction
 
 Approach: Use alpha diversity measure and DESeq2 tools to answer this question. Using alpha diversity, determine if there is an interaction between diet and age. Then use DESeq2 to see if any ASVs are associated with changes in die-age interaction. Using Simpson alpha diversity measure (or specifically, Gini-Simpson) evaluate how microbial diversity changes with age and diet in general, or age and BD, HD and WO diet specifically. Remember, shifts in alpha diversity measure suggest a shift in microbial diversity, with high alpha diversity suggesting high microbial diversity. Then, use DESeq2 to evaluate if ageing changes ASVs associated with diet.
 
