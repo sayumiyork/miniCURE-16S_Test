@@ -142,7 +142,7 @@ Approach: Test if Phylum and/or species composition differs by age across the da
 - Sayumi York, Notre Dame of Maryland University
 
 
-## Try it Question 1 - What has more impact on human microbial variation, diet or individuality?
+## Try it Question 1 - What has more impact on human microbial variation, diet or individuality
 
 Approach: Plot high level taxa (Phyla) for all timepoints and subjects and compare the plots to determine which factor has a stronger effect on microbiome composition.
 
@@ -209,7 +209,7 @@ A suggestion for your poster:
 |:-|
 | <br> |
 
-## Try it Question 2 - What are some of the most abundant microbes when viewed at different taxonomic resolutions? 
+## Try it Question 2 - What are some of the most abundant microbes when viewed at different taxonomic resolutions
 
 Approach: Plot progressively lower level taxa for all individuals, subsetting most abundant from each rank. 
 
@@ -352,7 +352,7 @@ A suggestion for your poster:
 |:-|
 | <br> |
 
-## Try it Question 3 - Does gender contribute to individual microbiome variation? 
+## Try it Question 3 - Does gender contribute to individual microbiome variation
 
 Approach: First survey the differences in microbiome across gender at the level of phyla and species, and identify potential candidates that may differ between males and females. Then, plot your candidates of interest  and additional candidate microbes previously associated with  gender-based variation.
 
@@ -486,7 +486,7 @@ Here is the candidate list of different microbes previously implicated in  gende
 | <br> |
 
 
-## Try it Question 4 - Does age contribute to individual microbiome variation?  
+## Try it Question 4 - Does age contribute to individual microbiome variation
 
 Approach: Survey the differences in microbiome across age, refining the plot to accommodate a continuous variable (age) and unequal sample sizes (some individuals in the study are the same age). Then, test if there is a shift in microbiome abundance of phyla Firmicutes and Bacteroidetes, two phyla suggested previously to change with age. 
 
