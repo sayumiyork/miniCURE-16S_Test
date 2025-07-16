@@ -128,7 +128,7 @@ step-3a.-perform-differential-abundance-analysis-between-genders.
 step-3b.-determine-the-impact-of-younger-age-on-differential-abundance-in-males-and-females-by-subsetting-age-50-data-from-the-phyloseq-object-and-performing-deseq2-analysis-on-this-subset.
 step-3c.-determine-the-impact-of-older-age-on-differential-abundance-in-males-and-females-by-subsetting-age-50-data-from-the-phyloseq-object-and-performing-deseq2-analysis-on-this-subset.
 step-4.-select-data-for-poster-and-include-the-code-used-to-generate-the-figure
-try-it-question-4---is-there-diet-and-age-interaction-and-what-microbes-asvs-correlate-with-changes-in-diet-age-interaction
+try-it-question-4---is-there-an-interaction-between-diet-and-age-and-the-microbiome
 step-1.-plot-alpha-diversity-based-on-age-for-all-dietary-groups-and-then-for-bd-hd-and-wo.
 step-2.-perform-differential-abundance-analysis-comparing-hd-to-bd-for-the-population-in-general-and-then-for-older-individuals-specifically-because-older-individuals-produced-the-biggest-dietage-interaction-based-on-alpha-diversity.
 step-2b.-perform-differential-abundance-analysis-between-hd-and-bd-for-older-individual-50-yo.
