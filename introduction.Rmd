@@ -4,29 +4,28 @@ library(cow)
 ```
 
 
+<!-- ```{r, echo=FALSE, results='asis'} -->
+<!-- cow::borrow_chapter( -->
+<!--   doc_path = "docs/02-chapter_of_course.md", -->
+<!--   repo_name = "jhudsl/OTTR_Template" -->
+<!-- ) -->
+<!-- ``` -->
+
+<!-- AnVIL -->
 
 ```{r, echo=FALSE, results='asis'}
 cow::borrow_chapter(
-  doc_path = "docs/02-chapter_of_course.md",
-  repo_name = "jhudsl/OTTR_Template"
+  doc_path = "docs/anvil.md",
+  repo_name = "sayumiyork/c-moor-ottr-generic"
 )
 ```
 
-<!-- <!-- AnVIL --> -->
 
-<!-- ```{r, echo=FALSE, results='asis'} -->
-<!-- borrow_chapter( -->
-<!--   doc_path = "docs/anvil.md", -->
-<!--   repo_name = "sayumiyork/c-moor-ottr-generic" -->
-<!-- ) -->
-<!-- ``` -->
+<!-- SciServer -->
 
-
-<!-- <!-- SciServer --> -->
-
-<!-- ```{r, echo=FALSE, results='asis'} -->
-<!-- borrow_chapter( -->
-<!--   doc_path = "docs/sciserver.md", -->
-<!--   repo_name = "sayumiyork/c-moor-ottr-generic" -->
-<!-- ) -->
-<!-- ``` -->
+```{r, echo=FALSE, results='asis'}
+cow::borrow_chapter(
+  doc_path = "docs/sciserver.md",
+  repo_name = "sayumiyork/c-moor-ottr-generic"
+)
+```
