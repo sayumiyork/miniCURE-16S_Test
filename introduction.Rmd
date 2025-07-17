@@ -1,23 +1,32 @@
 
-```{r, include = FALSE}
-ottrpal::set_knitr_image_path()
+```{r setup, include = FALSE}
+library(ottrpal)
 ```
 
-# Introduction
 
 
-## Motivation
-
-
-## Target Audience  
-
-The course is intended for ...
-
-## Curriculum  
-
-The course covers...
-
-
-```{r}
-devtools::session_info()
+```{r, echo=FALSE, results='asis'}
+borrow_chapter(
+  doc_path = "docs/02-chapter_of_course.md",
+  repo_name = "jhudsl/OTTR_Template"
+)
 ```
+
+<!-- <!-- AnVIL --> -->
+
+<!-- ```{r, echo=FALSE, results='asis'} -->
+<!-- borrow_chapter( -->
+<!--   doc_path = "docs/anvil.md", -->
+<!--   repo_name = "sayumiyork/c-moor-ottr-generic" -->
+<!-- ) -->
+<!-- ``` -->
+
+
+<!-- <!-- SciServer --> -->
+
+<!-- ```{r, echo=FALSE, results='asis'} -->
+<!-- borrow_chapter( -->
+<!--   doc_path = "docs/sciserver.md", -->
+<!--   repo_name = "sayumiyork/c-moor-ottr-generic" -->
+<!-- ) -->
+<!-- ``` -->
