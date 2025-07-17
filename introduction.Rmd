@@ -3,21 +3,21 @@
 ottrpal::set_knitr_image_path()
 ```
 
-# Introduction
+<!-- AnVIL -->
+
+```{r, echo=FALSE, results='asis'}
+borrow_chapter(
+  doc_path = "anvil.md",
+  repo_name = "sayumiyork/c-moor-ottr-generic"
+)
+```
 
 
-## Motivation
+<!-- SciServer -->
 
-
-## Target Audience  
-
-The course is intended for ...
-
-## Curriculum  
-
-The course covers...
-
-
-```{r}
-devtools::session_info()
+```{r, echo=FALSE, results='asis'}
+borrow_chapter(
+  doc_path = "sciserver.md",
+  repo_name = "sayumiyork/c-moor-ottr-generic"
+)
 ```
