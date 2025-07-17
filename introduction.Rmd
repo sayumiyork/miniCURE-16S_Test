@@ -1,7 +1,8 @@
 <!-- Set up code of OTTR Book-->
 
-```{r, include = FALSE}
-library(ottrpal)
+
+```{r setup, include = FALSE}
+library("ottrpal")
 ottrpal::set_knitr_image_path()
 ```
 
