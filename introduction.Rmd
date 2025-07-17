@@ -1,12 +1,12 @@
 
 ```{r setup, include = FALSE}
-library(ottrpal)
+library(cow)
 ```
 
 
 
 ```{r, echo=FALSE, results='asis'}
-borrow_chapter(
+cow::borrow_chapter(
   doc_path = "docs/02-chapter_of_course.md",
   repo_name = "jhudsl/OTTR_Template"
 )
