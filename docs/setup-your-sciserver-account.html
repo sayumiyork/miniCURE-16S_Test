@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>7.4 Try it Question 1 - How sensitive is microbial diversity to variables like diet, age and gender | Course Name</title>
+  <title>2.1 Setup your SciServer account | Course Name</title>
   <meta name="description" content="Description about Course/Book." />
   <meta name="generator" content="bookdown 0.41 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="7.4 Try it Question 1 - How sensitive is microbial diversity to variables like diet, age and gender | Course Name" />
+  <meta property="og:title" content="2.1 Setup your SciServer account | Course Name" />
   <meta property="og:type" content="book" />
   
   <meta property="og:description" content="Description about Course/Book." />
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="7.4 Try it Question 1 - How sensitive is microbial diversity to variables like diet, age and gender | Course Name" />
+  <meta name="twitter:title" content="2.1 Setup your SciServer account | Course Name" />
   
   <meta name="twitter:description" content="Description about Course/Book." />
   
@@ -29,8 +29,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   <link rel="shortcut icon" href="assets/dasl_favicon.ico" type="image/x-icon" />
-<link rel="prev" href="activity---exploring-16s-rrna-data-with-phyloseq-1.html"/>
-<link rel="next" href="try-it-question-2---do-diet-age-gender-and-levels-of-metabolites-correlate-with-microbe-variation-between-individuals.html"/>
+<link rel="prev" href="join-sciserver.html"/>
+<link rel="next" href="running-modules-on-sciserver.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -328,229 +328,84 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <div class="hero-image-container"> 
   <img class= "hero-image" src="assets/C-MOOR_Template/dasl_thin_main_image.png">
 </div>
-<div id="try-it-question-1---how-sensitive-is-microbial-diversity-to-variables-like-diet-age-and-gender" class="section level2 hasAnchor" number="7.4">
-<h2><span class="header-section-number">7.4</span> Try it Question 1 - How sensitive is microbial diversity to variables like diet, age and gender<a href="try-it-question-1---how-sensitive-is-microbial-diversity-to-variables-like-diet-age-and-gender.html#try-it-question-1---how-sensitive-is-microbial-diversity-to-variables-like-diet-age-and-gender" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Approach: Plot Simpson alpha diversity using plot_richness() command in phyloseq and assess the impact of different study variables on changes in microbial diversity. Identify the variables that impact alpha diversity. Visible shifts in alpha diversity measure suggests a shift in microbial diversity, and higher alpha diversity value indicates an increase in alpha diversity.</p>
-<p><strong>Note, when plotting this data you may get a warning below. That is ok!</strong></p>
-<div class="sourceCode" id="cb20"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb20-1"><a href="try-it-question-1---how-sensitive-is-microbial-diversity-to-variables-like-diet-age-and-gender.html#cb20-1" tabindex="-1"></a>Warning<span class="sc">:</span> The data you have provided does not have any singletons. This is highly suspicious. Results of richness <span class="fu">estimates</span> (<span class="cf">for</span> example) are probably unreliable, or wrong, <span class="cf">if</span> you have already trimmed low<span class="sc">-</span>abundance taxa from the data.We recommended that you find the un<span class="sc">-</span>trimmed data and retry.</span></code></pre></div>
-<p>Refer to the “alpha diversity” section of the “Analyze 16S rRNA Data with phyloseq” tutorial for help using the plot_richness() function.</p>
-<div id="step-1a.-plot-alpha-diversity-of-the-full-miso-dataset-by-subject-individuals." class="section level3 hasAnchor" number="7.4.1">
-<h3><span class="header-section-number">7.4.1</span> Step 1A. Plot alpha diversity of the full MISO dataset by subject (individuals).<a href="try-it-question-1---how-sensitive-is-microbial-diversity-to-variables-like-diet-age-and-gender.html#step-1a.-plot-alpha-diversity-of-the-full-miso-dataset-by-subject-individuals." class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<ul>
-<li>subject is on the x-axis</li>
-<li>Color is by subject</li>
-<li>Use the following code as a template:</li>
-</ul>
-<div class="sourceCode" id="cb21"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb21-1"><a href="try-it-question-1---how-sensitive-is-microbial-diversity-to-variables-like-diet-age-and-gender.html#cb21-1" tabindex="-1"></a><span class="fu">plot_richness</span>(miso_counts, <span class="at">x=</span><span class="st">&quot;fill in the blank&quot;</span>, </span>
-<span id="cb21-2"><a href="try-it-question-1---how-sensitive-is-microbial-diversity-to-variables-like-diet-age-and-gender.html#cb21-2" tabindex="-1"></a>              <span class="at">color=</span><span class="st">&quot;subject&quot;</span>, </span>
-<span id="cb21-3"><a href="try-it-question-1---how-sensitive-is-microbial-diversity-to-variables-like-diet-age-and-gender.html#cb21-3" tabindex="-1"></a>              <span class="at">measures=</span> <span class="st">&quot;Simpson&quot;</span>)</span></code></pre></div>
-<table>
-<thead>
-<tr class="header">
-<th align="left">1-A. Paste the resulting plot below:</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><br></td>
-</tr>
-</tbody>
-</table>
-<p><br></p>
-<p><strong>1A-2. Based on the alpha plot above, is individuality a strong determinant of microbial alpha diversity (richness and evenness) within an individual? Explain.</strong></p>
-<p>How close are the 5 points for an individual? Are individual data points closer to each other or to the 5 points of another individual? Give examples of individuals in your explanation (e.g. compare S26 and S30, or S02 and S09).</p>
-<table>
-<tbody>
-<tr class="odd">
-<td align="left"><br></td>
-</tr>
-</tbody>
-</table>
-<p>Some individual alpha diversity profiles appear to have “outliers”, such that e.g. one of the sample points appears separate from the rest. E.g., individuals S03, S10 and S31 seem to have 1 outlier sample. <strong>Speculate in general on what such singleton “outliers” could mean including recalling what the 5 points represent, evoking concepts of replicates, thinking about sampling and real biology.</strong></p>
-<table>
-<tbody>
-<tr class="odd">
-<td align="left"><br></td>
-</tr>
-</tbody>
-</table>
+<div id="setup-your-sciserver-account" class="section level2 hasAnchor" number="2.1">
+<h2><span class="header-section-number">2.1</span> Setup your SciServer account<a href="setup-your-sciserver-account.html#setup-your-sciserver-account" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="purpose-2" class="section level4 hasAnchor" number="2.1.0.1">
+<h4><span class="header-section-number">2.1.0.1</span> Purpose<a href="setup-your-sciserver-account.html#purpose-2" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Students will create a SciServer account and be added to a SciServer by their instructor, which gives them access to the images and data needed to access learning modules and complete their research project. <strong>The steps in this section only need to be completed once.</strong></p>
 </div>
-<div id="step-1b.-plot-alpha-diversity-of-the-full-miso-dataset-by-timepointgroup." class="section level3 hasAnchor" number="7.4.2">
-<h3><span class="header-section-number">7.4.2</span> Step 1B. Plot alpha diversity of the full MISO dataset, by timepointgroup.<a href="try-it-question-1---how-sensitive-is-microbial-diversity-to-variables-like-diet-age-and-gender.html#step-1b.-plot-alpha-diversity-of-the-full-miso-dataset-by-timepointgroup." class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<ul>
-<li>timepoint group is on the x-axis</li>
-<li>Color is by subject</li>
-<li>Use the following code as a template:</li>
-</ul>
-<div class="sourceCode" id="cb22"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb22-1"><a href="try-it-question-1---how-sensitive-is-microbial-diversity-to-variables-like-diet-age-and-gender.html#cb22-1" tabindex="-1"></a><span class="fu">plot_richness</span>(miso_counts, <span class="at">x=</span><span class="st">&quot;fill in the blank&quot;</span>, </span>
-<span id="cb22-2"><a href="try-it-question-1---how-sensitive-is-microbial-diversity-to-variables-like-diet-age-and-gender.html#cb22-2" tabindex="-1"></a>              <span class="at">color=</span><span class="st">&quot;fill in the blank&quot;</span>, </span>
-<span id="cb22-3"><a href="try-it-question-1---how-sensitive-is-microbial-diversity-to-variables-like-diet-age-and-gender.html#cb22-3" tabindex="-1"></a>              <span class="at">measures=</span> <span class="st">&quot;Simpson&quot;</span>)</span></code></pre></div>
-<table>
-<thead>
-<tr class="header">
-<th align="left">1B-1. Paste your plot below:</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><br></td>
-</tr>
-</tbody>
-</table>
-<p><br></p>
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">1B-2. Based on the alpha plot above, does diet have an impact on microbial diversity (richness and evenness) of individuals? Explain - do you observe a shift up or down in data distribution?</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><br></td>
-</tr>
-</tbody>
-</table>
-<p><br></p>
-</div>
-<div id="step-1c.-plot-alpha-diversity-of-the-full-miso-dataset-by-age." class="section level3 hasAnchor" number="7.4.3">
-<h3><span class="header-section-number">7.4.3</span> Step 1C. Plot alpha diversity of the full MISO dataset by age.<a href="try-it-question-1---how-sensitive-is-microbial-diversity-to-variables-like-diet-age-and-gender.html#step-1c.-plot-alpha-diversity-of-the-full-miso-dataset-by-age." class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<ul>
-<li>age is on the x-axis</li>
-<li>Color is by subject</li>
-<li>Use the following code as a template:</li>
-</ul>
-<div class="sourceCode" id="cb23"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb23-1"><a href="try-it-question-1---how-sensitive-is-microbial-diversity-to-variables-like-diet-age-and-gender.html#cb23-1" tabindex="-1"></a><span class="fu">plot_richness</span>(miso_counts, <span class="at">x=</span><span class="st">&quot;fill in the blank&quot;</span>, </span>
-<span id="cb23-2"><a href="try-it-question-1---how-sensitive-is-microbial-diversity-to-variables-like-diet-age-and-gender.html#cb23-2" tabindex="-1"></a>              <span class="at">color=</span><span class="st">&quot;fill in the blank&quot;</span>, </span>
-<span id="cb23-3"><a href="try-it-question-1---how-sensitive-is-microbial-diversity-to-variables-like-diet-age-and-gender.html#cb23-3" tabindex="-1"></a>              <span class="at">measures=</span> <span class="st">&quot;Simpson&quot;</span>)</span></code></pre></div>
-<table>
-<thead>
-<tr class="header">
-<th align="left">1C-1. Paste your plot below:</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><br></td>
-</tr>
-</tbody>
-</table>
-<p><br></p>
-<p><strong>1C-2. Based on the alpha plot above, does age have an impact on microbial diversity of individuals?</strong> Explain - do you observe a shift up or down in data during ageing? Do you observe a tighter data distribution in younger or older individuals? Which group, younger (&lt; 50 yo) or older (&gt;50 yo) has higher and tiger overall distribution?</p>
-<table>
-<tbody>
-<tr class="odd">
-<td align="left"><br></td>
-</tr>
-</tbody>
-</table>
-</div>
-<div id="step-1d.-plot-alpha-diversity-of-the-full-miso-dataset-by-gender." class="section level3 hasAnchor" number="7.4.4">
-<h3><span class="header-section-number">7.4.4</span> Step 1D. Plot alpha diversity of the full MISO dataset by gender.<a href="try-it-question-1---how-sensitive-is-microbial-diversity-to-variables-like-diet-age-and-gender.html#step-1d.-plot-alpha-diversity-of-the-full-miso-dataset-by-gender." class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<ul>
-<li>gender is on the x-axis</li>
-<li>Color is by subject</li>
-<li>Use the following code as a template:</li>
-</ul>
-<div class="sourceCode" id="cb24"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb24-1"><a href="try-it-question-1---how-sensitive-is-microbial-diversity-to-variables-like-diet-age-and-gender.html#cb24-1" tabindex="-1"></a><span class="fu">plot_richness</span>(miso_counts, <span class="at">x=</span><span class="st">&quot;fill in the blank&quot;</span>, </span>
-<span id="cb24-2"><a href="try-it-question-1---how-sensitive-is-microbial-diversity-to-variables-like-diet-age-and-gender.html#cb24-2" tabindex="-1"></a>              <span class="at">color=</span><span class="st">&quot;fill in the blank&quot;</span>, </span>
-<span id="cb24-3"><a href="try-it-question-1---how-sensitive-is-microbial-diversity-to-variables-like-diet-age-and-gender.html#cb24-3" tabindex="-1"></a>              <span class="at">measures=</span> <span class="st">&quot;Simpson&quot;</span>)</span></code></pre></div>
-<table>
-<thead>
-<tr class="header">
-<th align="left">1D-1. Paste your plot below:</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><br></td>
-</tr>
-</tbody>
-</table>
-<p><br></p>
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">1D-2. Based on the alpha plot above, does gender have an impact on microbial diversity? Explain. Which group has a tighter distribution? Which group overall has a more diverse microbiome, males or females? Which microbiomes are more similar to each other, male or female microbiomes?</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><br></td>
-</tr>
-</tbody>
-</table>
-<p><br></p>
-</div>
-<div id="step-2.-plot-alpha-diversity-of-the-full-miso-dataset-grouping-based-on-levels-for-5-different-metabolites-creatinine-pcs-is-hipp-pag." class="section level3 hasAnchor" number="7.4.5">
-<h3><span class="header-section-number">7.4.5</span> Step 2. Plot alpha diversity of the full MISO dataset, grouping based on levels for 5 different metabolites: Creatinine, PCS, IS, HIPP, PAG.<a href="try-it-question-1---how-sensitive-is-microbial-diversity-to-variables-like-diet-age-and-gender.html#step-2.-plot-alpha-diversity-of-the-full-miso-dataset-grouping-based-on-levels-for-5-different-metabolites-creatinine-pcs-is-hipp-pag." class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>Plot alpha diversity for the 5 metabolites independently then choose your favorite metabolite (e.g. one with most difference) and show plot below.</p>
-<ul>
-<li>metabolite on the x-axis (one at a time: Creatinine, PCS, IS, HIPP, PAG)</li>
-<li>Color is by subject</li>
-<li>Use the following code as a template:</li>
-</ul>
-<div class="sourceCode" id="cb25"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb25-1"><a href="try-it-question-1---how-sensitive-is-microbial-diversity-to-variables-like-diet-age-and-gender.html#cb25-1" tabindex="-1"></a><span class="fu">plot_richness</span>(miso_counts, <span class="at">x=</span><span class="st">&quot;fill in the blank metabolite name&quot;</span>, </span>
-<span id="cb25-2"><a href="try-it-question-1---how-sensitive-is-microbial-diversity-to-variables-like-diet-age-and-gender.html#cb25-2" tabindex="-1"></a>              <span class="at">color=</span><span class="st">&quot;fill in the blank&quot;</span>, </span>
-<span id="cb25-3"><a href="try-it-question-1---how-sensitive-is-microbial-diversity-to-variables-like-diet-age-and-gender.html#cb25-3" tabindex="-1"></a>              <span class="at">measures=</span> <span class="st">&quot;Simpson&quot;</span>)</span></code></pre></div>
-<table>
-<thead>
-<tr class="header">
-<th align="left">2A-1. Paste your metabolite plot(s) below:</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><br></td>
-</tr>
-</tbody>
-</table>
-<p><br></p>
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">2A-2. Which metabolite did you choose to show and why? Any difference between microbiomes for individuals with low versus high metabolite levels?</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><br></td>
-</tr>
-</tbody>
-</table>
-<p><br></p>
-</div>
-<div id="step-3.-select-data-for-poster-and-include-the-code-used-to-generate-the-figure." class="section level3 hasAnchor" number="7.4.6">
-<h3><span class="header-section-number">7.4.6</span> Step 3. Select data for poster and include the code used to generate the figure.<a href="try-it-question-1---how-sensitive-is-microbial-diversity-to-variables-like-diet-age-and-gender.html#step-3.-select-data-for-poster-and-include-the-code-used-to-generate-the-figure." class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="learning-objectives-2" class="section level4 hasAnchor" number="2.1.0.2">
+<h4><span class="header-section-number">2.1.0.2</span> Learning Objectives<a href="setup-your-sciserver-account.html#learning-objectives-2" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <ol style="list-style-type: decimal">
-<li>Prepare your final figure and associated code for the poster.</li>
-<li>Figure suggestion: A 2-part figure with Figure A showing alpha diversity based on your favorite variable (subject, timepointgroup, age, or gender), and Figure B, showing alpha diversity with your favorite metabolite (Creatinine, PCS, IS, HIPP, or PAG).</li>
+<li>Create an account on SciServer</li>
+<li>Confirm your email address</li>
+<li>Share your username with your instructor</li>
+<li>Confirm your access to class materials on SciServer</li>
 </ol>
+<p>This video (<a href="https://link.c-moor.org/video-join-sciserver">video</a>)(<a href="https://docs.google.com/presentation/d/1kxbnBLoRsdPW4ZkjwNsAHS1XFPuJpQZ8I1aVqyZISW0">slides</a>) shows you how to create a SciServer account. You can follow along with the video, or follow the steps below.</p>
+<ol style="list-style-type: decimal">
+<li>Open <a href="https://www.sciserver.org/">sciserver.org</a> in a web browser
+<ol style="list-style-type: lower-alpha">
+<li>It is a good idea to bookmark this page so that you can easily access it throughout the course.</li>
+</ol></li>
+<li>Click “Login to SciServer”</li>
+<li>Click “Create a new account”</li>
+<li>Enter a User name, Email, etc. and click “Create account”
+<ol style="list-style-type: lower-alpha">
+<li>Note that you cannot change your username once you have made your account</li>
+</ol></li>
+</ol>
+</div>
+<div id="confirm-your-email-address" class="section level4 hasAnchor" number="2.1.0.3">
+<h4><span class="header-section-number">2.1.0.3</span> Confirm your email address<a href="setup-your-sciserver-account.html#confirm-your-email-address" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<ol style="list-style-type: decimal">
+<li><strong>Important!</strong>: Click the verification link in your email inbox.
+<ol style="list-style-type: lower-alpha">
+<li>If you do not verify your account you will get locked out and will need to contact your instructor to unlock your account.</li>
+<li>If you do not see an email, try checking your spam folder.</li>
+</ol></li>
+<li>After clicking the verification link, confirm that your username appears in the upper right hand corner.</li>
+</ol>
+</div>
+<div id="share-your-username-with-your-instructor" class="section level4 hasAnchor" number="2.1.0.4">
+<h4><span class="header-section-number">2.1.0.4</span> Share your username with your instructor<a href="setup-your-sciserver-account.html#share-your-username-with-your-instructor" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Refer to your instructor on how to share your username with them. Your instructor will add you to a group that will give you access to all the necessary resources.</p>
+<ol style="list-style-type: decimal">
+<li>Share your username with you instructor and await invitation to the SciServer group</li>
+</ol>
+</div>
+<div id="accept-invitation-to-join-class-sciserver-group" class="section level4 hasAnchor" number="2.1.0.5">
+<h4><span class="header-section-number">2.1.0.5</span> Accept invitation to join class SciServer group<a href="setup-your-sciserver-account.html#accept-invitation-to-join-class-sciserver-group" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>This video (<a href="https://link.c-moor.org/video-join-sciserver-group">video</a>)(<a href="https://docs.google.com/presentation/d/1codot9UeUO7l0EDcEre7dJgyXurD_xyxpw6IJL_aEjM">slides</a>) shows you how to join a SciServer group. You can follow along with the video, or follow the steps below.</p>
+<ol style="list-style-type: decimal">
+<li>Open <a href="https://www.sciserver.org/">sciserver.org</a> in a web browser and log in to your account.</li>
+<li>Click “Groups”</li>
+<li>On the left, you should see a list of all the groups you have joined or been invited to. Click on the name of the group for this course, then click “Accept invitation”.
+<ol style="list-style-type: lower-alpha">
+<li>Your instructor must have your username to invite you to the group. If you do not see an invitation, contact your instructor with your SciServer username.</li>
+</ol></li>
+<li>Confirm that you can access course data
+<ol style="list-style-type: lower-alpha">
+<li>On the top menu bar, click “Files”</li>
+<li>On the left-hand menu, click “Data Volumes”</li>
+<li>Confirm that you see “C-MOOR-Data”</li>
+</ol></li>
+<li>Confirm that you can access course computing resources
+<ol style="list-style-type: lower-alpha">
+<li>Click “Home” in the top menu to return to the home page.</li>
+<li>Scroll down to the second set of boxes and click “Compute”</li>
+<li>Click “Create container”</li>
+<li>In the “Compute Image” drop-down menu, confirm that you can see “C-MOOR LearnR” and “C-MOOR R-Studio”</li>
+<li>Under “Data Volumes”, confirm that you can see “C-MOOR Data”</li>
+<li>You can close the Create Container dialog box (by clicking the “X” in the top right) once you’ve confirmed that you can see the C-MOOR content</li>
+</ol></li>
+</ol>
+</div>
+<div id="troubleshooting" class="section level4 hasAnchor" number="2.1.0.6">
+<h4><span class="header-section-number">2.1.0.6</span> Troubleshooting<a href="setup-your-sciserver-account.html#troubleshooting" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <ul>
-<li>Ensure you have a figure legend that explains your final figure.</li>
-<li>Ensure you submit the code you used to generate your final figure.</li>
+<li>Some students have had issues signing up or logging into SciServer but were successful at a later date/time. We suggest giving students time to sign up well in advance of their first module on SciServer in case of technical difficulties.</li>
 </ul>
-<table>
-<thead>
-<tr class="header">
-<th align="left">3A-1. Paste final poster figure and code below:</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><br></td>
-</tr>
-</tbody>
-</table>
-<p><br></p>
 </div>
 </div>
 <hr>
@@ -564,8 +419,8 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
           </div>
         </div>
       </div>
-<a href="activity---exploring-16s-rrna-data-with-phyloseq-1.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="try-it-question-2---do-diet-age-gender-and-levels-of-metabolites-correlate-with-microbe-variation-between-individuals.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="join-sciserver.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="running-modules-on-sciserver.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
