@@ -8,7 +8,7 @@ ottrpal::set_knitr_image_path()
 <!-- AnVIL -->
 
 ```{r, echo=FALSE, results='asis'}
-ottrpal::borrow_chapter(
+borrow_chapter(
   doc_path = "anvil.md",
   repo_name = "sayumiyork/c-moor-ottr-generic"
 )
@@ -18,7 +18,7 @@ ottrpal::borrow_chapter(
 <!-- SciServer -->
 
 ```{r, echo=FALSE, results='asis'}
-ottrpal::borrow_chapter(
+borrow_chapter(
   doc_path = "sciserver.md",
   repo_name = "sayumiyork/c-moor-ottr-generic"
 )
