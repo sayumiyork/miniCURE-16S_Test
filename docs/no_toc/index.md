@@ -1,5 +1,5 @@
 ---
-title: "Course Name"
+title: "miniCURE: Human Gut 16S rRNA "
 date: "July 25, 2025"
 site: bookdown::bookdown_site
 documentclass: book

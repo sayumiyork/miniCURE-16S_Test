@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>8.5 Try it Question 2 - What are some of the most abundant microbes when viewed at different taxonomic resolutions | miniCURE: Human Gut 16S rRNA</title>
+  <title>4.4 Running a module on AnVIL | miniCURE: Human Gut 16S rRNA</title>
   <meta name="description" content="Description about Course/Book." />
   <meta name="generator" content="bookdown 0.41 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="8.5 Try it Question 2 - What are some of the most abundant microbes when viewed at different taxonomic resolutions | miniCURE: Human Gut 16S rRNA" />
+  <meta property="og:title" content="4.4 Running a module on AnVIL | miniCURE: Human Gut 16S rRNA" />
   <meta property="og:type" content="book" />
   
   <meta property="og:description" content="Description about Course/Book." />
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="8.5 Try it Question 2 - What are some of the most abundant microbes when viewed at different taxonomic resolutions | miniCURE: Human Gut 16S rRNA" />
+  <meta name="twitter:title" content="4.4 Running a module on AnVIL | miniCURE: Human Gut 16S rRNA" />
   
   <meta name="twitter:description" content="Description about Course/Book." />
   
@@ -29,8 +29,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   <link rel="shortcut icon" href="assets/dasl_favicon.ico" type="image/x-icon" />
-<link rel="prev" href="try-it-question-1---what-has-more-impact-on-human-microbial-variation-diet-or-individuality.html"/>
-<link rel="next" href="try-it-question-3---does-gender-contribute-to-individual-microbiome-variation.html"/>
+<link rel="prev" href="set-up-billing-in-anvil.html"/>
+<link rel="next" href="scientific-literature.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -411,224 +411,99 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <div class="hero-image-container"> 
   <img class= "hero-image" src="assets/C-MOOR_Template/dasl_thin_main_image.png">
 </div>
-<div id="try-it-question-2---what-are-some-of-the-most-abundant-microbes-when-viewed-at-different-taxonomic-resolutions" class="section level2 hasAnchor" number="8.5">
-<h2><span class="header-section-number">8.5</span> Try it Question 2 - What are some of the most abundant microbes when viewed at different taxonomic resolutions<a href="try-it-question-2---what-are-some-of-the-most-abundant-microbes-when-viewed-at-different-taxonomic-resolutions.html#try-it-question-2---what-are-some-of-the-most-abundant-microbes-when-viewed-at-different-taxonomic-resolutions" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Approach: Plot progressively lower level taxa for all individuals, subsetting most abundant from each rank.</p>
-<div id="step-2a.-plot-phyla-across-all-subjects-and-identify-the-most-abundant-phyla.-specifically-your-plot-should-show-phyla-diversity-across-all-21-individuals." class="section level3 hasAnchor" number="8.5.1">
-<h3><span class="header-section-number">8.5.1</span> Step 2A. Plot Phyla across all subjects and identify the most abundant Phyla.** Specifically, your plot should show Phyla diversity across all 21 individuals.<a href="try-it-question-2---what-are-some-of-the-most-abundant-microbes-when-viewed-at-different-taxonomic-resolutions.html#step-2a.-plot-phyla-across-all-subjects-and-identify-the-most-abundant-phyla.-specifically-your-plot-should-show-phyla-diversity-across-all-21-individuals." class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<ul>
-<li><p>Refer to the “Explore 16S rRNA Data with phyloseq” tutorial for help using the plot_bar() function.</p></li>
-<li><p>Use the following code as a template:</p></li>
-</ul>
-<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="try-it-question-2---what-are-some-of-the-most-abundant-microbes-when-viewed-at-different-taxonomic-resolutions.html#cb3-1" tabindex="-1"></a><span class="fu">plot_bar</span>(miso, <span class="st">&quot;fill in the blank&quot;</span>, <span class="at">fill =</span> <span class="st">&quot;fill in the blank&quot;</span>, <span class="at">title =</span> <span class="st">&quot;choose a name for your graph&quot;</span>) <span class="sc">+</span> <span class="fu">geom_bar</span>(<span class="fu">aes</span>(<span class="at">color =</span> fill <span class="cf">in</span> the blank, <span class="at">fill =</span> fill <span class="cf">in</span> the blank), <span class="at">stat =</span> <span class="st">&quot;identity&quot;</span>, <span class="at">position =</span> <span class="st">&quot;stack&quot;</span>)</span></code></pre></div>
-<table>
-<thead>
-<tr class="header">
-<th align="left">2A-1. Insert the resulting plot below:</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><br></td>
-</tr>
-</tbody>
-</table>
-<p><br></p>
-<table>
-<thead>
-<tr class="header">
-<th align="left">2A-2. Enter the name of the most abundant Phyla below:</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><br></td>
-</tr>
-</tbody>
-</table>
-<p><br></p>
+<div id="running-a-module-on-anvil" class="section level2 hasAnchor" number="4.4">
+<h2><span class="header-section-number">4.4</span> Running a module on AnVIL<a href="running-a-module-on-anvil.html#running-a-module-on-anvil" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><img src="anvil-run-module_files/figure-docx//11wb3b7i9SwrDX_WO3mWNAycd2mbY4Moy8SuT0X3XvXo_g3709d9ac459_0_250.png" style="width:100.0%" /></p>
+<div id="purpose-2" class="section level4 hasAnchor" number="4.4.0.1">
+<h4><span class="header-section-number">4.4.0.1</span> Purpose<a href="running-a-module-on-anvil.html#purpose-2" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>In this section we will go over how to run C-MOOR modules on AnVIL. First we will need to clone the workspace that correlates to the research project we want to do (RNA-seq or 16S). We will only need to do this step once. Then we will go over how to create an RStudio environment in that workspace to run the module and properly end a session on AnVIL to prevent runaway costs.</p>
 </div>
-<div id="step-2b.-subset-the-most-abundant-phyla-and-plot-order-skip-class" class="section level3 hasAnchor" number="8.5.2">
-<h3><span class="header-section-number">8.5.2</span> Step 2B. Subset the most abundant Phyla, and plot Order (Skip Class)<a href="try-it-question-2---what-are-some-of-the-most-abundant-microbes-when-viewed-at-different-taxonomic-resolutions.html#step-2b.-subset-the-most-abundant-phyla-and-plot-order-skip-class" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<ul>
-<li><p>Refer to the “Subset taxonomy” section of the “Explore 16S rRNA Data with phyloseq” tutorial for help using the subset_taxa and plot_bar() functions.</p></li>
-<li><p>Use the following code as a template:</p></li>
-</ul>
-<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="try-it-question-2---what-are-some-of-the-most-abundant-microbes-when-viewed-at-different-taxonomic-resolutions.html#cb4-1" tabindex="-1"></a>subset <span class="ot">=</span> <span class="fu">subset_taxa</span>(miso, Phylum <span class="sc">==</span> <span class="st">&quot;fill in the blank&quot;</span>)</span>
-<span id="cb4-2"><a href="try-it-question-2---what-are-some-of-the-most-abundant-microbes-when-viewed-at-different-taxonomic-resolutions.html#cb4-2" tabindex="-1"></a><span class="fu">plot_bar</span>(subset, <span class="st">&quot;subject&quot;</span>, <span class="at">fill =</span> <span class="st">&quot;Order&quot;</span>, <span class="at">title =</span> <span class="st">&quot;choose a name for your graph&quot;</span>) <span class="sc">+</span> </span>
-<span id="cb4-3"><a href="try-it-question-2---what-are-some-of-the-most-abundant-microbes-when-viewed-at-different-taxonomic-resolutions.html#cb4-3" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="fu">aes</span>(<span class="at">color =</span> <span class="st">&quot;fill in the blank&quot;</span>, <span class="at">fill =</span> <span class="st">&quot;fill in the blank&quot;</span>), <span class="at">stat =</span> <span class="st">&quot;identity&quot;</span>, <span class="at">position =</span> <span class="st">&quot;stack&quot;</span>)</span></code></pre></div>
-<table>
-<thead>
-<tr class="header">
-<th align="left">2B-1. Insert the resulting plot below:</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><br></td>
-</tr>
-</tbody>
-</table>
-<p><br></p>
-<table>
-<thead>
-<tr class="header">
-<th align="left">2A-2. Enter the name of the most abundant Order below:</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><br></td>
-</tr>
-</tbody>
-</table>
-<p><br></p>
-<div id="step-2c.-subset-the-most-abundant-order-and-plot-associated-family" class="section level4 hasAnchor" number="8.5.2.1">
-<h4><span class="header-section-number">8.5.2.1</span> Step 2C. Subset the most abundant Order, and plot associated Family<a href="try-it-question-2---what-are-some-of-the-most-abundant-microbes-when-viewed-at-different-taxonomic-resolutions.html#step-2c.-subset-the-most-abundant-order-and-plot-associated-family" class="anchor-section" aria-label="Anchor link to header"></a></h4>
-<ul>
-<li><p>Refer to the “Subset taxonomy” section of the “Explore 16S rRNA Data with phyloseq” tutorial for help using the subset_taxa and plot_bar() functions.</p></li>
-<li><p>Use the following code as a template:</p></li>
-</ul>
-<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="try-it-question-2---what-are-some-of-the-most-abundant-microbes-when-viewed-at-different-taxonomic-resolutions.html#cb5-1" tabindex="-1"></a>subset <span class="ot">=</span> <span class="fu">subset_taxa</span>(miso, Order <span class="sc">==</span> <span class="st">&quot;fill in the blank&quot;</span>)</span>
-<span id="cb5-2"><a href="try-it-question-2---what-are-some-of-the-most-abundant-microbes-when-viewed-at-different-taxonomic-resolutions.html#cb5-2" tabindex="-1"></a><span class="fu">plot_bar</span>(subset, <span class="st">&quot;fill in the blank&quot;</span>, <span class="at">fill =</span> <span class="st">&quot;Family&quot;</span>, <span class="at">title =</span> <span class="st">&quot;choose a name for your graph&quot;</span>) <span class="sc">+</span> </span>
-<span id="cb5-3"><a href="try-it-question-2---what-are-some-of-the-most-abundant-microbes-when-viewed-at-different-taxonomic-resolutions.html#cb5-3" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="fu">aes</span>(<span class="at">color =</span> fill <span class="cf">in</span> the blank, <span class="at">fill =</span> fill <span class="cf">in</span> the blank), <span class="at">stat =</span> <span class="st">&quot;identity&quot;</span>, <span class="at">position =</span> <span class="st">&quot;stack&quot;</span>)</span></code></pre></div>
-<table>
-<thead>
-<tr class="header">
-<th align="left">2C-1. Insert the resulting plot below:</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><br></td>
-</tr>
-</tbody>
-</table>
-<p><br></p>
-<table>
-<thead>
-<tr class="header">
-<th align="left">2C-2. Enter the name of the most abundant Family below:</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><br></td>
-</tr>
-</tbody>
-</table>
-<p><br></p>
+<div id="learning-objectives-2" class="section level4 hasAnchor" number="4.4.0.2">
+<h4><span class="header-section-number">4.4.0.2</span> Learning Objectives<a href="running-a-module-on-anvil.html#learning-objectives-2" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<ol style="list-style-type: decimal">
+<li>Clone a public workspace for the research project you want to do (RNA-seq or 16S)</li>
+<li>Launch a module through the cloned workspace</li>
+<li>Close out a session on AnVIL properly to prevent runaway costs</li>
+</ol>
 </div>
-<div id="step-2d.-subset-most-abundant-family-and-plot-associated-genus" class="section level4 hasAnchor" number="8.5.2.2">
-<h4><span class="header-section-number">8.5.2.2</span> Step 2D. Subset most abundant Family, and plot associated Genus<a href="try-it-question-2---what-are-some-of-the-most-abundant-microbes-when-viewed-at-different-taxonomic-resolutions.html#step-2d.-subset-most-abundant-family-and-plot-associated-genus" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<div id="what-is-a-workspace" class="section level3 hasAnchor" number="4.4.1">
+<h3><span class="header-section-number">4.4.1</span> What is a workspace?<a href="running-a-module-on-anvil.html#what-is-a-workspace" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>The workspace is the heart of AnVIL. Here are some key points about workspaces:</p>
 <ul>
-<li><p>Refer to the “Subset taxonomy” section of the “Explore 16S rRNA Data with phyloseq” tutorial for help using the subset_taxa and plot_bar() functions.</p></li>
-<li><p>Use the following code as a template:</p></li>
+<li>Every workspace comes with its own Google Bucket (our cloud storage). Your bucket will be empty.</li>
+<li>Every workspace has its own billing project. Students who are not yet associated with a billing project will not be able to compute on their workspace.</li>
+<li>We can control access levels of users and set them either as owners, writers, or readers. Students will be writers with compute access.</li>
 </ul>
-<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="try-it-question-2---what-are-some-of-the-most-abundant-microbes-when-viewed-at-different-taxonomic-resolutions.html#cb6-1" tabindex="-1"></a>subset <span class="ot">=</span> <span class="fu">subset_taxa</span>(miso, Family <span class="sc">==</span> <span class="st">&quot;fill in the blank&quot;</span>)</span>
-<span id="cb6-2"><a href="try-it-question-2---what-are-some-of-the-most-abundant-microbes-when-viewed-at-different-taxonomic-resolutions.html#cb6-2" tabindex="-1"></a><span class="fu">plot_bar</span>(subset, <span class="st">&quot;fill in the blank&quot;</span>, <span class="at">fill =</span> <span class="st">&quot;Genus&quot;</span>, <span class="at">title =</span> <span class="st">&quot;choose a name for your graph&quot;</span>) <span class="sc">+</span> </span>
-<span id="cb6-3"><a href="try-it-question-2---what-are-some-of-the-most-abundant-microbes-when-viewed-at-different-taxonomic-resolutions.html#cb6-3" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="fu">aes</span>(<span class="at">color =</span> fill <span class="cf">in</span> the blank, <span class="at">fill =</span> fill <span class="cf">in</span> the blank), <span class="at">stat =</span> <span class="st">&quot;identity&quot;</span>, <span class="at">position =</span> <span class="st">&quot;stack&quot;</span>)</span></code></pre></div>
-<table>
-<thead>
-<tr class="header">
-<th align="left">2D-1. Insert the resulting plot below:</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><br></td>
-</tr>
-</tbody>
-</table>
-<p><br></p>
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">2D-2. Enter the name of the most abundant Genus of your chosen Family below:</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><br></td>
-</tr>
-</tbody>
-</table>
-<p><br></p>
 </div>
-<div id="step-2e.-subset-the-most-abundant-genus-and-plot-associated-species" class="section level4 hasAnchor" number="8.5.2.3">
-<h4><span class="header-section-number">8.5.2.3</span> Step 2E. Subset the most abundant Genus, and plot associated Species<a href="try-it-question-2---what-are-some-of-the-most-abundant-microbes-when-viewed-at-different-taxonomic-resolutions.html#step-2e.-subset-the-most-abundant-genus-and-plot-associated-species" class="anchor-section" aria-label="Anchor link to header"></a></h4>
-<ul>
-<li><p>Refer to the “Subset taxonomy” section of the “Explore 16S rRNA Data with phyloseq” tutorial for help using the subset_taxa and plot_bar() functions.</p></li>
-<li><p>Use the following code as a template:</p></li>
-</ul>
-<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="try-it-question-2---what-are-some-of-the-most-abundant-microbes-when-viewed-at-different-taxonomic-resolutions.html#cb7-1" tabindex="-1"></a>subset <span class="ot">=</span> <span class="fu">subset_taxa</span>(miso, Genus <span class="sc">==</span> <span class="st">&quot;fill in the blank&quot;</span>)</span>
-<span id="cb7-2"><a href="try-it-question-2---what-are-some-of-the-most-abundant-microbes-when-viewed-at-different-taxonomic-resolutions.html#cb7-2" tabindex="-1"></a><span class="fu">plot_bar</span>(subset, <span class="st">&quot;fill in the blank&quot;</span>, <span class="at">fill =</span> <span class="st">&quot;fill in the blank&quot;</span>, <span class="at">title =</span> <span class="st">&quot;choose a name for your graph&quot;</span>) <span class="sc">+</span> </span>
-<span id="cb7-3"><a href="try-it-question-2---what-are-some-of-the-most-abundant-microbes-when-viewed-at-different-taxonomic-resolutions.html#cb7-3" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="fu">aes</span>(<span class="at">color =</span> fill <span class="cf">in</span> the blank, <span class="at">fill =</span> fill <span class="cf">in</span> the blank), <span class="at">stat =</span> <span class="st">&quot;identity&quot;</span>, <span class="at">position =</span> <span class="st">&quot;stack&quot;</span>)</span></code></pre></div>
-<ul>
-<li><p>Note, given the many different Species associated with an abundant Genus, we may need to reduce the legend text and key size in order to visualize the plot better.</p></li>
-<li><p>You can do so by adding the following lines of code:</p></li>
-</ul>
-<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="try-it-question-2---what-are-some-of-the-most-abundant-microbes-when-viewed-at-different-taxonomic-resolutions.html#cb8-1" tabindex="-1"></a><span class="fu">theme</span>(<span class="at">legend.text=</span><span class="fu">element_text</span>(<span class="at">size=</span><span class="dv">6</span>)) <span class="sc">+</span> </span>
-<span id="cb8-2"><a href="try-it-question-2---what-are-some-of-the-most-abundant-microbes-when-viewed-at-different-taxonomic-resolutions.html#cb8-2" tabindex="-1"></a><span class="fu">theme</span>(<span class="at">legend.key.size =</span> <span class="fu">unit</span>(<span class="dv">6</span>, <span class="st">&quot;pt&quot;</span>))</span></code></pre></div>
-<table>
-<thead>
-<tr class="header">
-<th align="left">2E-1. Insert the resulting plot below:</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><br></td>
-</tr>
-</tbody>
-</table>
-<p><br></p>
-<table>
-<thead>
-<tr class="header">
-<th align="left">2E-2. Enter the name of the some of the most abundant species below:</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><br></td>
-</tr>
-</tbody>
-</table>
-<p><br></p>
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">2E-3. After looking through all your plots, summarize your conclusion regarding individual microbiome composition diversity. Explain what reasoning led you to your conclusion.</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><br></td>
-</tr>
-</tbody>
-</table>
-<p><br></p>
-<p>A suggestion for your poster:</p>
-<ul>
-<li><p>Combine 4 plots into a single Figure showing your subsetting of the most abundant Order, Family, Genus, and Species. Skip showing Phyla because the group working on Activity 1 will have Phyla data and show a plot for that. Include title and short figure description (figure legend).</p></li>
-<li><p>Paste the code you used to generate your final figure(s) below:</p></li>
-</ul>
-<table>
-<tbody>
-<tr class="odd">
-<td align="left"><br></td>
-</tr>
-</tbody>
-</table>
+<div id="clone-a-workspace-on-anvil" class="section level3 hasAnchor" number="4.4.2">
+<h3><span class="header-section-number">4.4.2</span> Clone a workspace on AnVIL<a href="running-a-module-on-anvil.html#clone-a-workspace-on-anvil" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><strong>We only have to do this once.</strong></p>
+<p>Follow the written steps below or refer to the <a href="https://docs.google.com/presentation/d/11wb3b7i9SwrDX_WO3mWNAycd2mbY4Moy8SuT0X3XvXo/edit?usp=sharing">slides</a> or video guide.</p>
+<ol style="list-style-type: decimal">
+<li>While logged into AnVIL, using the hamburger icon in the top left corner of the screen, navigate to the workspaces page</li>
+<li>Select the public tab</li>
+<li>Search for the desired workspace. Your instructor will tell you which workspace to look for (miniCURE-RNA-seq or miniCURE-16S-Human_Gut).</li>
+<li>Click on the more options icon on the right side of the desired workspace and click clone</li>
+<li>Give the cloned workspace a unique name, such as by adding your initials or last name. All workspaces must have unique names; if someone has already taken the workspace name you initially wanted, please try a different name.</li>
+<li>Confirm the billing project is the one your instructor has chosen.</li>
+<li>The rest of the options should be left as is. Clone the workspace. It may take a few minutes to clone.</li>
+</ol>
+<p><mark><strong>You only have to clone the workspace once. From now on, use your cloned workspace.</strong></mark> After you clone the workspace you will automatically be directed to it. For all other times, your workspaces can be found using the hamburger icon in the top left.</p>
+</div>
+<div id="running-modules-on-anvil" class="section level3 hasAnchor" number="4.4.3">
+<h3><span class="header-section-number">4.4.3</span> Running modules on AnVIL<a href="running-a-module-on-anvil.html#running-modules-on-anvil" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="starting-a-module-on-anvil" class="section level4 hasAnchor" number="4.4.3.1">
+<h4><span class="header-section-number">4.4.3.1</span> Starting a module on AnVIL<a href="running-a-module-on-anvil.html#starting-a-module-on-anvil" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>When you open the workspace, you will be on the dashboard tab by default. The dashboard contains the instructions on how to use the workspace, links to C-MOOR websites, and the startup script.</p>
+<ol style="list-style-type: decimal">
+<li><mark><strong>Copy the startup script</strong></mark>. Make sure there are no spaces before or after what you copy. This script is held in the original workspace everyone cloned. It does not have to be in your own workspace for it to work.</li>
+<li>Click on the Environment Configuration button (cloud with thunderbolt)</li>
+</ol>
+<p><img src="anvil-run-module_files/figure-docx//11wb3b7i9SwrDX_WO3mWNAycd2mbY4Moy8SuT0X3XvXo_g3709d9ac459_0_271.png" style="width:100.0%" /></p>
+<ol start="3" style="list-style-type: decimal">
+<li>In the RStudio section, click Settings</li>
+<li>In application configuration, select Legacy RStudio (R 4.4.1, Bioconductor 3.19, Python 3.10.12).</li>
+<li>In the <mark><strong>startup script field, paste the startup script</strong></mark></li>
+<li>Scroll to the bottom of the window and click “Create”.</li>
+</ol>
+<p><img src="anvil-run-module_files/figure-docx//11wb3b7i9SwrDX_WO3mWNAycd2mbY4Moy8SuT0X3XvXo_g3709d9ac459_0_275.png" style="width:100.0%" /></p>
+<p>It will take some time for the RStudio Environment to be created. You can keep track of the status of the environment based on the colored dot next to the RStudio icon. The dot will turn green when the environment is ready. While it is loading (blue), you cannot interact with it.</p>
+<p><img src="anvil-run-module_files/figure-docx//11wb3b7i9SwrDX_WO3mWNAycd2mbY4Moy8SuT0X3XvXo_g3709d9ac459_0_279.png" style="width:100.0%" /></p>
+<ol start="7" style="list-style-type: decimal">
+<li>When the environment is ready, use the Open RStudio button that will pop up. You can also access RStudio through the Analyses tab. If you hold down Ctrl as you click, you can open RStudio in a new window.</li>
+</ol>
+<p><img src="anvil-run-module_files/figure-docx//11wb3b7i9SwrDX_WO3mWNAycd2mbY4Moy8SuT0X3XvXo_g3709d9ac459_0_283.png" style="width:100.0%" /></p>
+<ol start="8" style="list-style-type: decimal">
+<li>Use the file explorer in RStudio to navigate to your module of choice. From the folder called cure-rnaseq, go to tutorials, and then the folder of the module you want.</li>
+</ol>
+<p><img src="anvil-run-module_files/figure-docx//11wb3b7i9SwrDX_WO3mWNAycd2mbY4Moy8SuT0X3XvXo_g3709d9ac459_0_287.png" style="width:100.0%" /></p>
+<ol start="9" style="list-style-type: decimal">
+<li>In the module’s directory, open the .Rmd file by double clicking its name.</li>
+</ol>
+<p><img src="anvil-run-module_files/figure-docx//11wb3b7i9SwrDX_WO3mWNAycd2mbY4Moy8SuT0X3XvXo_g3709d9ac459_0_291.png" style="width:100.0%" /></p>
+<ol start="10" style="list-style-type: decimal">
+<li>Click Run Document in the open .Rmd file</li>
+</ol>
+<p><img src="anvil-run-module_files/figure-docx//11wb3b7i9SwrDX_WO3mWNAycd2mbY4Moy8SuT0X3XvXo_g3709d9ac459_0_295.png" style="width:100.0%" /></p>
+<p><mark><strong>When you are finished, make sure you close out your session properly to prevent runaway costs!</strong></mark>.</p>
 </div>
 </div>
+<div id="closing-out-a-session-on-anvil" class="section level3 hasAnchor" number="4.4.4">
+<h3><span class="header-section-number">4.4.4</span> Closing out a session on AnVIL<a href="running-a-module-on-anvil.html#closing-out-a-session-on-anvil" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<ol style="list-style-type: decimal">
+<li>On the right side of the screen, click the Cloud Environment button. This is the Cloud with the lighting symbol.</li>
+<li>Under the RStudio section, click settings.</li>
+<li>Scroll to the bottom of the new window and click delete environment.</li>
+<li>Check <mark><strong>Delete everything, including the persistent disk or your instructor’s billing account will incur costs for storage</strong></mark>.</li>
+</ol>
+<p><img src="anvil-run-module_files/figure-docx//11wb3b7i9SwrDX_WO3mWNAycd2mbY4Moy8SuT0X3XvXo_g3709d9ac459_0_299.png" style="width:100.0%" /></p>
+
+</div>
+</div>
+<!-- </div> -->
+
+
+
 </div>
 <hr>
 <center> 
@@ -641,8 +516,8 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
           </div>
         </div>
       </div>
-<a href="try-it-question-1---what-has-more-impact-on-human-microbial-variation-diet-or-individuality.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="try-it-question-3---does-gender-contribute-to-individual-microbiome-variation.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="set-up-billing-in-anvil.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="scientific-literature.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
