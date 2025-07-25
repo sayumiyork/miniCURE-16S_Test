@@ -10,7 +10,7 @@
 
 ## Pre-lab - Scientific literature
 
-<img src="scientific-literature_files/figure-html//1dEZtb0TgLbzhbr3HxQElwg8hENur2HMIzseg19OGd0g_g33d73503c03_0_51.png" alt="Image test" width="100%" style="display: block; margin: auto;" />
+![](resources/images/scientific-literature_files/figure-docx//1dEZtb0TgLbzhbr3HxQElwg8hENur2HMIzseg19OGd0g_g33d73503c03_0_51.png){width=100%}
 
 
 ### Purpose
@@ -74,7 +74,7 @@ Read the paper [“Fecal transplant in children with Clostridioides difficile gi
 
 <!-- Perhaps this could also be generic? -->
 
-<img src="scientific-literature_files/figure-html//1mibD1XUpgRZcDPbYj5XOMUASuScuJoUBVV7RkT5nnSc_g36d36570436_0_413.png" alt="Image test" width="100%" style="display: block; margin: auto;" />
+![](resources/images/scientific-literature_files/figure-docx//1mibD1XUpgRZcDPbYj5XOMUASuScuJoUBVV7RkT5nnSc_g36d36570436_0_413.png){width=100%}
 
 [Lecture](https://docs.google.com/presentation/d/1mibD1XUpgRZcDPbYj5XOMUASuScuJoUBVV7RkT5nnSc/edit?usp=sharing)
 

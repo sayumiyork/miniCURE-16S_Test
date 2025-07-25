@@ -19,7 +19,7 @@ It's difficult to capture the mechanisms and effects of diet on the gut microbio
 
 ### MISO study diet and sampling schedule
 
-<img src="meet-MISO_files/figure-html//1dEZtb0TgLbzhbr3HxQElwg8hENur2HMIzseg19OGd0g_g33d6fd7d4b6_0_27.png" alt="Image test" width="100%" style="display: block; margin: auto;" />
+![](resources/images/meet-MISO_files/figure-docx//1dEZtb0TgLbzhbr3HxQElwg8hENur2HMIzseg19OGd0g_g33d6fd7d4b6_0_27.png){width=100%}
 
 The figure above shows the study design for the MISO study. You do not need to memorize all these details; feel free to refer to this page throughout the project:
 
@@ -38,7 +38,7 @@ The study lasts a total of 28 days. Samples from the blood, stool, and urine, ou
 
 ### MISO study variables and factors
 
-<img src="meet-MISO_files/figure-html//1dEZtb0TgLbzhbr3HxQElwg8hENur2HMIzseg19OGd0g_g33d6fd7d4b6_0_61.png" alt="Image test" width="100%" style="display: block; margin: auto;" />
+![](resources/images/meet-MISO_files/figure-docx//1dEZtb0TgLbzhbr3HxQElwg8hENur2HMIzseg19OGd0g_g33d6fd7d4b6_0_61.png){width=100%}
 
 We have a number of variables we can use in our analysis. Notice that the variables for the study and subjects are in lowercase. This is also how you will access these variables in R.
 
@@ -76,13 +76,13 @@ We have a number of variables we can use in our analysis. Notice that the variab
 
 Finally we have our microbe count data, or our *Amplicon Sequence Variants (ASVs)*. Each ASV is a unique sequences that differs by as little as a single nucleotide from other ASVs and represents a specific microbe. We have assigned taxonomy to these microbes, but not all microbes have taxonomic data through the species level. These missing fields will appear as NA in the data.
 
-<img src="meet-MISO_files/figure-html//1dEZtb0TgLbzhbr3HxQElwg8hENur2HMIzseg19OGd0g_g33d6fd7d4b6_0_136.png" alt="Image test" width="100%" style="display: block; margin: auto;" />
+![](resources/images/meet-MISO_files/figure-docx//1dEZtb0TgLbzhbr3HxQElwg8hENur2HMIzseg19OGd0g_g33d6fd7d4b6_0_136.png){width=100%}
 
 You may see the word Operational Taxonomic Unit (OTU) in phyloseq and in other published studies. **ASVs and OTUs have some differences between them but they both represent distinct units of microbial taxa**, although they have some key differences. 
 
 Each sample is associated with a count of each ASV. We can compare the counts of these ASVs between samples to determine differences in the composition of the microbiome between samples.
 
-<img src="meet-MISO_files/figure-html//1dEZtb0TgLbzhbr3HxQElwg8hENur2HMIzseg19OGd0g_g33d6fd7d4b6_0_113.png" alt="Image test" width="100%" style="display: block; margin: auto;" />
+![](resources/images/meet-MISO_files/figure-docx//1dEZtb0TgLbzhbr3HxQElwg8hENur2HMIzseg19OGd0g_g33d6fd7d4b6_0_113.png){width=100%}
 
 
 ### Footnotes
