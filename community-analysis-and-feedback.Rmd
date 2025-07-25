@@ -1,3 +1,4 @@
+
 ```{r setup, include = FALSE}
 library(cow)
 ```
@@ -5,11 +6,12 @@ library(cow)
 
 
 
-<!-- About C-MOOR -->
+<!--Community analysis and feedback -->
 
 ```{r, echo=FALSE, results='asis'}
 cow::borrow_chapter(
-  doc_path = "docs/about-c-moor.md",
+  doc_path = "docs/community-analysis-and-feedback.md",
   repo_name = "sayumiyork/c-moor-ottr-generic"
 )
 ```
+

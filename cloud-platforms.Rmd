@@ -1,0 +1,36 @@
+
+```{r setup, include = FALSE}
+library(cow)
+```
+
+# (PART\*) Setting up on a cloud platform {-}
+
+<!-- AnVIL -->
+
+```{r, echo=FALSE, results='asis'}
+cow::borrow_chapter(
+  doc_path = "docs/anvil-about.md",
+  repo_name = "sayumiyork/c-moor-ottr-generic"
+)
+```
+
+```{r, echo=FALSE, results='asis'}
+cow::borrow_chapter(
+  doc_path = "docs/anvil-make-account.md",
+  repo_name = "sayumiyork/c-moor-ottr-generic"
+)
+```
+
+```{r, echo=FALSE, results='asis'}
+cow::borrow_chapter(
+  doc_path = "docs/anvil-billing-projects.md",
+  repo_name = "sayumiyork/c-moor-ottr-generic"
+)
+```
+
+```{r, echo=FALSE, results='asis'}
+cow::borrow_chapter(
+  doc_path = "docs/anvil-run-module.md",
+  repo_name = "sayumiyork/c-moor-ottr-generic"
+)
+```
