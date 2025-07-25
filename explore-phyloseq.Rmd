@@ -15,7 +15,7 @@ ottrpal::set_knitr_image_path()
 
 ## Lecture - Exploring 16S rRNA Data with phyloseq
 
-*Estimated time: *
+*Estimated time: * 
 
 ```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "Image test"}
 
