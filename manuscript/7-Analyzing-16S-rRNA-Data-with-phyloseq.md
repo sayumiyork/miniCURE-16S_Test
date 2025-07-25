@@ -1,0 +1,7 @@
+# 7 Analyzing 16S rRNA Data with phyloseq
+ 
+{type: iframe, title:7 Analyzing 16S rRNA Data with phyloseq, width:800, height:600, poster:resources/chapt_screen_images/analyzing-16s-rrna-data-with-phyloseq.png}
+![](https://sayumiyork.github.io/miniCURE-16S_Test/analyzing-16s-rrna-data-with-phyloseq.html)
+ 
+
+ 
