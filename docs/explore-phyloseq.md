@@ -13,9 +13,9 @@
 
 ## Lecture - Exploring 16S rRNA Data with phyloseq
 
-*Estimated time: * 
+*Estimated time: *
 
-![](resources/images/explore-phyloseq_files/figure-docx//15tv_IS177gF_px3JYKcQZmOsJg2d-GkjVXi7a-Skgs8_g35f391192_00.png){width=100%}
+<img src="explore-phyloseq_files/figure-html//15tv_IS177gF_px3JYKcQZmOsJg2d-GkjVXi7a-Skgs8_g35f391192_00.png" alt="Image test" width="100%" style="display: block; margin: auto;" />
 
 [Lecture](https://docs.google.com/presentation/d/15tv_IS177gF_px3JYKcQZmOsJg2d-GkjVXi7a-Skgs8/edit?usp=sharing)
 

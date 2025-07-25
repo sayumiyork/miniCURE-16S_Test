@@ -7,7 +7,7 @@
 
 
 
-# Meet the MISO study
+# Reference - Meet the MISO study
 
 Let's get prepared to do some research using 16S rRNA data! In this section, we'll be exploring data from *Impact of a 7-day homogeneous diet on interpersonal variation in human gut microbiomes and metabolomes* by Guthrie et al. (2022). This study is one of many that explores the relationship between diet and the human gut microbiome and will help familiarize us with the format that 16S rRNA data takes. We'll start slow and look at just a few lines of data in Google Sheets and then use phyloseq and DESeq2 in R to take our analysis to the next level.
 
@@ -19,7 +19,7 @@ It's difficult to capture the mechanisms and effects of diet on the gut microbio
 
 ### MISO study diet and sampling schedule
 
-![](resources/images/meet-MISO_files/figure-docx//1dEZtb0TgLbzhbr3HxQElwg8hENur2HMIzseg19OGd0g_g33d6fd7d4b6_0_27.png){width=100%}
+<img src="meet-MISO_files/figure-html//1dEZtb0TgLbzhbr3HxQElwg8hENur2HMIzseg19OGd0g_g33d6fd7d4b6_0_27.png" alt="Image test" width="100%" style="display: block; margin: auto;" />
 
 The figure above shows the study design for the MISO study. You do not need to memorize all these details; feel free to refer to this page throughout the project:
 
@@ -38,7 +38,7 @@ The study lasts a total of 28 days. Samples from the blood, stool, and urine, ou
 
 ### MISO study variables and factors
 
-![](resources/images/meet-MISO_files/figure-docx//1dEZtb0TgLbzhbr3HxQElwg8hENur2HMIzseg19OGd0g_g33d6fd7d4b6_0_61.png){width=100%}
+<img src="meet-MISO_files/figure-html//1dEZtb0TgLbzhbr3HxQElwg8hENur2HMIzseg19OGd0g_g33d6fd7d4b6_0_61.png" alt="Image test" width="100%" style="display: block; margin: auto;" />
 
 We have a number of variables we can use in our analysis. Notice that the variables for the study and subjects are in lowercase. This is also how you will access these variables in R.
 
@@ -76,13 +76,13 @@ We have a number of variables we can use in our analysis. Notice that the variab
 
 Finally we have our microbe count data, or our *Amplicon Sequence Variants (ASVs)*. Each ASV is a unique sequences that differs by as little as a single nucleotide from other ASVs and represents a specific microbe. We have assigned taxonomy to these microbes, but not all microbes have taxonomic data through the species level. These missing fields will appear as NA in the data.
 
-![](resources/images/meet-MISO_files/figure-docx//1dEZtb0TgLbzhbr3HxQElwg8hENur2HMIzseg19OGd0g_g33d6fd7d4b6_0_136.png){width=100%}
+<img src="meet-MISO_files/figure-html//1dEZtb0TgLbzhbr3HxQElwg8hENur2HMIzseg19OGd0g_g33d6fd7d4b6_0_136.png" alt="Image test" width="100%" style="display: block; margin: auto;" />
 
 You may see the word Operational Taxonomic Unit (OTU) in phyloseq and in other published studies. **ASVs and OTUs have some differences between them but they both represent distinct units of microbial taxa**, although they have some key differences. 
 
 Each sample is associated with a count of each ASV. We can compare the counts of these ASVs between samples to determine differences in the composition of the microbiome between samples.
 
-![](resources/images/meet-MISO_files/figure-docx//1dEZtb0TgLbzhbr3HxQElwg8hENur2HMIzseg19OGd0g_g33d6fd7d4b6_0_113.png){width=100%}
+<img src="meet-MISO_files/figure-html//1dEZtb0TgLbzhbr3HxQElwg8hENur2HMIzseg19OGd0g_g33d6fd7d4b6_0_113.png" alt="Image test" width="100%" style="display: block; margin: auto;" />
 
 
 ### Footnotes

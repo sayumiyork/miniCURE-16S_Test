@@ -1,0 +1,40 @@
+
+```{r setup, include = FALSE}
+library(cow)
+```
+
+
+
+
+<!-- Instructor Guide -->
+
+```{r, echo=FALSE, results='asis'}
+cow::borrow_chapter(
+  doc_path = "docs/instructor-guide.md",
+  repo_name = "sayumiyork/c-moor-ottr-generic"
+)
+```
+
+# Human gut 16S rRNA
+
+### Content overview
+
+### Sample Schedules
+
+### What to know
+
+### Where to get help
+
+### Grades
+
+
+### Footnotes
+
+**Contributions and Affiliations**
+
+- Valeriya Gaysinskaya, Johns Hopkins University
+- Frederick Tan, Johns Hopkins University
+- Katherine Cox, Johns Hopkins University
+- Sayumi York, Notre Dame of Maryland University
+
+Last Revised: July 2025
