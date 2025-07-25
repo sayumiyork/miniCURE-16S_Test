@@ -2,12 +2,15 @@ book_filename: "Course_Name"
 chapter_name: "Chapter "
 repo: https://github.com/sayumiyork/miniCURE-16S_Test/
 rmd_files: ["index.Rmd",
-            "introduction.Rmd",
+            "about_c-moor.Rmd",
+            "instructor-guide.Rmd",
+            "cloud-platforms.Rmd",
             "scientific-literature.Rmd",
             "meet-MISO.Rmd",
             "introducing-16S-data.Rmd",
             "explore-phyloseq.Rmd",
             "analyze-phyloseq.Rmd",
+            "community-analysis-and-feedback.Rmd",
             "About.Rmd",
             "References.Rmd"]
 new_session: yes
