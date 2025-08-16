@@ -11,6 +11,7 @@ rmd_files: ["index.Rmd",
             "explore-phyloseq.Rmd",
             "analyze-phyloseq.Rmd",
             "community-analysis-and-feedback.Rmd",
+            "resources.Rmd",
             "About.Rmd",
             "References.Rmd"]
 new_session: yes
