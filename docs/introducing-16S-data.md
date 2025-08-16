@@ -15,7 +15,7 @@ In this section we will look at 16S data in a spreadsheet via Google Sheets. We 
 
 *Estimated time: *
 
-![](resources/images/introducing-16S-data_files/figure-docx//14E26SbzaLEDJxAaZ1qjaZcJehAI8q2GHuTokNPKKDTc_g35f391192_00.png){width=100%}
+![](introducing-16S-data_files/figure-docx//14E26SbzaLEDJxAaZ1qjaZcJehAI8q2GHuTokNPKKDTc_g35f391192_00.png){width=100%}
 
 [Lecture](https://docs.google.com/presentation/d/14E26SbzaLEDJxAaZ1qjaZcJehAI8q2GHuTokNPKKDTc/edit?usp=sharing)
 

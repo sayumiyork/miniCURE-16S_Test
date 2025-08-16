@@ -15,7 +15,7 @@
 
 *Estimated time: *
 
-![](resources/images/analyze-phyloseq_files/figure-docx//1QZbSBPOGkBeizh1L45C6EaktOxl6pqrTDGNIncHQ5lY_g35f391192_00.png){width=100%}
+![](analyze-phyloseq_files/figure-docx//1QZbSBPOGkBeizh1L45C6EaktOxl6pqrTDGNIncHQ5lY_g35f391192_00.png){width=100%}
 
 [Lecture](https://docs.google.com/presentation/d/1QZbSBPOGkBeizh1L45C6EaktOxl6pqrTDGNIncHQ5lY/edit?usp=sharing)
 

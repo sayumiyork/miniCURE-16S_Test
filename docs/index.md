@@ -1,6 +1,6 @@
 ---
 title: "miniCURE: Human Gut 16S rRNA "
-date: "July 25, 2025"
+date: "August 16, 2025"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: [book.bib]
