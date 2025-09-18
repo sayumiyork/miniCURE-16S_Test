@@ -5,8 +5,7 @@ library(cow)
 
  
 # (PART\*) Community analysis and feedback {-}
-
-<!--Community analysis and feedback -->
+# Community analysis and feedback
 
 ```{r, echo=FALSE, results='asis'}
 cow::borrow_chapter(
