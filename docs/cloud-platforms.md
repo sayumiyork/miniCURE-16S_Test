@@ -25,7 +25,7 @@ In this section, we will set up our accounts on AnVIL and go through the entire 
 
 #### Purpose
 
-You will need an account on AnVIL in order to use the platform. In this section we'll go over the specifics of account creation. 
+You will need an account on AnVIL in order to use the platform. In this section we'll go over the specifics of account creation.  
 
 #### Learning Objectives
 
