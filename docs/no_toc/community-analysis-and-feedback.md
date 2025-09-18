@@ -1,7 +1,7 @@
 
 
 
-
+ 
 
 
 <!--Community analysis and feedback -->
@@ -14,6 +14,7 @@
 
 *Estimated time: ---*
 
+<!-- change fig.align quotes from single to double -->
 ![](community-analysis-and-feedback_files/figure-docx//1-orSi8DpN22hMt9-6p_rHZnte1YXXLe-a132HDSyd0U_g35f391192_00.png){width=100%}
 
 [Scientific Posters](https://docs.google.com/presentation/d/1-orSi8DpN22hMt9-6p_rHZnte1YXXLe-a132HDSyd0U/edit?usp=sharing)
