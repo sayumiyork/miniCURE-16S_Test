@@ -3,7 +3,7 @@
 library(cow)
 ```
 
-# (PART\*) Setting up on a cloud platform  {-}
+# (PART\*) Setting up on a cloud platform {-}
 
 <!-- AnVIL --> 
 
