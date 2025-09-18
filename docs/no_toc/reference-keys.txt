@@ -165,6 +165,7 @@ step-1.-plot-alpha-diversity-based-on-age-for-all-dietary-groups-and-then-for-bd
 step-2.-perform-differential-abundance-analysis-comparing-hd-to-bd-for-the-population-in-general-and-then-for-older-individuals-specifically-because-older-individuals-produced-the-biggest-dietage-interaction-based-on-alpha-diversity.
 step-2b.-perform-differential-abundance-analysis-between-hd-and-bd-for-older-individual-50-yo.
 step-3.-select-data-for-poster-and-include-the-code-used-to-generate-the-figure.-1
+community-analysis-and-feedback
 lecture---scientific-posters
 activity---scientific-posters
 activity-1
