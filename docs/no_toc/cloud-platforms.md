@@ -123,7 +123,7 @@ For more information on how to control computing charges, please see the Terra g
 
 
 ## Running a module on AnVIL
-
+<!-- change fig.align quotes from single to double -->
 ![](anvil-run-module_files/figure-docx//11wb3b7i9SwrDX_WO3mWNAycd2mbY4Moy8SuT0X3XvXo_g3709d9ac459_0_250.png){width=100%}
 
 #### Purpose
