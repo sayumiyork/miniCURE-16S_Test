@@ -10,31 +10,27 @@ library(cow)
 ```{r, echo=FALSE, results='asis'}
 cow::borrow_chapter(
   doc_path = "anvil-about.Rmd",
-  repo_name = "sayumiyork/c-moor-ottr-generic",
-  remove_h1 = TRUE
+  repo_name = "sayumiyork/c-moor-ottr-generic"
 )
 ```
 
 ```{r, echo=FALSE, results='asis'}
 cow::borrow_chapter(
   doc_path = "anvil-make-account.Rmd",
-  repo_name = "sayumiyork/c-moor-ottr-generic",
-  remove_h1 = TRUE
+  repo_name = "sayumiyork/c-moor-ottr-generic"
 )
 ```
 
 ```{r, echo=FALSE, results='asis'}
 cow::borrow_chapter(
   doc_path = "anvil-billing-projects.Rmd",
-  repo_name = "sayumiyork/c-moor-ottr-generic",
-  remove_h1 = TRUE
+  repo_name = "sayumiyork/c-moor-ottr-generic"
 )
 ```
 
 ```{r, echo=FALSE, results='asis'}
 cow::borrow_chapter(
   doc_path = "anvil-run-module.Rmd",
-  repo_name = "sayumiyork/c-moor-ottr-generic",
-  remove_h1 = TRUE
+  repo_name = "sayumiyork/c-moor-ottr-generic"
 )
 ```
