@@ -6,6 +6,60 @@
 # Community analysis and feedback
 
 
+```
+## Warning: Chunk option fig.align is not supported for docx output
+## Warning: Chunk option fig.align is not supported for docx output
+```
+
+```
+## Warning: Chunk option fig.alt is not supported for docx output
+```
+
+```
+## Warning: Chunk option fig.align is not supported for docx output
+```
+
+```
+## Warning: Chunk option fig.alt is not supported for docx output
+```
+
+```
+## Warning: Chunk option fig.align is not supported for docx output
+```
+
+```
+## Warning: Chunk option fig.alt is not supported for docx output
+```
+
+```
+## Warning: Chunk option fig.align is not supported for docx output
+```
+
+```
+## Warning: Chunk option fig.alt is not supported for docx output
+```
+
+```
+## Warning: Chunk option fig.align is not supported for docx output
+```
+
+```
+## Warning: Chunk option fig.alt is not supported for docx output
+```
+
+```
+## Warning: Chunk option fig.align is not supported for docx output
+```
+
+```
+## Warning: Chunk option fig.alt is not supported for docx output
+## Warning: Chunk option fig.alt is not supported for docx output
+## Warning: Chunk option fig.alt is not supported for docx output
+## Warning: Chunk option fig.alt is not supported for docx output
+## Warning: Chunk option fig.alt is not supported for docx output
+```
+
+
 <!-- Set up code -->
 
 
