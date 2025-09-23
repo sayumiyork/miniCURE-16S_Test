@@ -17,7 +17,7 @@
 
 <!-- change fig.align quotes from single to double and remove fig alt-->
 
-![](community-analysis-and-feedback_files/figure-docx//1-orSi8DpN22hMt9-6p_rHZnte1YXXLe-a132HDSyd0U_g35f391192_00.png){width=100%}
+<img src="community-analysis-and-feedback_files/figure-html//1-orSi8DpN22hMt9-6p_rHZnte1YXXLe-a132HDSyd0U_g35f391192_00.png" width="100%" style="display: block; margin: auto;" />
 
 [Scientific Posters](https://docs.google.com/presentation/d/1-orSi8DpN22hMt9-6p_rHZnte1YXXLe-a132HDSyd0U/edit?usp=sharing)
 
@@ -154,13 +154,13 @@ Last Revised: April 2025
 
 Now that you've finished your C-MOOR project, how do you close out your research experience or take it further? In this section we'll explore how to publicize and use your experience to help build your professional career.
 
-![](community-analysis-and-feedback_files/figure-docx//1hYKF7Ss3vJ8rrUIH7ByNh1BUlRa2fhsJhq8MXzEowCc_g344ad28629a_0_229.png){width=100%}
+<img src="community-analysis-and-feedback_files/figure-html//1hYKF7Ss3vJ8rrUIH7ByNh1BUlRa2fhsJhq8MXzEowCc_g344ad28629a_0_229.png" alt="Image test" width="100%" style="display: block; margin: auto;" />
 
 ## Lecture - Next Steps
 
 *Estimated time: ---*
 
-![](community-analysis-and-feedback_files/figure-docx//1PMvZ19kSTK2ghdgLNFRS_t5p8R_GKFNbExPRxMsE1Ns_g35f391192_00.png){width=100%}
+<img src="community-analysis-and-feedback_files/figure-html//1PMvZ19kSTK2ghdgLNFRS_t5p8R_GKFNbExPRxMsE1Ns_g35f391192_00.png" alt="Image test" width="100%" style="display: block; margin: auto;" />
 
 [Slides: Next Steps](https://docs.google.com/presentation/d/1PMvZ19kSTK2ghdgLNFRS_t5p8R_GKFNbExPRxMsE1Ns/edit?usp=sharing)
 
@@ -283,7 +283,7 @@ The two invited speakers for the Microbial Mysteries CURE Spring 2025 at the JHU
 1. Dr. Karina Gutiérrez-García
 2. Dr. Leah Guthrie
 
-![](community-analysis-and-feedback_files/figure-docx//1hYKF7Ss3vJ8rrUIH7ByNh1BUlRa2fhsJhq8MXzEowCc_g344ad28629a_0_263.png){width=100%}
+<img src="community-analysis-and-feedback_files/figure-html//1hYKF7Ss3vJ8rrUIH7ByNh1BUlRa2fhsJhq8MXzEowCc_g344ad28629a_0_263.png" alt="Image test" width="100%" style="display: block; margin: auto;" />
 
 For each speaker, students were asked to prepare by completing the Science Talks Activities.
 
@@ -372,7 +372,7 @@ A: You can, however we suggest being explicit in your experience and add the lev
 
 ## C-MOOR Scholars
 
-![](community-analysis-and-feedback_files/figure-docx//1dI8-_iVqbkzNMf11M4dK85E8ZW3OyZECs_YwMKw5fhs_g362a06a915d_2_4.png){width=100%}
+<img src="community-analysis-and-feedback_files/figure-html//1dI8-_iVqbkzNMf11M4dK85E8ZW3OyZECs_YwMKw5fhs_g362a06a915d_2_4.png" alt="Image test" width="100%" style="display: block; margin: auto;" />
 
 C-MOOR Scholars are research clubs that function as an extension of the C-MOOR curriculum. You can explore techniques and concepts from modules you've yet to take to learn about different approaches we can use to explore different questions through genomics, connect with other scholars and mentors, and experience the climate of a research lab. 
 
@@ -408,7 +408,7 @@ Meet the C-MOOR Scholars and learn how you can support them
 
 Perhaps you're interested in pursuing research beyond what C-MOOR currently provides. Maybe you're more interested in wet lab work, or a specific model organism. We encourage you to try all sorts of different opportunities even if you feel totally comfortable working with C-MOOR so you can better understand what kind of roles suit you best. This section serves as a guide for some common jumping off points to find outside research opportunities.
 
-![](community-analysis-and-feedback_files/figure-docx//1dI8-_iVqbkzNMf11M4dK85E8ZW3OyZECs_YwMKw5fhs_g362974128df_0_98.png){width=100%}
+<img src="community-analysis-and-feedback_files/figure-html//1dI8-_iVqbkzNMf11M4dK85E8ZW3OyZECs_YwMKw5fhs_g362974128df_0_98.png" alt="Image test" width="100%" style="display: block; margin: auto;" />
 
 ### Research opportunities at your institution
 
@@ -445,7 +445,7 @@ Don't be surprised if it takes the researcher a while to get back to you or if t
 
 This section is primarily geared toward instructors as students will be able to get access to the BioDIGS data through their local C-MOOR Scholars chapter.
 
-![](community-analysis-and-feedback_files/figure-docx//1dI8-_iVqbkzNMf11M4dK85E8ZW3OyZECs_YwMKw5fhs_g362a06a915d_2_10.png){width=100%}
+<img src="community-analysis-and-feedback_files/figure-html//1dI8-_iVqbkzNMf11M4dK85E8ZW3OyZECs_YwMKw5fhs_g362a06a915d_2_10.png" alt="Image test" width="100%" style="display: block; margin: auto;" />
 
 **What is BioDIGS?**: [BioDIGS](biodigs.org) is a project from the Genomic Data Science Community Network (GDSCN), which aims to characterize the microbiome of soil throughout sites in the US while connecting scientists to research. 
 
@@ -463,11 +463,11 @@ Below is a sampling of some discussion forums that you may find useful:
 - [support.bioconductor.org](https://support.bioconductor.org){target="_blank"} for all things R/Bioconductor
 - [help.anvilproject.org](https://help.anvilproject.org){target="_blank"} for interactions with the GDSCN BioDIGS consortium [https://biodigs.org/#home](https://biodigs.org/#home)
 
-![](community-analysis-and-feedback_files/figure-docx//1fH9s5OLcRF5meZtFWTJe89RFvJSh125kdjhdqp5smqA_g302b08c5e6e_0_16.png)
+<img src="community-analysis-and-feedback_files/figure-html//1fH9s5OLcRF5meZtFWTJe89RFvJSh125kdjhdqp5smqA_g302b08c5e6e_0_16.png" width="480" />
 
-![](community-analysis-and-feedback_files/figure-docx//1fH9s5OLcRF5meZtFWTJe89RFvJSh125kdjhdqp5smqA_g302b08c5e6e_0_5.png)
+<img src="community-analysis-and-feedback_files/figure-html//1fH9s5OLcRF5meZtFWTJe89RFvJSh125kdjhdqp5smqA_g302b08c5e6e_0_5.png" width="480" />
 
-![](community-analysis-and-feedback_files/figure-docx//1fH9s5OLcRF5meZtFWTJe89RFvJSh125kdjhdqp5smqA_g302b08c5e6e_0_22.png)
+<img src="community-analysis-and-feedback_files/figure-html//1fH9s5OLcRF5meZtFWTJe89RFvJSh125kdjhdqp5smqA_g302b08c5e6e_0_22.png" width="480" />
 
-![](community-analysis-and-feedback_files/figure-docx//1fH9s5OLcRF5meZtFWTJe89RFvJSh125kdjhdqp5smqA_g302b08c5e6e_0_12.png)
+<img src="community-analysis-and-feedback_files/figure-html//1fH9s5OLcRF5meZtFWTJe89RFvJSh125kdjhdqp5smqA_g302b08c5e6e_0_12.png" width="480" />
 
