@@ -9,28 +9,28 @@ library(cow)
 
 ```{r, echo=FALSE, results='asis'}
 cow::borrow_chapter(
-  doc_path = "docs/anvil-about.md",
+  doc_path = "anvil-about.Rmd",
   repo_name = "sayumiyork/c-moor-ottr-generic"
 )
 ```
 
 ```{r, echo=FALSE, results='asis'}
 cow::borrow_chapter(
-  doc_path = "docs/anvil-make-account.md",
+  doc_path = "anvil-make-account.Rmd",
   repo_name = "sayumiyork/c-moor-ottr-generic"
 )
 ```
 
 ```{r, echo=FALSE, results='asis'}
 cow::borrow_chapter(
-  doc_path = "docs/anvil-billing-projects.md",
+  doc_path = "anvil-billing-projects.Rmd",
   repo_name = "sayumiyork/c-moor-ottr-generic"
 )
 ```
 
 ```{r, echo=FALSE, results='asis'}
 cow::borrow_chapter(
-  doc_path = "docs/anvil-run-module.md",
+  doc_path = "anvil-run-module.Rmd",
   repo_name = "sayumiyork/c-moor-ottr-generic"
 )
 ```
