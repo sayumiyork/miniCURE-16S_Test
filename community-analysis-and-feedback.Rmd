@@ -10,7 +10,7 @@ library(cow)
 
 ```{r, echo=FALSE, results='asis'}
 cow::borrow_chapter(
-  doc_path = "docs/community-analysis-and-feedback.md",
+  doc_path = "community-analysis-and-feedback.Rmd",
   repo_name = "sayumiyork/c-moor-ottr-generic"
 )
 ```
