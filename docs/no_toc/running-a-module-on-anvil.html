@@ -410,7 +410,7 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <div id="running-a-module-on-anvil" class="section level2 hasAnchor" number="4.4">
 <h2><span class="header-section-number">4.4</span> Running a module on AnVIL<a href="running-a-module-on-anvil.html#running-a-module-on-anvil" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <!-- change fig.align quotes from single to double -->
-<p><img src="anvil-run-module_files/figure-docx//11wb3b7i9SwrDX_WO3mWNAycd2mbY4Moy8SuT0X3XvXo_g3709d9ac459_0_250.png" style="width:100.0%" /></p>
+<p><img src="cloud-platforms_files/figure-html/11wb3b7i9SwrDX_WO3mWNAycd2mbY4Moy8SuT0X3XvXo_g3709d9ac459_0_250.png" width="100%" style="display: block; margin: auto;" /></p>
 <div id="purpose-2" class="section level4 hasAnchor" number="4.4.0.1">
 <h4><span class="header-section-number">4.4.0.1</span> Purpose<a href="running-a-module-on-anvil.html#purpose-2" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>In this section we will go over how to run C-MOOR modules on AnVIL. First we will need to clone the workspace that correlates to the research project we want to do (RNA-seq or 16S). We will only need to do this step once. Then we will go over how to create an RStudio environment in that workspace to run the module and properly end a session on AnVIL to prevent runaway costs.</p>
@@ -436,14 +436,14 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <h3><span class="header-section-number">4.4.2</span> Clone a workspace on AnVIL<a href="running-a-module-on-anvil.html#clone-a-workspace-on-anvil" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p><strong>We only have to do this once.</strong></p>
 <p>Follow the written steps below or refer to the <a href="https://docs.google.com/presentation/d/11wb3b7i9SwrDX_WO3mWNAycd2mbY4Moy8SuT0X3XvXo/edit?usp=sharing">slides</a> or video guide.</p>
-<p><img src="anvil-run-module_files/figure-docx//11wb3b7i9SwrDX_WO3mWNAycd2mbY4Moy8SuT0X3XvXo_g3709d9ac459_0_263.png" style="width:100.0%" /></p>
+<p><img src="cloud-platforms_files/figure-html/11wb3b7i9SwrDX_WO3mWNAycd2mbY4Moy8SuT0X3XvXo_g3709d9ac459_0_263.png" width="100%" style="display: block; margin: auto;" /></p>
 <ol style="list-style-type: decimal">
 <li>While logged into AnVIL, using the hamburger icon in the top left corner of the screen, navigate to the workspaces page</li>
 <li>Select the public tab</li>
 <li>Search for the desired workspace. Your instructor will tell you which workspace to look for (miniCURE-RNA-seq or miniCURE-16S-microbiome).</li>
 <li>Click on the more options icon on the right side of the desired workspace and click clone</li>
 </ol>
-<p><img src="anvil-run-module_files/figure-docx//11wb3b7i9SwrDX_WO3mWNAycd2mbY4Moy8SuT0X3XvXo_g3709d9ac459_0_267.png" style="width:100.0%" /></p>
+<p><img src="cloud-platforms_files/figure-html/11wb3b7i9SwrDX_WO3mWNAycd2mbY4Moy8SuT0X3XvXo_g3709d9ac459_0_267.png" width="100%" style="display: block; margin: auto;" /></p>
 <ol start="5" style="list-style-type: decimal">
 <li>Give the cloned workspace a unique name, such as by adding your initials or last name. All workspaces must have unique names; if someone has already taken the workspace name you initially wanted, please try a different name.</li>
 <li>Confirm the billing project is the one your instructor has chosen.</li>
@@ -456,13 +456,13 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <div id="starting-a-module-on-anvil" class="section level4 hasAnchor" number="4.4.3.1">
 <h4><span class="header-section-number">4.4.3.1</span> Starting a module on AnVIL<a href="running-a-module-on-anvil.html#starting-a-module-on-anvil" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>When you open the workspace, you will be on the dashboard tab by default. The dashboard contains the instructions on how to use the workspace, links to C-MOOR websites, and the startup script. Let’s try running a module.</p>
-<p><img src="anvil-run-module_files/figure-docx//11wb3b7i9SwrDX_WO3mWNAycd2mbY4Moy8SuT0X3XvXo_g3709d9ac459_0_271.png" style="width:100.0%" /></p>
+<p><img src="cloud-platforms_files/figure-html/11wb3b7i9SwrDX_WO3mWNAycd2mbY4Moy8SuT0X3XvXo_g3709d9ac459_0_271.png" width="100%" style="display: block; margin: auto;" /></p>
 <ol style="list-style-type: decimal">
 <li><p>Take note of the container image for the custom environment. We recommend copying this to a word document or notepad. Make sure there are no spaces before or after what you copy. You will need to input this URL soon.</p></li>
 <li><p>Take note of the startup script. Make sure there are no spaces before or after what you copy. This script is held in the original workspace everyone cloned. It does not have to be in your own workspace for it to work. You will need to input this URL soon.</p></li>
 <li><p>Click on the Environment Configuration button , the cloud with a thunderbolt.</p></li>
 </ol>
-<p><img src="anvil-run-module_files/figure-docx//11wb3b7i9SwrDX_WO3mWNAycd2mbY4Moy8SuT0X3XvXo_g3709d9ac459_0_275.png" style="width:100.0%" /></p>
+<p><img src="cloud-platforms_files/figure-html/11wb3b7i9SwrDX_WO3mWNAycd2mbY4Moy8SuT0X3XvXo_g3709d9ac459_0_275.png" width="100%" style="display: block; margin: auto;" /></p>
 <ol start="4" style="list-style-type: decimal">
 <li><p>In the RStudio section, click Settings.</p></li>
 <li><p><mark>Make sure you have the following settings matching these instructions. Under Application configuration, choose “Custom environment”. In the container image field that appears, paste the container image URL that we copied earlier from the workspace. The URL should end with Bioconductor 3.19.1. In the startup script field, paste the URL for the startup script. This URL contains the words C-MOOR Startup Script. </mark></p></li>
@@ -470,21 +470,21 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <li><p>Confirm that the cloud compute cost is 20 cents per hour. If it is not 20 cents per hour, reselect CPUs and memory allocation in part 6. This is a known bug in AnVIL at the writing of this guide.</p></li>
 <li><p>Scroll to the bottom of the window and click “Create”.</p></li>
 </ol>
-<p><img src="anvil-run-module_files/figure-docx//11wb3b7i9SwrDX_WO3mWNAycd2mbY4Moy8SuT0X3XvXo_g3709d9ac459_0_279.png" style="width:100.0%" /></p>
+<p><img src="cloud-platforms_files/figure-html/11wb3b7i9SwrDX_WO3mWNAycd2mbY4Moy8SuT0X3XvXo_g3709d9ac459_0_279.png" width="100%" style="display: block; margin: auto;" /></p>
 <p>It will take some time for the RStudio Environment to be created. You can keep track of the status of the environment based on the colored dot next to the RStudio icon. The dot will turn green when the environment is ready. While it is loading (blue), you cannot interact with it.</p>
-<p><img src="anvil-run-module_files/figure-docx//11wb3b7i9SwrDX_WO3mWNAycd2mbY4Moy8SuT0X3XvXo_g3709d9ac459_0_283.png" style="width:100.0%" /></p>
+<p><img src="cloud-platforms_files/figure-html/11wb3b7i9SwrDX_WO3mWNAycd2mbY4Moy8SuT0X3XvXo_g3709d9ac459_0_283.png" width="100%" style="display: block; margin: auto;" /></p>
 <ol start="9" style="list-style-type: decimal">
 <li>When the environment is ready, use the Open RStudio button that will pop up. You can also access RStudio through the Analyses tab. If you hold down Ctrl as you click, you can open RStudio in a new window.</li>
 </ol>
-<p><img src="anvil-run-module_files/figure-docx//11wb3b7i9SwrDX_WO3mWNAycd2mbY4Moy8SuT0X3XvXo_g3709d9ac459_0_287.png" style="width:100.0%" /></p>
+<p><img src="cloud-platforms_files/figure-html/11wb3b7i9SwrDX_WO3mWNAycd2mbY4Moy8SuT0X3XvXo_g3709d9ac459_0_287.png" width="100%" style="display: block; margin: auto;" /></p>
 <ol start="10" style="list-style-type: decimal">
 <li>Use the file explorer in RStudio to navigate to your module of choice. From the folder called cure-rnaseq, go to tutorials, and then the folder of the module you want.</li>
 </ol>
-<p><img src="anvil-run-module_files/figure-docx//11wb3b7i9SwrDX_WO3mWNAycd2mbY4Moy8SuT0X3XvXo_g3709d9ac459_0_291.png" style="width:100.0%" /></p>
+<p><img src="cloud-platforms_files/figure-html/11wb3b7i9SwrDX_WO3mWNAycd2mbY4Moy8SuT0X3XvXo_g3709d9ac459_0_291.png" width="100%" style="display: block; margin: auto;" /></p>
 <ol start="11" style="list-style-type: decimal">
 <li>In the module’s directory, open the .Rmd file by double clicking its name.</li>
 </ol>
-<p><img src="anvil-run-module_files/figure-docx//11wb3b7i9SwrDX_WO3mWNAycd2mbY4Moy8SuT0X3XvXo_g3709d9ac459_0_295.png" style="width:100.0%" /></p>
+<p><img src="cloud-platforms_files/figure-html/11wb3b7i9SwrDX_WO3mWNAycd2mbY4Moy8SuT0X3XvXo_g3709d9ac459_0_295.png" width="100%" style="display: block; margin: auto;" /></p>
 <ol start="12" style="list-style-type: decimal">
 <li>Click Run Document in the open .Rmd file</li>
 </ol>
@@ -493,7 +493,7 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 </div>
 <div id="closing-out-a-session-on-anvil" class="section level3 hasAnchor" number="4.4.4">
 <h3><span class="header-section-number">4.4.4</span> Closing out a session on AnVIL<a href="running-a-module-on-anvil.html#closing-out-a-session-on-anvil" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p><img src="anvil-run-module_files/figure-docx//11wb3b7i9SwrDX_WO3mWNAycd2mbY4Moy8SuT0X3XvXo_g3709d9ac459_0_299.png" style="width:100.0%" /></p>
+<p><img src="cloud-platforms_files/figure-html/11wb3b7i9SwrDX_WO3mWNAycd2mbY4Moy8SuT0X3XvXo_g3709d9ac459_0_299.png" alt="The status of the RStudio Environment." width="100%" style="display: block; margin: auto;" /></p>
 <ol style="list-style-type: decimal">
 <li>On the right side of the screen, click the Cloud Environment button. This is the Cloud with the lighting symbol.</li>
 <li>Under the RStudio section, click settings.</li>

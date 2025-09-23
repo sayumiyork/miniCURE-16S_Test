@@ -21,7 +21,7 @@ In this section, we will set up our accounts on AnVIL and go through the entire 
 
 ## Sign up for an AnVIL account
 
-![](anvil-make-account_files/figure-docx//1uwlG7uaTOnItdpd4Ll6nNQiBJKBivsvR-erupicAwJM_g3709d9ac459_0_250.png){width=100%}
+<img src="cloud-platforms_files/figure-html//1uwlG7uaTOnItdpd4Ll6nNQiBJKBivsvR-erupicAwJM_g3709d9ac459_0_250.png" width="100%" style="display: block; margin: auto;" />
 
 #### Purpose
 
@@ -38,7 +38,7 @@ You will need an account on AnVIL in order to use the platform. In this section 
 Follow the written steps below or refer to the [slides](https://docs.google.com/presentation/d/1uwlG7uaTOnItdpd4Ll6nNQiBJKBivsvR-erupicAwJM/edit?usp=sharing) or video guide.
 
 
-![](anvil-make-account_files/figure-docx//1uwlG7uaTOnItdpd4Ll6nNQiBJKBivsvR-erupicAwJM_g3709d9ac459_0_299.png){width=100%}
+<img src="cloud-platforms_files/figure-html//1uwlG7uaTOnItdpd4Ll6nNQiBJKBivsvR-erupicAwJM_g3709d9ac459_0_299.png" width="100%" style="display: block; margin: auto;" />
 
 1. Open [anvil.terra.bio](https://anvil.terra.bio/) in <mark> **Google Chrome** </mark>. Google Chrome is the only officially supported web browser for AnIVL. Because of this, while you can run AnVIL in other browsers you strongly suggest using Chrome.
     a. It is a good idea to bookmark this page so that you can easily access it throughout the course.
@@ -46,7 +46,7 @@ Follow the written steps below or refer to the [slides](https://docs.google.com/
 1. Click "Sign in"
 
 
-![](anvil-make-account_files/figure-docx//1uwlG7uaTOnItdpd4Ll6nNQiBJKBivsvR-erupicAwJM_g36368ab83bf_0_2.png){width=100%}
+<img src="cloud-platforms_files/figure-html//1uwlG7uaTOnItdpd4Ll6nNQiBJKBivsvR-erupicAwJM_g36368ab83bf_0_2.png" alt="'Test'" width="100%" style="display: block; margin: auto;" />
 
 4. Click "Sign in with Google".
 5. Sign in with a <mark>**Google associated email address**</mark> such as an institutional email that uses Gmail or a personal Gmail account. You must use a Google associated email address to gain access to Google Cloud computing resources. 
@@ -59,7 +59,7 @@ Follow the written steps below or refer to the [slides](https://docs.google.com/
 
 <mark>**This section is only for instructors. Students do NOT have to set up billing**</mark>
 
-![](anvil-billing-projects_files/figure-docx//1yyH3DZb8Et19galJhNPiUnCevrFRC1acvMG2PB52FCo_g3709d9ac459_0_250.png){width=100%}
+<img src="cloud-platforms_files/figure-html//1yyH3DZb8Et19galJhNPiUnCevrFRC1acvMG2PB52FCo_g3709d9ac459_0_250.png" alt="test1" width="100%" style="display: block; margin: auto;" />
 
 AnVIL will charge you for computing costs; as of the writing of this guide, the cost for running RStudio with the default settings is \$0.06 per hour. RStudio will also cost \$0.01 per hour while paused and not in use. Additionally, the persistent storage the environment comes with (50GB) costs \$2.00 per month if not deleted.
 
@@ -81,7 +81,7 @@ We will learn about the billing structure of AnVIL and how to attach users to bi
 
 ### What is a billing project?
 
-![](anvil-billing-projects_files/figure-docx//1yyH3DZb8Et19galJhNPiUnCevrFRC1acvMG2PB52FCo_g37166799c0e_0_6.png){width=100%}
+<img src="cloud-platforms_files/figure-html//1yyH3DZb8Et19galJhNPiUnCevrFRC1acvMG2PB52FCo_g37166799c0e_0_6.png" alt="test2." width="100%" style="display: block; margin: auto;" />
 
 A billing project is used to connect a workspace - where students will be executing code - to a billing account, which is where your actual payment information is stored. As you can see in the above diagram, a billing account can have multiple billing projects, and each billing project can be used by multiple workspaces. 
 
@@ -92,7 +92,7 @@ We suggest each student uses their own workspace and attaching all those workspa
 
 Follow the written steps below or refer to the [slides](https://docs.google.com/presentation/d/1yyH3DZb8Et19galJhNPiUnCevrFRC1acvMG2PB52FCo/edit?usp=sharing) or video guide.
 
-![](anvil-billing-projects_files/figure-docx//1yyH3DZb8Et19galJhNPiUnCevrFRC1acvMG2PB52FCo_g37166799c0e_0_90.png){width=100%}
+<img src="cloud-platforms_files/figure-html//1yyH3DZb8Et19galJhNPiUnCevrFRC1acvMG2PB52FCo_g37166799c0e_0_90.png" alt="test3" width="100%" style="display: block; margin: auto;" />
 
 1. Access billing by clicking on the hamburger icon in the top left corner of the window, click on your name, and select billing. That brings you to your billing projects page.
 1. On the billing project you’d like to use, click on the Members tab.
@@ -102,7 +102,7 @@ Follow the written steps below or refer to the [slides](https://docs.google.com/
 ### Using groups to manage classes
 
 
-![](anvil-billing-projects_files/figure-docx//1yyH3DZb8Et19galJhNPiUnCevrFRC1acvMG2PB52FCo_g37166799c0e_0_17.png){width=100%}
+<img src="cloud-platforms_files/figure-html//1yyH3DZb8Et19galJhNPiUnCevrFRC1acvMG2PB52FCo_g37166799c0e_0_17.png" alt="test4" width="100%" style="display: block; margin: auto;" />
 
 If you have a lot of students and classes, you may find it helpful to organize your students with groups. Everyone in the group is controlled by a single email address.
 
@@ -124,7 +124,7 @@ For more information on how to control computing charges, please see the Terra g
 
 ## Running a module on AnVIL
 <!-- change fig.align quotes from single to double -->
-![](anvil-run-module_files/figure-docx//11wb3b7i9SwrDX_WO3mWNAycd2mbY4Moy8SuT0X3XvXo_g3709d9ac459_0_250.png){width=100%}
+<img src="cloud-platforms_files/figure-html//11wb3b7i9SwrDX_WO3mWNAycd2mbY4Moy8SuT0X3XvXo_g3709d9ac459_0_250.png" width="100%" style="display: block; margin: auto;" />
 
 #### Purpose
 
@@ -151,14 +151,14 @@ The workspace is the heart of AnVIL. Here are some key points about workspaces:
 
 Follow the written steps below or refer to the [slides](https://docs.google.com/presentation/d/11wb3b7i9SwrDX_WO3mWNAycd2mbY4Moy8SuT0X3XvXo/edit?usp=sharing) or video guide.
 
-![](anvil-run-module_files/figure-docx//11wb3b7i9SwrDX_WO3mWNAycd2mbY4Moy8SuT0X3XvXo_g3709d9ac459_0_263.png){width=100%}
+<img src="cloud-platforms_files/figure-html//11wb3b7i9SwrDX_WO3mWNAycd2mbY4Moy8SuT0X3XvXo_g3709d9ac459_0_263.png" width="100%" style="display: block; margin: auto;" />
 
 1. While logged into AnVIL, using the hamburger icon in the top left corner of the screen, navigate to the workspaces page
 2. Select the public tab
 3. Search for the desired workspace. Your instructor will tell you which workspace to look for (miniCURE-RNA-seq or miniCURE-16S-microbiome).
 4. Click on the more options icon on the right side of the desired workspace and click clone
 
-![](anvil-run-module_files/figure-docx//11wb3b7i9SwrDX_WO3mWNAycd2mbY4Moy8SuT0X3XvXo_g3709d9ac459_0_267.png){width=100%}
+<img src="cloud-platforms_files/figure-html//11wb3b7i9SwrDX_WO3mWNAycd2mbY4Moy8SuT0X3XvXo_g3709d9ac459_0_267.png" width="100%" style="display: block; margin: auto;" />
 
 
 5. Give the cloned workspace a unique name, such as by adding your initials or last name. All workspaces must have unique names; if someone has already taken the workspace name you initially wanted, please try a different name.
@@ -176,7 +176,7 @@ Follow the written steps below or refer to the [slides](https://docs.google.com/
 
 When you open the workspace, you will be on the dashboard tab by default. The dashboard contains the instructions on how to use the workspace, links to C-MOOR websites, and the startup script. Let’s try running a module.
 
-![](anvil-run-module_files/figure-docx//11wb3b7i9SwrDX_WO3mWNAycd2mbY4Moy8SuT0X3XvXo_g3709d9ac459_0_271.png){width=100%}
+<img src="cloud-platforms_files/figure-html//11wb3b7i9SwrDX_WO3mWNAycd2mbY4Moy8SuT0X3XvXo_g3709d9ac459_0_271.png" width="100%" style="display: block; margin: auto;" />
 
 1. Take note of the container image for the custom environment. We recommend copying this to a word document or notepad. Make sure there are no spaces before or after what you copy. You will need to input this URL soon.
 
@@ -184,7 +184,7 @@ When you open the workspace, you will be on the dashboard tab by default. The da
 
 3. Click on the Environment Configuration button , the cloud with a thunderbolt.
 
-![](anvil-run-module_files/figure-docx//11wb3b7i9SwrDX_WO3mWNAycd2mbY4Moy8SuT0X3XvXo_g3709d9ac459_0_275.png){width=100%}
+<img src="cloud-platforms_files/figure-html//11wb3b7i9SwrDX_WO3mWNAycd2mbY4Moy8SuT0X3XvXo_g3709d9ac459_0_275.png" width="100%" style="display: block; margin: auto;" />
 
 4. In the RStudio section, click Settings.
 
@@ -196,23 +196,23 @@ When you open the workspace, you will be on the dashboard tab by default. The da
 
 8. Scroll to the bottom of the window and click “Create”. 
 
-![](anvil-run-module_files/figure-docx//11wb3b7i9SwrDX_WO3mWNAycd2mbY4Moy8SuT0X3XvXo_g3709d9ac459_0_279.png){width=100%}
+<img src="cloud-platforms_files/figure-html//11wb3b7i9SwrDX_WO3mWNAycd2mbY4Moy8SuT0X3XvXo_g3709d9ac459_0_279.png" width="100%" style="display: block; margin: auto;" />
 
 It will take some time for the RStudio Environment to be created. You can keep track of the status of the environment based on the colored dot next to the RStudio icon. The dot will turn green when the environment is ready. While it is loading (blue), you cannot interact with it.
 
-![](anvil-run-module_files/figure-docx//11wb3b7i9SwrDX_WO3mWNAycd2mbY4Moy8SuT0X3XvXo_g3709d9ac459_0_283.png){width=100%}
+<img src="cloud-platforms_files/figure-html//11wb3b7i9SwrDX_WO3mWNAycd2mbY4Moy8SuT0X3XvXo_g3709d9ac459_0_283.png" width="100%" style="display: block; margin: auto;" />
 
 9. When the environment is ready, use the Open RStudio button that will pop up. You can also access RStudio through the Analyses tab. If you hold down Ctrl as you click, you can open RStudio in a new window.
 
-![](anvil-run-module_files/figure-docx//11wb3b7i9SwrDX_WO3mWNAycd2mbY4Moy8SuT0X3XvXo_g3709d9ac459_0_287.png){width=100%}
+<img src="cloud-platforms_files/figure-html//11wb3b7i9SwrDX_WO3mWNAycd2mbY4Moy8SuT0X3XvXo_g3709d9ac459_0_287.png" width="100%" style="display: block; margin: auto;" />
 
 10. Use the file explorer in RStudio to navigate to your module of choice. From the folder called cure-rnaseq, go to tutorials, and then the folder of the module you want.
 
-![](anvil-run-module_files/figure-docx//11wb3b7i9SwrDX_WO3mWNAycd2mbY4Moy8SuT0X3XvXo_g3709d9ac459_0_291.png){width=100%}
+<img src="cloud-platforms_files/figure-html//11wb3b7i9SwrDX_WO3mWNAycd2mbY4Moy8SuT0X3XvXo_g3709d9ac459_0_291.png" width="100%" style="display: block; margin: auto;" />
 
 11. In the module’s directory, open the .Rmd file by double clicking its name.
 
-![](anvil-run-module_files/figure-docx//11wb3b7i9SwrDX_WO3mWNAycd2mbY4Moy8SuT0X3XvXo_g3709d9ac459_0_295.png){width=100%}
+<img src="cloud-platforms_files/figure-html//11wb3b7i9SwrDX_WO3mWNAycd2mbY4Moy8SuT0X3XvXo_g3709d9ac459_0_295.png" width="100%" style="display: block; margin: auto;" />
 
 12. Click Run Document in the open .Rmd file
 
@@ -220,7 +220,7 @@ It will take some time for the RStudio Environment to be created. You can keep t
 
 ### Closing out a session on AnVIL
 
-![](anvil-run-module_files/figure-docx//11wb3b7i9SwrDX_WO3mWNAycd2mbY4Moy8SuT0X3XvXo_g3709d9ac459_0_299.png){width=100%}
+<img src="cloud-platforms_files/figure-html//11wb3b7i9SwrDX_WO3mWNAycd2mbY4Moy8SuT0X3XvXo_g3709d9ac459_0_299.png" alt="The status of the RStudio Environment." width="100%" style="display: block; margin: auto;" />
 
 1. On the right side of the screen, click the Cloud Environment button. This is the Cloud with the lighting symbol.
 1. Under the RStudio section, click settings.
