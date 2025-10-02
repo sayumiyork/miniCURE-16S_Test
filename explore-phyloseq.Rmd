@@ -6,7 +6,7 @@
 ottrpal::set_knitr_image_path()
 ```
 
-# Exploring 16S rRNA Data with phyloseq
+# Exploring 16S rRNA Data with phyloseq 
 
 ## Exploring 16S rRNA Data with phyloseq
 
