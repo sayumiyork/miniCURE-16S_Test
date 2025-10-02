@@ -69,9 +69,9 @@ Follow the written steps below or refer to the [slides](https://docs.google.com/
 
 4. Click "Sign in with Google".
 5. Sign in with a <mark>**Google associated email address**</mark> such as an institutional email that uses Gmail or a personal Gmail account. You must use a Google associated email address to gain access to Google Cloud computing resources. 
-6. If you are a student, share the email you used to sign up for AnVIL with your instructor following their instructions. If you are an instructor on a C-MOOR billing project, share the email you used to sign up with someone from C-MOOR. 
+6. If you are a student, share the email you used to sign up for AnVIL with your instructor following their instructions.
 
-**Until your account is associated with a billing project you will be unable to use computational resources on AnVIL.** 
+<mark>**Instructors should collect the student emails and use them in the next section, "Setting up workspaces on AnVIL." Students do not need to set up a workspace, and should proceed to the section, "Running a module on AnVIL".**</mark> 
 
 
 ```
@@ -106,67 +106,38 @@ Follow the written steps below or refer to the [slides](https://docs.google.com/
 ## Warning: Chunk option fig.alt is not supported for docx output
 ```
 
+```
+## Warning: Chunk option fig.align is not supported for docx output
+```
+
+```
+## Warning: Chunk option fig.alt is not supported for docx output
+```
 
 
-## Set up billing in AnVIL
 
-<mark>**This section is only for instructors. Students do NOT have to set up billing**</mark>
+## Setting up workspaces on AnVIL
 
-![](cloud-platforms_files/figure-docx//1yyH3DZb8Et19galJhNPiUnCevrFRC1acvMG2PB52FCo_g3709d9ac459_0_250.png){width=100%}
+<mark>**This section is only for instructors. Students do NOT have to set up workspaces.**</mark>
 
-AnVIL will charge you for computing costs; as of the writing of this guide, the cost for running RStudio with the default settings is \$0.06 per hour. RStudio will also cost \$0.01 per hour while paused and not in use. Additionally, the persistent storage the environment comes with (50GB) costs \$2.00 per month if not deleted.
+![](cloud-platforms_files/figure-docx//1uCiZDAwgh1iM5XPlpbK5uz7oVBujmimUXVQaR8iGuho_g368970cb22e_0_75.png){width=100%}
 
-To minimize costs, we ask students to delete their RStudio Environment and persistent disk at the end of every session. While you can also reduce the amount of CPUs and memory allotted per session this will also slow down your computation.
+Follow the written steps below or refer to the [slides](https://docs.google.com/presentation/d/1uCiZDAwgh1iM5XPlpbK5uz7oVBujmimUXVQaR8iGuho/edit?usp=sharing) or video guide.
 
-We will not go over setting up a Google billing account which you will need to setting up a billing project on AnVIL. For assistance with setting up your billing account we suggest refering to the Terra (the platform on which AnVIL runs) [guide to billing](https://support.terra.bio/hc/en-us/articles/360048632271-Terra-costs-and-billing-GCP-details) and speaking with your institution’s information technology and finance departments. 
 
 #### Purpose
 
-We will learn about the billing structure of AnVIL and how to attach users to billing projects. We will then cover how to create groups on AnVIL which you may find helpful in organizing billing.
+We will learn about managing students using groups and how to clone a copy of the C-MOOR workspaces for each section of a given class.
 
 #### Learning Objectives
 
-1. Distinguish between a billing account and a billing project
-1. Understand how billing projects are connected to workspaces
-1. Add users to a billing project
 1. Learn how to create groups that can be used to control users' access 
+1. Clone the workspace of your chosen C-MOOR curriculum for each section of your class
+1. Simultaneously add students of that section to the chosen workspace
 
+### A note to instructors on billing
 
-### What is a billing project?
-
-![](cloud-platforms_files/figure-docx//1yyH3DZb8Et19galJhNPiUnCevrFRC1acvMG2PB52FCo_g37166799c0e_0_6.png){width=100%}
-
-A billing project is used to connect a workspace - where students will be executing code - to a billing account, which is where your actual payment information is stored. As you can see in the above diagram, a billing account can have multiple billing projects, and each billing project can be used by multiple workspaces. 
-
-We suggest each student uses their own workspace and attaching all those workspaces to a billing project for the class. Currently, AnVIL only allow you to monitor costs from billing projects, not workspaces. But having different billing projects shown above for each class can help you learn how much computational resources reach class is using.
-
-
-### Adding students to a billing account
-
-Follow the written steps below or refer to the [slides](https://docs.google.com/presentation/d/1yyH3DZb8Et19galJhNPiUnCevrFRC1acvMG2PB52FCo/edit?usp=sharing) or video guide.
-
-![](cloud-platforms_files/figure-docx//1yyH3DZb8Et19galJhNPiUnCevrFRC1acvMG2PB52FCo_g37166799c0e_0_90.png){width=100%}
-
-1. Access billing by clicking on the hamburger icon in the top left corner of the window, click on your name, and select billing. That brings you to your billing projects page.
-1. On the billing project you’d like to use, click on the Members tab.
-1. Click Add users. A new window will open. You are then able to add students to the billing project with the same email they used to sign up for their AnVIL account.
-
-
-### Using groups to manage classes
-
-
-![](cloud-platforms_files/figure-docx//1yyH3DZb8Et19galJhNPiUnCevrFRC1acvMG2PB52FCo_g37166799c0e_0_17.png){width=100%}
-
-If you have a lot of students and classes, you may find it helpful to organize your students with groups. Everyone in the group is controlled by a single email address.
-
-1. Access billing by clicking on the hamburger icon in the top left corner of the window, click on your name, and select groups. This will take you to this groups page.
-1. Click Create New group. You will be prompted to give your group a unique name.
-1. Click on the name of the newly created group to enter it.
-1. Click add users. Add users to the group using the same email they used to sign up for AnVIL.
-1. You can use the group email created for the group seen on the group management page to manage everyone in that group. For example, you can add everyone in the group to a billing project by adding this group email to the billing project.
-
-
-### Preventing runaway costs
+Instructors should have a Google billing account associated with their AnVIL account on Terra. We will not cover how to set up a Google Billing Account, which is separate from and required by a billing project. For assistance with setting up your billing account we suggest refering to the Terra (the platform on which AnVIL runs) [guide to billing](https://support.terra.bio/hc/en-us/articles/360048632271-Terra-costs-and-billing-GCP-details) and speaking with your institution’s information technology and finance departments. 
 
 Our team at C-MOOR is still piloting our curriculum on AnVIL. As such, we don't have much information on the approximate cost per student. We hope to provide this data in the future. 
 
@@ -175,21 +146,48 @@ The best way to conserve costs is to <mark>make sure that students close out the
 For more information on how to control computing charges, please see the Terra guide: [How to cut off GCP charges](https://support.terra.bio/hc/en-us/articles/360042023952-Runaway-costs-How-to-cut-off-GCP-charges). 
 
 
-```
-## Warning: Chunk option fig.align is not supported for docx output
-```
+### Using groups to manage classes
 
-```
-## Warning: Chunk option fig.alt is not supported for docx output
-```
 
-```
-## Warning: Chunk option fig.align is not supported for docx output
-```
+![](cloud-platforms_files/figure-docx//1uCiZDAwgh1iM5XPlpbK5uz7oVBujmimUXVQaR8iGuho_g37166799c0e_0_17.png){width=100%}
 
-```
-## Warning: Chunk option fig.alt is not supported for docx output
-```
+We recommend you manage students and their access to workspaces through groups. When people are added to a group, they are given a new group email address that controls everyone within that group. For example, if there are 20 people in the group, all 20 are added at one time when the group email is used to give a group access to a workspace. Likewise, we recommend any management of students, such as removal or additions later in the class, be managed through the group interface.
+
+
+1. Access billing by clicking on the hamburger icon in the top left corner of the window, click on your name, and select groups. This will take you to this groups page.
+1. Click Create New group. You will be prompted to give your group a unique name.
+1. Click on the name of the newly created group to enter it.
+1. Click add users. Add users to the group using the same email they used to sign up for AnVIL.
+1. You can use the group email created for the group seen on the group management page to manage everyone in that group. For example, you can add everyone in the group to a workspace by adding this group email to the billing project.
+
+
+### Clone a workspace on AnVIL
+
+![](cloud-platforms_files/figure-docx//1uCiZDAwgh1iM5XPlpbK5uz7oVBujmimUXVQaR8iGuho_g368970cb22e_0_0.png){width=100%}
+
+The instructor will clone the workspace in AnVIL. We recommend cloning one workspace for each section you teach. Each workspace can be shared by approximately 50 students without issue. You can clone multiple workspaces for exceptionally large classes. Students in a given section will use the cloned workspace for all learning modules and the research project.
+
+
+1. While logged into AnVIL, using the hamburger icon in the top left corner of the screen, navigate to the workspaces page
+2. Select the public tab
+3. Search for the desired workspace. Your instructor will tell you which workspace to look for (miniCURE-RNA-seq or miniCURE-16S-microbiome).
+4. Click on the more options icon on the right side of the desired workspace and click clone
+
+![](cloud-platforms_files/figure-docx//1uCiZDAwgh1iM5XPlpbK5uz7oVBujmimUXVQaR8iGuho_g368970cb22e_0_147.png){width=100%}
+
+
+5. Give the cloned workspace a unique name. We recommend choosing the class and section name that the workspace is intended for.
+6. Confirm the billing project is the one you want to use. In this example, we have a billing project by semester and curriculum. All computational costs by students in the workspace will be billed ot this account.
+
+![](cloud-platforms_files/figure-docx//1uCiZDAwgh1iM5XPlpbK5uz7oVBujmimUXVQaR8iGuho_g368970cb22e_0_151.png){width=100%}
+
+7. In the sharing step, add the students to the workspace using their group email. Refer to the section on managing students with groups for more information on adding students to groups.
+8. Make the students writers.
+9. Confirm that the can compute box is checked. This allows the students to computational resources on the cloud. Without it, they won’t be able to open any modules or run any code.
+10. The other options can be left as defaults. Finish cloning the workspace.
+
+**Students should now have access to the workspace. To view your workspaces, click on the hamburger icon in the top left of the screen and go to the Workspaces tab. We recommend that any further management of people and their access to the workspaces be done by managing their group.**
+
 
 ```
 ## Warning: Chunk option fig.align is not supported for docx output
@@ -271,11 +269,10 @@ For more information on how to control computing charges, please see the Terra g
 
 #### Purpose
 
-In this section we will go over how to run C-MOOR modules on AnVIL. First we will need to clone the workspace that correlates to the research project we want to do (RNA-seq or 16S). We will only need to do this step once. Then we will go over how to create an RStudio environment in that workspace to run the module and properly end a session on AnVIL to prevent runaway costs.
+In this section we will go over how to run C-MOOR modules on AnVIL. We will go over how to create an RStudio environment in that workspace to run the module and properly end a session on AnVIL to prevent runaway costs.
 
 #### Learning Objectives
 
-1. Clone a public workspace for the research project you want to do (RNA-seq or 16S)
 1. Launch a module through the cloned workspace
 1. Close out a session on AnVIL properly to prevent runaway costs
 
@@ -287,35 +284,9 @@ The workspace is the heart of AnVIL. Here are some key points about workspaces:
 - Every workspace has its own billing project. Students who are not yet associated with a billing project will not be able to compute on their workspace.
 - We can control access levels of users and set them either as owners, writers, or readers. Students will be writers with compute access.
 
-
-### Clone a workspace on AnVIL
-
-**We only have to do this once.** 
-
-Follow the written steps below or refer to the [slides](https://docs.google.com/presentation/d/11wb3b7i9SwrDX_WO3mWNAycd2mbY4Moy8SuT0X3XvXo/edit?usp=sharing) or video guide.
-
-![](cloud-platforms_files/figure-docx//11wb3b7i9SwrDX_WO3mWNAycd2mbY4Moy8SuT0X3XvXo_g3709d9ac459_0_263.png){width=100%}
-
-1. While logged into AnVIL, using the hamburger icon in the top left corner of the screen, navigate to the workspaces page
-2. Select the public tab
-3. Search for the desired workspace. Your instructor will tell you which workspace to look for (miniCURE-RNA-seq or miniCURE-16S-microbiome).
-4. Click on the more options icon on the right side of the desired workspace and click clone
-
-![](cloud-platforms_files/figure-docx//11wb3b7i9SwrDX_WO3mWNAycd2mbY4Moy8SuT0X3XvXo_g3709d9ac459_0_267.png){width=100%}
-
-
-5. Give the cloned workspace a unique name, such as by adding your initials or last name. All workspaces must have unique names; if someone has already taken the workspace name you initially wanted, please try a different name.
-6. Confirm the billing project is the one your instructor has chosen.
-7. The rest of the options should be left as is. Clone the workspace. It may take a few minutes to clone.
-
-
-<mark>**You only have to clone the workspace once. From now on, use your cloned workspace.**</mark> After you clone the workspace you will automatically be directed to it. For all other times, your workspaces can be found using the hamburger icon in the top left.
-
-
 ### Running modules on AnVIL
 
 #### Starting a module on AnVIL
-
 
 When you open the workspace, you will be on the dashboard tab by default. The dashboard contains the instructions on how to use the workspace, links to C-MOOR websites, and the startup script. Let’s try running a module.
 
@@ -331,7 +302,7 @@ When you open the workspace, you will be on the dashboard tab by default. The da
 
 4. In the RStudio section, click Settings.
 
-5. <mark>Make sure you have the following settings matching these instructions. Under Application configuration, choose “Custom environment”. In the container image field that appears, paste the container image URL that we copied earlier from the workspace. The URL should end with Bioconductor 3.19.1. In the startup script field, paste the URL for the startup script. This URL contains the words C-MOOR Startup Script. </mark>
+5. <mark>Make sure you have the following settings matching these instructions. Under Application configuration, choose “Custom environment”. In the container image field that appears, paste the container image URL that we copied earlier from the workspace. The URL should end with Bioconductor 3.19.1. In the startup script field, paste the URL for the startup script. This URL contains the words C-MOOR Startup Script. Set the creation timeout limit to 15 minutes. </mark>
 
 6. Select 4 CPUs and 15 gigabytes of memory. 
 
