@@ -23,7 +23,7 @@ cow::borrow_chapter(
 
 ```{r, echo=FALSE, results='asis'}
 cow::borrow_chapter(
-  doc_path = "anvil-billing-projects.Rmd",
+  doc_path = "anvil-setup-workspace.Rmd",
   repo_name = "sayumiyork/c-moor-ottr-generic"
 )
 ```
