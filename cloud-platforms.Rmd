@@ -1,6 +1,6 @@
 
 ```{r setup, include = FALSE}
-library(cow)
+library(cow) 
 ```
 
 # (PART\*) Setting up on a cloud platform {-}
