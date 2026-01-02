@@ -2,7 +2,20 @@
 ```{r setup, include = FALSE}
 library(cow)
 ```
-# (PART\*) Resources {-}
+
+```{r, echo=FALSE, results='asis'}
+cow::borrow_chapter(
+  doc_path = "spreadsheets-tutorial.Rmd",
+  repo_name = "sayumiyork/c-moor-ottr-generic"
+)
+```
+
+```{r, echo=FALSE, results='asis'}
+cow::borrow_chapter(
+  doc_path = "legends-tutorial.Rmd",
+  repo_name = "sayumiyork/c-moor-ottr-generic"
+)
+```
 
 # 16S miniCURE Guide
 
