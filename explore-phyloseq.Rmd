@@ -28,6 +28,8 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/15tv_IS177gF_px3J
 
 ## Activity - Exploring 16S rRNA Data with phyloseq
 
+#### Purpose
+
 To explore bacterial diversity based on 16S rRNA gene sequencing using data from the “Impact of a 7-day homogeneous diet on interpersonal variation in human gut microbiomes and metabolomes” by Guthrie et al., 2023. This study is also referred to as the MISO study for “Microbiome Individuality and Stability Over Time” because the study aims to understand variation (or stability) of microbiomes across individuals.
 
 This activity aims to explore and profile the metagenomic diversity using the R/Bioconductor package phyloseq which leverages various R-based tools to produce publication-quality taxonomy profiling and analysis  graphics.
@@ -50,26 +52,33 @@ Explore a phyloseq object through the “Explore 16S rRNA Data with phyloseq” 
 
 Log into SciServer, click on compute, and create a new C-MOOR LearnR container. When creating a container, remember to:
 
-1. Use the “C-MOOR LearnR (Bioconductor 3.17)” image (not the Bioconductor 3.16)
-1. Check the box next to Data volume “C-MOOR Data”
-1. Start the “Explore 16S rRNA Data with phyloseq” tutorial. Visit SciServer Guides and FAQs. If you need assistance accessing the tutorial.
-1. To move through the activities click “Continue” at the bottom of the screen. When you are done with a topic, click “Next Topic” to move on.
-1. This tutorial has small boxes in which you can enter and run short lines of code to analyze the data.
+1. Access the C-MOOR Tutorials
+
+- If you are using SciServer, log into SciServer, click on compute and open your “C-MOOR LearnR” container. Visit SciServer Guides and FAQs if you need to jog your memory on how to do this.
+
+- If you are using AnVIL, log into AnVIL, navigate to your class Workspace, start up an RStudio Cloud Environment, and open RStudio. Visit the AnVIL Guides and FAQs if you need to jog your memory on how to do this. This module can be found in the “8-intro-rnaseq” folder of the “rnaseq” curriculum folder.
+
+- If you are using an alternative setup, follow the instructions provided by your instructor.
+
+2. Check the box next to Data volume “C-MOOR Data”
+3. Start the “Explore 16S rRNA Data with phyloseq” tutorial. Visit SciServer Guides and FAQs. If you need assistance accessing the tutorial.
+4. To move through the activities click “Continue” at the bottom of the screen. When you are done with a topic, click “Next Topic” to move on.
+5. This tutorial has small boxes in which you can enter and run short lines of code to analyze the data.
 
 As you work through the tutorial, take snapshots of your work and paste your answers in the grey boxes below:
 
 
-|1-1. OTU_table Exercise – Take a snapshot and paste your code and the output for the following question in the tutorial: “What is the normalized count for ASV115 in sample 10?”|
+|**1-1. OTU_table section – Take a snapshot and paste your code and the output for the following question in the tutorial: “What is the normalized count for ASV115 in sample 10?”**|
 |:--|
 | <br> |
 <br>
 
-|1-2. Visualizing Taxonomy Exercise – Take a snapshot and paste your code and the output for the following question in the tutorial: “What timepoint has the lowest proportion of phylum Verrucomicrobia?”|
+|**1-2. Visualizing Taxonomy section – Take a snapshot and paste your code and the output for the following question in the tutorial: “What timepoint has the lowest proportion of phylum Verrucomicrobia?”**|
 |:--|
 | <br> |
 <br>
 
-|1-3. Using subset_taxa() Exercise – Take a snapshot and paste your code and the output for the following question in the tutorial: “What are the 2 most abundant orders in the class Gammaproteobacteria?”|
+|**Using subset_taxa() section – Take a snapshot and paste your code and the output for the following question in the tutorial: “What are the 2 most abundant orders in the class Gammaproteobacteria?”**|
 |:--|
 | <br> |
 <br>
@@ -78,10 +87,7 @@ As you work through the tutorial, take snapshots of your work and paste your ans
 
 *Estimated time: 60 min*
 
-With your group, perform some exploratory data analysis selecting from one of the four questions below or coming up with your own question.  When you are done, copy and paste your results into the class poster.   
-[Class Poster](---)
-
-There are 4 different questions for groups to explore. Take a look at the four questions below and go to the section of your chosen question for more instructions!
+With your group, perform some exploratory data analysis selecting from one of the four questions below or coming up with your own question.  Each question has its own section with code templates for you to use below. Select a question here, then go to the page specific to your question.
 
 #### Question 1. What has more impact on human microbial variation, diet or individuality?
 
@@ -94,7 +100,7 @@ Approach: Examine high-level (Phylum) taxonomy for 5 timepoints and 21 individua
 
 #### Question 2. What are some of the most abundant microbes when viewed at different taxonomic resolutions? 
 
-Microbes within the core microbiome - the most common and abundant species across samples in a given group - are likely to be involved in key functions of the holobiont.  However, the thousands of species present in the human gut is difficult to visualize and interpret when done all at once.  One approach is the focus on the most abundant taxa at a given taxonomic rank.
+Microbes within the core microbiome - the most common and abundant species across samples in a given group - are likely to be involved in key functions of the holobiont.  Here we will explore some of the most common microbes at increasing levels of taxonomic resolution.
 
 Approach: Examine microbial composition for most abundant taxonomic ranks in the human gut of the 21 individuals. To do so, you will use progressive sub-setting of the most abundant taxonomic ranks ranging from Phylum down to Species.
 
@@ -134,8 +140,6 @@ Approach: Test if Phylum and/or species composition differs by age across the da
 
 #### Resources
 
-- [Class Poster](---)
-
 - [Google Doc](https://docs.google.com/document/d/1d1co_BVzZ1P5RuUYnPWrkB-Lvo7f4lYvahXhoCOjvIg/edit?usp=sharing)
 
 - [16S rRNA R Quick Reference](https://docs.google.com/document/d/1pYTq_U-e3Fath5yB6N9b5ic-cMynUtclkEgdojkAXwE/edit?usp=sharing)
@@ -150,8 +154,9 @@ Approach: Test if Phylum and/or species composition differs by age across the da
 
 ## Try it Question 1 - What has more impact on human microbial variation, diet or individuality
 
-Approach: Plot high level taxa (Phyla) for all timepoints and subjects and compare the plots to determine which factor has a stronger effect on microbiome composition.
+Diet is suggested to play an important role in shaping the human gut microbiome. However, other factors that are specific to an individual such as their physical fitness, metabolism, and genotype are also suspected to play a strong role. Here we will explore the impact of diet and individuality on the human gut microbiome.
 
+Approach: Plot high level taxa (Phyla) for all timepoints and subjects and compare the plots to determine which factor has a stronger effect on microbiome composition.
 
 ### Step 1A: Plot high-level taxonomy (Phylum level) for each  timepoint using the plot_bar() function.** Specifically, your plot should show Phyla diversity across all 5 timepoints. 
 
@@ -162,81 +167,89 @@ Approach: Plot high level taxa (Phyla) for all timepoints and subjects and compa
 
 ```{r, eval=FALSE}
 
-plot_bar(miso, "fill in the blank", fill = "fill in the blank", title = "choose a name for your graph") +
-  geom_bar(aes(color = fill in the blank, fill = fill in the blank), stat = "identity", position = "stack")
+plot_bar(miso, "fill in the blank", fill = "fill in the blank", title = "choose a name for your graph") + 
+geom_bar(aes(color = fill in the blank, fill = fill in the blank), stat = "identity", position = "stack")
 
 ```
 
-|1A-1. Paste figure 1A below.|
+|**1A-1. Paste figure 1A below.**|
 |:--|
 | <br> |
 <br>
 
-**1A-2. State your conclusion for  Figure 1A below.**
-
-- Include a list of the identified Phyla and their names
-- Include if you think  there is a difference between conditions and  your reasoning why or why not
-
-| |
-|:-|
+|**1A-2. Does the gut microbiome at the phyla-level look similar for the two samples within the baseline diet treatment (timepoints 1&2)?**|
+|:--|
 | <br> |
+<br>
 
-### Step 1B: Plot high-level taxonomy (Phylum level) for each individual, using only normalized homogenized diet “HD” timepoints to minimize contribution of diet to the analysis using the plot_bar() function. Specifically, your plot should show Phyla diversity across all 21 individuals at HD timepoints. 
+|**1A-3. Does the gut microbiome at the phyla-level look similar for the two samples within the homogenous diet treatment (timepoints 3&4)?**|
+|:--|
+| <br> |
+<br>
 
-- Use the command below to create a phyloseq object with only “HD” timepoints
+|**1A-4. Does the gut microbiome at the phyla-level look different between diet treatments (timepoints  1 & 2 vs. 3 & 4 vs 5?)**|
+|:--|
+| <br> |
+<br>
+
+|**1A-5 Based on what you wrote above, conclude the effect of diet on the gut microbiome at the level of phylum.**|
+|:--|
+| <br> |
+<br>
+
+
+### Step 1B: Plot high-level taxonomy (Phylum level) for each individual, using only normalized homogenized diet “HD” timepoints to minimize contribution of diet to the analysis using the plot_bar() function. 
 
 ```{r, eval=FALSE}
-misoHD = subset_samples(miso, timepointgroup == "HD")
+misoHD = subset_samples(miso, diet == "HD")
+plot_bar(misoHD, "fill in the blank", fill = "fill in the blank", title = "choose a name for your graph") + 
+geom_bar(aes(color = fill in the blank, fill = fill in the blank), stat = "identity", position = "stack")
 ```
 
+- Specifically, your plot should show Phyla diversity across all 21 individuals at HD timepoints. 
 - Refer to the “Explore 16S rRNA Data with phyloseq” tutorial for help using the plot_bar() function.
-- Ensure your plot has a title
+- Check that your plot has a title
+- Use the command below to create a phyloseq object with only “HD” timepoints and fill in the template code to make your plot.
 
 
-|1B-1. Paste figure 1B below.|
+|**1B-1. Paste your Figure 1B below:**|
 |:--|
 | <br> |
 <br>
 
-**1B-2. State your conclusion for  Figure 1B below.**
-- Include a list of the identified Phyla and their names
-- Include if you think  there is a difference between conditions and  your reasoning why or why not
-
-| |
-|:-|
+|**1B-2. How different is the gut microbiome between subjects?**|
+|:--|
 | <br> |
+<br>
 
-A suggestion for your poster: 
-
-1. Combine plot 1A-1 and 1B-1 into a single figure. Include their titles and short figure description (figure legend).
-1. Paste the code you used to generate your final figure(s) below:
-
-| |
-|:-|
+|**1B-3. Based on this figure, what is the effect of the  individual on the gut microbiome composition at the level of phylum?** Remember, this figure contains data for subjects who were all eating the same homogenized diet. So, the effect of diet is controlled for here and we can see the effect of the individual, which encompasses their lifestyle, genetic factors, age, and unique biology.|
+|:--|
 | <br> |
+<br>
 
 ## Try it Question 2 - What are some of the most abundant microbes when viewed at different taxonomic resolutions
 
+Microbes within the core microbiome - the most common and abundant species across samples in a given group - are likely to be involved in key functions of the holobiont.  Here we will explore some of the most common microbes at increasing levels of taxonomic resolution.
+
 Approach: Plot progressively lower level taxa for all individuals, subsetting most abundant from each rank. 
 
-### Step 2A. Plot Phyla across all subjects and identify the most abundant Phyla.** Specifically, your plot should show Phyla diversity across all 21 individuals. 
+### Step 2A. Plot Phyla across all subjects and identify the most abundant Phyla. Specifically, your plot should show Phyla diversity across all 21 individuals. 
 
 - Refer to the “Explore 16S rRNA Data with phyloseq” tutorial for help using the plot_bar() function.
 
 - Use the following code as a template:
 
 ```{r, eval=FALSE}
-
-plot_bar(miso, "fill in the blank", fill = "fill in the blank", title = "choose a name for your graph") + geom_bar(aes(color = fill in the blank, fill = fill in the blank), stat = "identity", position = "stack")
-
+plot_bar(miso, "fill in the blank", fill = "fill in the blank", title = "choose a name for your graph") + 
+geom_bar(aes(color = fill in the blank, fill = fill in the blank), stat = "identity", position = "stack")
 ```
 
-|2A-1. Insert the resulting plot below:|
+|**2A-1. Insert the resulting plot below:**|
 |:--|
 | <br> |
 <br>
 
-|2A-2. Enter the name of the most abundant Phyla below:|
+|**2A-2. Enter the name of the most abundant Phyla below:**|
 |:--|
 | <br> |
 <br>
@@ -248,19 +261,17 @@ plot_bar(miso, "fill in the blank", fill = "fill in the blank", title = "choose 
 - Use the following code as a template:
 
 ```{r, eval=FALSE}
-
 subset = subset_taxa(miso, Phylum == "fill in the blank")
 plot_bar(subset, "subject", fill = "Order", title = "choose a name for your graph") + 
-  geom_bar(aes(color = "fill in the blank", fill = "fill in the blank"), stat = "identity", position = "stack")
-
+  geom_bar(aes(color = fill in the blank, fill = fill in the blank), stat = "identity", position = "stack")
 ```
 
-|2B-1. Insert the resulting plot below:|
+|**2B-1. Insert the resulting plot below. Your plot’s abundance should be more varied and less than all the previous plots you have made so far, as it is only including a subset of the overall dataset.**|
 |:--|
 | <br> |
 <br>
 
-|2A-2. Enter the name of the most abundant Order below:|
+|**2B-2. Enter the name of the most abundant Order of your chosen phylum below:**|
 |:--|
 | <br> |
 <br>
@@ -273,16 +284,16 @@ plot_bar(subset, "subject", fill = "Order", title = "choose a name for your grap
 
 ```{r, eval=FALSE}
 subset = subset_taxa(miso, Order == "fill in the blank")
-plot_bar(subset, "fill in the blank", fill = "Family", title = "choose a name for your graph") + 
+plot_bar(subset, "subject", fill = "Family", title = "choose a name for your graph") + 
   geom_bar(aes(color = fill in the blank, fill = fill in the blank), stat = "identity", position = "stack")
 ```
 
-|2C-1. Insert the resulting plot below:|
+|**2C-1. Insert the resulting plot below:**|
 |:--|
 | <br> |
 <br>
 
-|2C-2. Enter the name of the most abundant Family below:|
+|**2C-2. Enter the name of the most abundant Family below:**|
 |:--|
 | <br> |
 <br>
@@ -295,7 +306,7 @@ plot_bar(subset, "fill in the blank", fill = "Family", title = "choose a name fo
 
 ```{r, eval=FALSE}
 subset = subset_taxa(miso, Family == "fill in the blank")
-plot_bar(subset, "fill in the blank", fill = "Genus", title = "choose a name for your graph") + 
+plot_bar(subset, "subject", fill = "Genus", title = "choose a name for your graph") + 
   geom_bar(aes(color = fill in the blank, fill = fill in the blank), stat = "identity", position = "stack")
 ```
 
@@ -317,46 +328,45 @@ plot_bar(subset, "fill in the blank", fill = "Genus", title = "choose a name for
 
 ```{r, eval=FALSE}
 subset = subset_taxa(miso, Genus == "fill in the blank")
-plot_bar(subset, "fill in the blank", fill = "fill in the blank", title = "choose a name for your graph") + 
-  geom_bar(aes(color = fill in the blank, fill = fill in the blank), stat = "identity", position = "stack")
-```
-
-- Note, given the many different Species associated with an abundant Genus, we may need to reduce the legend text and key size in order to visualize the plot better. 
-
-- You can do so by adding the following lines of code:
-
-```{r, eval=FALSE}
+plot_bar(subset, "subject", fill = "Species", title = "choose a name for your graph") + 
+  geom_bar(aes(color = fill in the blank, fill = fill in the blank), stat = "identity", position = "stack")+
 theme(legend.text=element_text(size=6)) + 
 theme(legend.key.size = unit(6, "pt"))
+
 ```
 
+- Note, given the many different Species associated with an abundant Genus, we may need to reduce the legend text and key size in order to visualize the plot better. We have added some code above to help see the legend.
 
-|2E-1. Insert the resulting plot below:|
+|**2E-1. Insert the resulting plot below:**|
 |:--|
 | <br> |
 <br>
 
-|2E-2. Enter the name of the some of the most abundant species below:|
+|**2E-2. Enter the name of the some of the most abundant species below:**|
 |:--|
 | <br> |
 <br>
 
-|2E-3. After looking through all your plots, summarize your conclusion regarding individual microbiome composition diversity. Explain what reasoning led you to your conclusion.|
+|**2E-3. After looking through all your plots, summarize your conclusion regarding individual microbiome composition diversity. Explain what reasoning led you to your conclusion.**|
 |:--|
 | <br> |
 <br>
 
-A suggestion for your poster: 
-
-- Combine 4 plots into a single Figure showing your subsetting of the most abundant Order, Family, Genus, and Species. Skip showing Phyla because the group working on Activity 1 will have Phyla data and show a plot for that. Include title and short figure description (figure legend).
-
-- Paste the code you used to generate your final figure(s) below:
-
-| |
-|:-|
+|**2E-4. If an ASV is listed as NA at a given taxonomic rank, it means taxonomic information is not available at that level for that microbe. Are there are lot of ASVs with NA annotations across different levels?**|
+|:--|
 | <br> |
+<br>
+
+|**2E-5. Look up one of the species you found. How might it serve a function in the gut microbiome?**|
+|:--|
+| <br> |
+<br>
+
+
 
 ## Try it Question 3 - Does gender contribute to individual microbiome variation
+
+The biological sex of the host has been suggested to help shape or influence its gut microbiome. Some candidate microbes have been implicated in sex differences. Here we will explore the potential sex-based differences in the human gut microbiome.
 
 Approach: First survey the differences in microbiome across gender at the level of phyla and species, and identify potential candidates that may differ between males and females. Then, plot your candidates of interest  and additional candidate microbes previously associated with  gender-based variation.
 
@@ -373,14 +383,14 @@ plot_bar(miso, "fill in the blank", fill = "fill in the blank", title = "fill in
 geom_bar(aes(color = fill in the blank, fill = fill in the blank), stat = "identity", position = "stack")
 ```
 
-|3A-1. Insert the resulting plot below:|
+|**3A-1. Insert the resulting plot below:**|
 |:--|
 | <br> |
 <br>
 
-Consider any initial differences you see, then  choose one high-abundant and one low-abundant candidate Phylum that shows hints of being differentially abundant between genders.
+Consider any initial differences you see, then choose one high-abundant and one low-abundant candidate Phylum that shows hints of being differentially abundant between genders.
 
-|3A-2. Record the phylum you chose:|
+|**3A-2. Record the phylum you chose:**|
 |:--|
 | <br> |
 <br>
@@ -395,24 +405,20 @@ Consider any initial differences you see, then  choose one high-abundant and one
 subset = subset_taxa(miso, Phylum == "fill in the blank")
 
 plot_bar(subset, "fill in the blank", fill = "Species", title = "choose a name for your graph") + 
-  geom_bar(aes(color = fill in the blank, fill = fill in the blank), stat = "identity", position = "stack")
-```
-
-- Note, given the many different Species associated with an abundant Genus, we may need to reduce the legend text and key size in order to visualize the plot better. 
-
-- You can do so by adding the following lines of code:
-
-```{r, eval=FALSE}
+  geom_bar(aes(color = fill in the blank, fill = fill in the blank), stat = "identity", position = "stack")+
 theme(legend.text=element_text(size=6)) + 
 theme(legend.key.size = unit(6, "pt"))
+
 ```
 
-|3B-1. Insert the resulting plot below:|
+- We may need to reduce the legend text and key size in order to visualize the plot better. We have added some code above to help see the legend.
+
+|**3B-1. Insert the resulting plot below:**|
 |:--|
 | <br> |
 <br>
 
-|3B-2. Do you observe any differences in species based on gender?|
+|**3B-2. Do you observe any differences in species based on gender within your highly abundant phylum?**|
 |:--|
 | <br> |
 <br>
@@ -423,14 +429,21 @@ theme(legend.key.size = unit(6, "pt"))
 
 - Use the code you used in Step 3B as a template for your code
 
-|3C-1. Insert the resulting plot below:|
+- You may receive an error if you chose a phylum that has no species data (all NA). Please choose a new low abundant phylum and try again.
+
+|**3C-1. Insert the resulting plot below:**|
+|:--|
+| <br> |
+<br>
+
+|**3C-2. Do you observe any differences in species based on gender within your low abundant phylum?**|
 |:--|
 | <br> |
 <br>
 
 ### Step 3D:  Plot the individual abundance of 2 candidate microbes for gender differences based on your analysis above, and/or the curated menu of microbes below (previously associated with gender variation), with color denoting gender. 
 
-Specifically, your plot should show the chosen microbial group across 21 subjects with the bars colored by gender.
+- Specifically, your plot should show the chosen microbial group across 21 subjects with the bars colored by gender.
 
 - Refer to the “Subset taxonomy” section of the “Explore 16S rRNA Data with phyloseq” tutorial for help using the subset_taxa and  plot_bar() functions.
 
@@ -451,42 +464,35 @@ Here is the candidate list of different microbes previously implicated in  gende
 - Genus: Fusobacterium
 - Species: muciniphila 
 
-|3D-1. Insert the plot from your first chosen microbial group below:|
+|**3D-1. Insert the plot from your first chosen microbial group below. Your plot should have subjects on the x-axis, with each subject denoted as male or female by a colored bar. The height of the bars will vary.**|
 |:--|
 | <br> |
 <br>
 
-|3D-2. Insert the plot from your second chosen microbial group below:|
+|**3D-2. Insert the plot from your second chosen microbial group below: Your plot should have subjects on the x-axis, with each subject denoted as male or female by a colored bar. The height of the bars will vary.**|
 |:--|
 | <br> |
 <br>
 
-|3D-3. Based on the all graphs you made, did you identify any candidate Phylum or Species that may differ between genders?|
+|**3D-3. Based on the all graphs you made, did you identify any candidate Phylum or Species that may differ between genders?**|
 |:--|
 | <br> |
 <br>
 
-|3D-4. Based on the graphs you made, what conclusion can you make about microbiome differences  between genders? |
+|**3D-4. Based on the graphs you made, what conclusion can you make about microbiome differences  between genders? Do you think gender is connected to a difference in the gut microbiome?**|
 |:--|
 | <br> |
 <br>
 
-|3D-5. Which seems to have more effect on microbial compositions? Gender or individual subject?|
+|**3D-5. Which seems to have more effect on microbial compositions? Gender or individual subject? Are there bigger differences between genders or between individuals of the same gender?**|
 |:--|
 | <br> |
 <br>
-
-**A suggestion for your poster:** 
-- Combine the 2 plots that cover the entire dataset (3A-1 and 3B-1) and 2 plots from exploring microbial groups (3D) to make one figure summarizing your findings for gender based differences in microbial composition. 
-- Include titles and a short figure description (figure legend).
-- Paste the code you used to generate your final figure(s) below:
-
-| |
-|:-|
-| <br> |
 
 
 ## Try it Question 4 - Does age contribute to individual microbiome variation
+
+The human gut microbiome has been associated with age-related disease states, immune-system changes, and metabolic function. Here we will explore the potential microbiome changes associated with aging. 
 
 Approach: Survey the differences in microbiome across age, refining the plot to accommodate a continuous variable (age) and unequal sample sizes (some individuals in the study are the same age). Then, test if there is a shift in microbiome abundance of phyla Firmicutes and Bacteroidetes, two phyla suggested previously to change with age. 
 
@@ -505,7 +511,7 @@ plot_bar(miso, "fill in the blank", fill = "fill in the blank", title = "fill in
 geom_bar(aes(color = fill in the blank, fill = fill in the blank), stat = "identity", position = "stack")
 ```
 
-|4A-1. Insert the resulting plot below: |
+|**4A-1. Insert the resulting plot below: It will be a very unusual looking graph!**|
 |:--|
 | <br> |
 <br>
@@ -543,29 +549,31 @@ merge <- transform_sample_counts(merge, function(x) 100 * x/sum(x))
 
 ```{r, eval=FALSE}
 plot_bar(merge, x= "age", fill = "fill in the blank", title = "fill in the blank") +
-  geom_bar(aes(color = fill in the blank, fill = fill in the blank), stat = "identity", position = "stack")
-```
-
-5. If you need to decrease the size of your legend key and text to fit, add code below to your plot after adding a + to the end of the geom_bar  line:
-
-```{r, eval=FALSE}
+  geom_bar(aes(color = fill in the blank, fill = fill in the blank), stat = "identity", position = "stack")+
 theme(legend.text=element_text(size=6)) + 
 theme(legend.key.size = unit(6, "pt"))
+
 ```
 
-|4B-1. Insert the resulting plot below:|
+- We may need to reduce the legend text and key size in order to visualize the plot better. We have added some code above in light blue to help see the legend.
+
+- You will need to run all the commands in the same code chunk to produce the plot.
+
+
+|**4B-1. Insert the resulting plot below:**|
 |:--|
 | <br> |
 <br>
 
 
-|4B-2. Do you observe any candidate Phyla that changes with age?|
+|**4B-2. Do you observe any candidate Phyla that changes with age?**|
 |:--|
 | <br> |
 <br>
 
-### Step 4C. Candidate Phyla implicated in age variation include Firmicutes and Bacteroidetes. Plot these specific phyla on their own, separately, to observe any shift that occurs with age.** Use your new merged and normalized  ‘merge’ phyloseq object as input.
+### Step 4C. Candidate Phyla implicated in age variation include Firmicutes and Bacteroidetes. Plot these specific phyla on their own, separately, to observe any shift that occurs with age. 
 
+- Use your new merged and normalized ‘merge’ phyloseq object as input. This means the new code must be placed in the same code block as the previous and run together.
 - Refer to the “Subset taxonomy” section of the “Explore 16S rRNA Data with phyloseq” tutorial for help using the subset_taxa and  plot_bar() functions.
 - Use the following code as a template:
 
@@ -576,38 +584,26 @@ plot_bar(subset, "age", fill = "fill in the blank", title = "fill in the blank")
 
 ```
 
-|4C-1. Insert the plot that graphs the relationship of age to the Phylum Firmicutes below:|
+|**4C-1. Insert the plot that graphs the relationship of age to the Phylum Firmicutes below: The graph should have age on the axis, and just one color of bar that varies in height.**|
 |:--|
 | <br> |
 <br>
 
-|4C-2. Do you observe any changes in Phyla based on age?|
+|**4C-2. Do you observe any changes in Firmicutes based on age?**|
 |:--|
 | <br> |
 <br>
 
-|4C-3. Insert the plot that graphs the relationship of age to the Phylum Bacteroidetes below:|
+|**4C-3. Insert the plot that graphs the relationship of age to the Phylum Bacteroidetes below: The graph should have age on the axis, and just one color of bar that varies in height.**|
 |:--|
 | <br> |
 <br>
 
-|4C-4 Do you observe any changes in Phyla based on age?|
+|**4C-4 Do you observe any changes in Bacteroidetes based on age?**|
 |:--|
 | <br> |
 <br>
 
-|Step 4C-5: Based on the graphs you made, did you identify any candidate Phylum that may differ between genders?|
-|:--|
-| <br> |
-<br>
-
-**A suggestion for your poster:** 
-- Combine 2-4 of your plots to make one figure summarizing Phylum and Species age-based differences you observed in the MISO study. Include titles and short figure description (figure legend). 
-- Paste the code you used to generate your final figure(s) below:
-
-| |
-|:-|
-| <br> |
 
 
 
