@@ -26,7 +26,7 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/14E26SbzaLEDJxAaZ
 [Lecture](https://docs.google.com/presentation/d/14E26SbzaLEDJxAaZ1qjaZcJehAI8q2GHuTokNPKKDTc/edit?usp=sharing)
 
 
-## Activity - Introducing 16S rRNA Data Using Spreadsheets
+## Activity - Introducing 16S rRNA Data Using Spreadsheets 
 
 ### Purpose
 
