@@ -56,16 +56,14 @@ Log into SciServer, click on compute, and create a new C-MOOR LearnR container. 
 
 - If you are using SciServer, log into SciServer, click on compute and open your “C-MOOR LearnR” container. Visit SciServer Guides and FAQs if you need to jog your memory on how to do this.
 
-- If you are using AnVIL, log into AnVIL, navigate to your class Workspace, start up an RStudio Cloud Environment, and open RStudio. Visit the AnVIL Guides and FAQs if you need to jog your memory on how to do this. This module can be found in the “8-intro-rnaseq” folder of the “rnaseq” curriculum folder.
+- If you are using AnVIL, log into AnVIL, navigate to your class Workspace, start up an RStudio Cloud Environment, and open RStudio. Visit the AnVIL Guides and FAQs if you need to jog your memory on how to do this. This module can be found in the “1-explore-ps” folder of the “16s” curriculum folder.
 
 - If you are using an alternative setup, follow the instructions provided by your instructor.
 
-2. Check the box next to Data volume “C-MOOR Data”
-3. Start the “Explore 16S rRNA Data with phyloseq” tutorial. Visit SciServer Guides and FAQs. If you need assistance accessing the tutorial.
-4. To move through the activities click “Continue” at the bottom of the screen. When you are done with a topic, click “Next Topic” to move on.
-5. This tutorial has small boxes in which you can enter and run short lines of code to analyze the data.
-
-As you work through the tutorial, take snapshots of your work and paste your answers in the grey boxes below:
+2. Start the “Explore 16S rRNA Data with phyloseq” tutorial. Visit SciServer Guides and FAQs. If you need assistance accessing the tutorial.
+3. To move through the activities click “Continue” at the bottom of the screen. When you are done with a topic, click “Next Topic” to move on.
+4. This tutorial has small boxes in which you can enter and run short lines of code to analyze the data.
+5. As you work through the tutorial, take snapshots of your work and paste your answers in the grey boxes below:
 
 
 |**1-1. OTU_table section – Take a snapshot and paste your code and the output for the following question in the tutorial: “What is the normalized count for ASV115 in sample 10?”**|
