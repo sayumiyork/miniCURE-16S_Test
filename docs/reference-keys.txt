@@ -127,6 +127,7 @@ analyzing-16s-rrna-data-with-phyloseq
 analyzing-16s-rrna-data-with-phyloseq-1
 lecture---analyzing-16s-rrna-data-with-phyloseq
 activity---exploring-16s-rrna-data-with-phyloseq-1
+purpose-7
 learning-objectives-6
 introduction-3
 activity-1-analyze-16s-rrna-data-with-phyloseq-tutorial
@@ -141,11 +142,10 @@ resources-5
 contributions-and-affiliations-5
 try-it-question-1---how-sensitive-is-microbial-diversity-to-variables-like-diet-age-and-gender
 step-1a.-plot-alpha-diversity-of-the-full-miso-dataset-by-subject-individuals.
-step-1b.-plot-alpha-diversity-of-the-full-miso-dataset-by-timepointgroup.
+step-1b.-plot-alpha-diversity-of-the-full-miso-dataset-by-diet
 step-1c.-plot-alpha-diversity-of-the-full-miso-dataset-by-age.
 step-1d.-plot-alpha-diversity-of-the-full-miso-dataset-by-gender.
 step-2.-plot-alpha-diversity-of-the-full-miso-dataset-grouping-based-on-levels-for-5-different-metabolites-creatinine-pcs-is-hipp-pag.
-step-3.-select-data-for-poster-and-include-the-code-used-to-generate-the-figure.
 try-it-question-2---do-diet-age-gender-and-levels-of-metabolites-correlate-with-microbe-variation-between-individuals
 step-1.-make-a-pcoa-plot-ordinating-on-the-entire-miso-dataset-and-coloring-by-individual.-investigate-resulting-plot-shape.
 step-2.-using-the-pcoa-plot-from-step-1-above-look-for-any-correlations-between-the-shape-of-your-pcoa-plot-and-diet-gender-and-age
@@ -155,12 +155,10 @@ try-it-question-3---what-microbes-asvs-differ-between-males-and-females-and-does
 step-3a.-perform-differential-abundance-analysis-between-genders.
 step-3b.-determine-the-impact-of-younger-age-on-differential-abundance-in-males-and-females-by-subsetting-age-50-data-from-the-phyloseq-object-and-performing-deseq2-analysis-on-this-subset.
 step-3c.-determine-the-impact-of-older-age-on-differential-abundance-in-males-and-females-by-subsetting-age-50-data-from-the-phyloseq-object-and-performing-deseq2-analysis-on-this-subset.
-step-4.-select-data-for-poster-and-include-the-code-used-to-generate-the-figure
 try-it-question-4---is-there-an-interaction-between-diet-and-age-and-the-microbiome
 step-1.-plot-alpha-diversity-based-on-age-for-all-dietary-groups-and-then-for-bd-hd-and-wo.
-step-2.-perform-differential-abundance-analysis-comparing-hd-to-bd-for-the-population-in-general-and-then-for-older-individuals-specifically-because-older-individuals-produced-the-biggest-dietage-interaction-based-on-alpha-diversity.
+step-2.-perform-differential-abundance-analysis-comparing-hd-to-bd-for-the-population-in-general-and-then-for-older-individuals-specifically.
 step-2b.-perform-differential-abundance-analysis-between-hd-and-bd-for-older-individual-50-yo.
-step-3.-select-data-for-poster-and-include-the-code-used-to-generate-the-figure.-1
 community-analysis-and-feedback
 lecture---scientific-posters
 activity---scientific-posters
