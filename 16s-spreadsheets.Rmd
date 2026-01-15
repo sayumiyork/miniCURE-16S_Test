@@ -358,7 +358,7 @@ Recall that there samples 1 and 2 are from the baseline diet (BD), samples 3 and
 
 #### Resources
 
-- [Google Doc](https://docs.google.com/document/d/1GC2cwwGAQEzMCta82RUQgQvqz9OOvFyCH4ht520BTGk/edit?usp=sharing)
+- [Google Doc](https://docs.google.com/document/d/12pKSIwcVXisaf6dniyoG_AGdCQh1dG1dDwZ5s1cz92c/edit?usp=sharing)
 - [Spreadsheets 101](https://science.c-moor.org/miniCURE-16S-Microbiome/spreadsheets-101.html)
 - [‘MISO1-S02-1’](https://docs.google.com/spreadsheets/d/1hpSyjO0H8sXq6C1xM_oGMyv9vCY2qTvfYHVdqO9ZVhk/edit?usp=sharing) spreadsheet
 - [MISO_WO](https://docs.google.com/spreadsheets/d/1vD0wbxgYuDlfKA0DF2Km-N4GHL2gRoUaEN_oCrSb2jU/edit?usp=sharing) spreadsheet
