@@ -5,7 +5,7 @@ bookdown::gitbook:
   includes:
     before_body: assets/C-MOOR_Template/big-image-c-moor.html
     after_body: footer.html
-    in_header: /__w/miniCURE-16S_Test/miniCURE-16S_Test/docs/no_toc/assets/links.html
+    in_header: /__w/miniCURE-16S-Microbiome/miniCURE-16S-Microbiome/docs/no_toc/assets/links.html
   highlight: tango
   config:
     toc:

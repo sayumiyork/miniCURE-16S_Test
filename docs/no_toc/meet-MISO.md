@@ -11,7 +11,7 @@
 
 Let's get prepared to do some research using 16S rRNA data! In this section, we'll be exploring data from *Impact of a 7-day homogeneous diet on interpersonal variation in human gut microbiomes and metabolomes* by Guthrie et al. (2022). This study is one of many that explores the relationship between diet and the human gut microbiome and will help familiarize us with the format that 16S rRNA data takes. We'll start slow and look at just a few lines of data in Google Sheets and then use phyloseq and DESeq2 in R to take our analysis to the next level.
 
-Human diet has been implicated heavily in the establishment and maintenance of the gut microbiome [REFs]. For example, human babies undergo a drastic change in the gut microbiome following the transition to solid food [REF], and microbes that assist in the breakdown of seaweed are found in Japanese gut microbiomes. 
+Human diet has been implicated heavily in the establishment and maintenance of the gut microbiome. For example, human babies undergo a drastic change in the gut microbiome following the transition to solid food.
 
 <!-- REFs: Xu et al. (2015) -->
 
@@ -49,8 +49,7 @@ We have a number of variables we can use in our analysis. Notice that the variab
 |Variable|What is it?|Factors|
 |:----|--------------|----:|
 |timepoint|The 5 samplings that occur on days 0, 13, 17, 21, and 28 coded as timepoints 1 through 5|1, 2, 3, 4, 5| 
-|timepoint group|The diet the subject was on during the sampling|BD, HD, WO|
-|phase|Whether the subject was on their usual diet or the homogenized diet during sampling|non-miso, miso| 
+|diet|The diet the subject was on during the sampling|BD, HD, WO|
 
 #### Subject variables
 
