@@ -133,7 +133,6 @@ Approach: Test if Phylum and/or species composition differs by age across the da
 #### Resources
 
 - [Google Doc](https://docs.google.com/document/d/1d1co_BVzZ1P5RuUYnPWrkB-Lvo7f4lYvahXhoCOjvIg/edit?usp=sharing)
-
 - [16S rRNA R Quick Reference](https://docs.google.com/document/d/1pYTq_U-e3Fath5yB6N9b5ic-cMynUtclkEgdojkAXwE/edit?usp=sharing)
 
 #### Contributions and affiliations
@@ -218,6 +217,25 @@ geom_bar(aes(color = fill in the blank, fill = fill in the blank), stat = "ident
 |:--|
 | <br> |
 <br>
+
+
+### Grading criteria
+
+- Download the assignment to your local computer as a .docx, complete it, and upload the assignment to your LMS (Blackboard, Canvas, Google Classroom).
+
+### Footnotes
+
+#### Resources
+
+- [Google Doc](https://docs.google.com/document/d/1d1co_BVzZ1P5RuUYnPWrkB-Lvo7f4lYvahXhoCOjvIg/edit?usp=sharing)
+- [16S rRNA R Quick Reference](https://docs.google.com/document/d/1pYTq_U-e3Fath5yB6N9b5ic-cMynUtclkEgdojkAXwE/edit?usp=sharing)
+
+#### Contributions and affiliations
+
+- Valeriya Gaysinskaya, Johns Hopkins University
+- Gauri Paul, Clovis Community College
+- Frederick Tan, Johns Hopkins University
+- Sayumi York, Notre Dame of Maryland University
 
 ## Try it Question 2 - What are some of the most abundant microbes when viewed at different taxonomic resolutions
 
@@ -359,6 +377,23 @@ theme(legend.key.size = unit(6, "pt"))
 <br>
 
 
+### Grading criteria
+
+- Download the assignment to your local computer as a .docx, complete it, and upload the assignment to your LMS (Blackboard, Canvas, Google Classroom).
+
+### Footnotes
+
+#### Resources
+
+- [Google Doc](https://docs.google.com/document/d/1d1co_BVzZ1P5RuUYnPWrkB-Lvo7f4lYvahXhoCOjvIg/edit?usp=sharing)
+- [16S rRNA R Quick Reference](https://docs.google.com/document/d/1pYTq_U-e3Fath5yB6N9b5ic-cMynUtclkEgdojkAXwE/edit?usp=sharing)
+
+#### Contributions and affiliations
+
+- Valeriya Gaysinskaya, Johns Hopkins University
+- Gauri Paul, Clovis Community College
+- Frederick Tan, Johns Hopkins University
+- Sayumi York, Notre Dame of Maryland University
 
 ## Try it Question 3 - Does gender contribute to individual microbiome variation
 
@@ -488,6 +523,24 @@ Here is the candidate list of different microbes previously implicated in  gende
 <br>
 
 
+### Grading criteria
+
+- Download the assignment to your local computer as a .docx, complete it, and upload the assignment to your LMS (Blackboard, Canvas, Google Classroom).
+
+### Footnotes
+
+#### Resources
+
+- [Google Doc](https://docs.google.com/document/d/1d1co_BVzZ1P5RuUYnPWrkB-Lvo7f4lYvahXhoCOjvIg/edit?usp=sharing)
+- [16S rRNA R Quick Reference](https://docs.google.com/document/d/1pYTq_U-e3Fath5yB6N9b5ic-cMynUtclkEgdojkAXwE/edit?usp=sharing)
+
+#### Contributions and affiliations
+
+- Valeriya Gaysinskaya, Johns Hopkins University
+- Gauri Paul, Clovis Community College
+- Frederick Tan, Johns Hopkins University
+- Sayumi York, Notre Dame of Maryland University
+
 ## Try it Question 4 - Does age contribute to individual microbiome variation
 
 The human gut microbiome has been associated with age-related disease states, immune-system changes, and metabolic function. Here we will explore the potential microbiome changes associated with aging. 
@@ -605,6 +658,24 @@ plot_bar(subset, "age", fill = "fill in the blank", title = "fill in the blank")
 | <br> |
 <br>
 
+
+### Grading criteria
+
+- Download the assignment to your local computer as a .docx, complete it, and upload the assignment to your LMS (Blackboard, Canvas, Google Classroom).
+
+### Footnotes
+
+#### Resources
+
+- [Google Doc](https://docs.google.com/document/d/1d1co_BVzZ1P5RuUYnPWrkB-Lvo7f4lYvahXhoCOjvIg/edit?usp=sharing)
+- [16S rRNA R Quick Reference](https://docs.google.com/document/d/1pYTq_U-e3Fath5yB6N9b5ic-cMynUtclkEgdojkAXwE/edit?usp=sharing)
+
+#### Contributions and affiliations
+
+- Valeriya Gaysinskaya, Johns Hopkins University
+- Gauri Paul, Clovis Community College
+- Frederick Tan, Johns Hopkins University
+- Sayumi York, Notre Dame of Maryland University
 
 
 
