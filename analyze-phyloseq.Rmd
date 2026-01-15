@@ -138,13 +138,14 @@ Approach: Use alpha diversity measure and DESeq2 tools to answer this question. 
 
 ### Grading criteria
 
-- Download this assignment as Microsoft Word (.docx) and upload on Canvas
+- Download the assignment to your local computer as a .docx, complete it, and upload the assignment to your LMS (Blackboard, Canvas, Google Classroom).
 
 ### Footnotes
 
 #### Resources
 
-[Google Doc](https://docs.google.com/document/d/1OWgUwaT2MlSd-qq7wSlB3BnM-cq_GTxEyy38HV5ajoU/edit?usp=sharing)
+- [Google Doc](https://docs.google.com/document/d/1OWgUwaT2MlSd-qq7wSlB3BnM-cq_GTxEyy38HV5ajoU/edit?usp=sharing)
+- [16S rRNA R Quick Reference](https://docs.google.com/document/d/1pYTq_U-e3Fath5yB6N9b5ic-cMynUtclkEgdojkAXwE/edit?usp=sharing)
 
 #### Contributions and affiliations
 
@@ -313,6 +314,21 @@ plot_richness(miso_counts, x="fill in the blank metabolite name",
 |**2A-3. Are there any trends in alpha diversity as this metabolite increases in level?**|
 |:--|
 | <br> |
+
+
+### Footnotes
+
+#### Resources
+
+- [Google Doc](https://docs.google.com/document/d/1OWgUwaT2MlSd-qq7wSlB3BnM-cq_GTxEyy38HV5ajoU/edit?usp=sharing)
+- [16S rRNA R Quick Reference](https://docs.google.com/document/d/1pYTq_U-e3Fath5yB6N9b5ic-cMynUtclkEgdojkAXwE/edit?usp=sharing)
+
+#### Contributions and affiliations
+
+- Valeriya Gaysinskaya, Johns Hopkins University
+- Gauri Paul, Clovis Community College
+- Frederick Tan, Johns Hopkins University
+- Sayumi York, Notre Dame of Maryland University
 
 ## Try it Question 2 - Do diet, age, gender and levels of metabolites correlate with microbe variation between individuals 
 
@@ -549,6 +565,20 @@ plot_ordination(misoBD, pcoa.misoBD,
 | <br> |
 
 
+### Footnotes
+
+#### Resources
+
+- [Google Doc](https://docs.google.com/document/d/1OWgUwaT2MlSd-qq7wSlB3BnM-cq_GTxEyy38HV5ajoU/edit?usp=sharing)
+- [16S rRNA R Quick Reference](https://docs.google.com/document/d/1pYTq_U-e3Fath5yB6N9b5ic-cMynUtclkEgdojkAXwE/edit?usp=sharing)
+
+#### Contributions and affiliations
+
+- Valeriya Gaysinskaya, Johns Hopkins University
+- Gauri Paul, Clovis Community College
+- Frederick Tan, Johns Hopkins University
+- Sayumi York, Notre Dame of Maryland University
+
 ## Try it Question 3 - What microbes (ASVs) differ between males and females, and does age have an impact
 
 Approach: Perform DESeq analysis between females and males and determine how many differentially abundant microbes are there between the sexes. Then examine if age has a further impact on the abundance of the microbes between the sexes. 
@@ -657,6 +687,7 @@ ggplot(Significant_DEseq2_ASVs, aes(x = fill in the blank, y=log2FoldChange, col
 |:--|
 | <br> |
 
+
 ### Step 3C. Determine the impact of older age on differential abundance in males and females, by subsetting age >= 50 data from the phyloseq object, and performing DESeq2 analysis on this subset.
 
 - You can use template code below:
@@ -701,6 +732,19 @@ ggplot(Significant_DEseq2_ASVs, aes(x = fill in the blank, y=log2FoldChange, col
 
 
 
+### Footnotes
+
+#### Resources
+
+- [Google Doc](https://docs.google.com/document/d/1OWgUwaT2MlSd-qq7wSlB3BnM-cq_GTxEyy38HV5ajoU/edit?usp=sharing)
+- [16S rRNA R Quick Reference](https://docs.google.com/document/d/1pYTq_U-e3Fath5yB6N9b5ic-cMynUtclkEgdojkAXwE/edit?usp=sharing)
+
+#### Contributions and affiliations
+
+- Valeriya Gaysinskaya, Johns Hopkins University
+- Gauri Paul, Clovis Community College
+- Frederick Tan, Johns Hopkins University
+- Sayumi York, Notre Dame of Maryland University
 
 ## Try it Question 4 -  Is there an interaction between diet and age and the microbiome
 
@@ -928,3 +972,16 @@ ggplot(Significant_ASVs_subset, aes(x = Phylum, y=log2FoldChange, color= fill in
 
 
 
+### Footnotes
+
+#### Resources
+
+- [Google Doc](https://docs.google.com/document/d/1OWgUwaT2MlSd-qq7wSlB3BnM-cq_GTxEyy38HV5ajoU/edit?usp=sharing)
+- [16S rRNA R Quick Reference](https://docs.google.com/document/d/1pYTq_U-e3Fath5yB6N9b5ic-cMynUtclkEgdojkAXwE/edit?usp=sharing)
+
+#### Contributions and affiliations
+
+- Valeriya Gaysinskaya, Johns Hopkins University
+- Gauri Paul, Clovis Community College
+- Frederick Tan, Johns Hopkins University
+- Sayumi York, Notre Dame of Maryland University

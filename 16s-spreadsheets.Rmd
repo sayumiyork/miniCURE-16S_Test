@@ -36,7 +36,7 @@ This spreadsheet activity aims to orient you towards understanding the data and 
 
 **Please note that this activity takes place in Google Sheets.** It is possible to do the same analysis in Microsoft Excel although the individual steps you will take are different. To help make things easier for everyone, we strongly recommend everyone uses Google Sheets; all our instructions will be specific to Sheets. Students who do not have a Google-associated email address can sign up for a free Gmail account and gain access to Google Sheets this way. 
 
-**A Google Sheets cheatsheet that covers the necessary steps for this activity is available.** Students who are not experienced using spreadsheet software should note that the instructions build on prior steps. 
+**A Google Sheets cheatsheet that covers the necessary steps for this activity is available in our [Spreadsheets 101](https://science.c-moor.org/miniCURE-16S-Microbiome/spreadsheets-101.html) guide.** Students who are not experienced using spreadsheet software should note that the instructions build on prior steps. 
 
 
 ### Learning objectives
@@ -350,12 +350,16 @@ Recall that there samples 1 and 2 are from the baseline diet (BD), samples 3 and
 |:-|
 | <br> |
 
+### Grading criteria
+
+- Download the assignment to your local computer as a .docx, complete it, and upload the assignment to your LMS (Blackboard, Canvas, Google Classroom).
 
 ### Footnotes
 
 #### Resources
 
 - [Google Doc](https://docs.google.com/document/d/1GC2cwwGAQEzMCta82RUQgQvqz9OOvFyCH4ht520BTGk/edit?usp=sharing)
+- [Spreadsheets 101](https://science.c-moor.org/miniCURE-16S-Microbiome/spreadsheets-101.html)
 - [‘MISO1-S02-1’](https://docs.google.com/spreadsheets/d/1hpSyjO0H8sXq6C1xM_oGMyv9vCY2qTvfYHVdqO9ZVhk/edit?usp=sharing) spreadsheet
 - [MISO_WO](https://docs.google.com/spreadsheets/d/1vD0wbxgYuDlfKA0DF2Km-N4GHL2gRoUaEN_oCrSb2jU/edit?usp=sharing) spreadsheet
 - [‘MISO_Subject1’](https://docs.google.com/spreadsheets/d/1SXPLeaHAbxjOBkdVsyldp-bdGG7fQgReKlh4sjG5AKI/edit?usp=sharing) spreadsheet
