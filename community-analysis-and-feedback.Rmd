@@ -3,9 +3,12 @@
 library(cow)
 ```
 
- 
-# (PART\*) Community analysis and feedback {-}
-# Community analysis and feedback
+```{r, echo=FALSE, results='asis'}
+cow::borrow_chapter(
+  doc_path = "making-group-poster.Rmd",
+  repo_name = "sayumiyork/c-moor-ottr-generic"
+)
+```
 
 ```{r, echo=FALSE, results='asis'}
 cow::borrow_chapter(
