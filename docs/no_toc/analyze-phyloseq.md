@@ -15,7 +15,7 @@ In this section we will do more advanced analyses in phyloseq. These include:
 1. Performing a differential abundance analysis to compare the abundance of microbes between two conditions
 1. Relating all the above to different metadata variables in our datasets such as subject, age, and gender
 
-These analyses are slightly more complex to run and interpret, but students who have completed the [chapter on scientific literature](https://sayumiyork.github.io/miniCURE-16S_Test/scientific-literature.html) will have previous exposure to these figures.
+These analyses are slightly more complex to run and interpret, but students who have completed the [chapter on scientific literature](https://science.c-moor.org/miniCURE-16S-Microbiome/scientific-literature.html) will have previous exposure to these figures.
 
 ## Lecture - Analyzing 16S rRNA Data with phyloseq
 
